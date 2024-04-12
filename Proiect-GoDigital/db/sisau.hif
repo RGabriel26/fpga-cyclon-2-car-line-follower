@@ -1,0 +1,384 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+numarator_1000
+# storage
+db|sisau.(1).cnf
+db|sisau.(1).cnf
+# case_insensitive
+# source_file
+numarator_1000.bdf
+a9f71d90979adb2a835aa29a14eadfe8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+numarator_1000:inst
+}
+# macro_sequence
+
+# end
+# entity
+numarator_10
+# storage
+db|sisau.(2).cnf
+db|sisau.(2).cnf
+# case_insensitive
+# source_file
+numarator_10.bdf
+54d348f9a8936eb0d1714ee074da831f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+numarator_1000:inst|numarator_10:inst2
+numarator_1000:inst|numarator_10:inst1
+numarator_1000:inst|numarator_10:inst
+divizor_1000:inst16|numarator_10:inst2
+divizor_1000:inst16|numarator_10:inst1
+divizor_1000:inst16|numarator_10:inst
+divizor_1000:inst17|numarator_10:inst2
+divizor_1000:inst17|numarator_10:inst1
+divizor_1000:inst17|numarator_10:inst
+}
+# macro_sequence
+
+# end
+# entity
+divizor_10
+# storage
+db|sisau.(3).cnf
+db|sisau.(3).cnf
+# case_insensitive
+# source_file
+divizor_10.bdf
+e52468159ab8edfd4cf217ad7ae2ab1a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+divizor_10:inst2
+}
+# macro_sequence
+
+# end
+# entity
+comparator_1BIT
+# storage
+db|sisau.(4).cnf
+db|sisau.(4).cnf
+# case_insensitive
+# source_file
+comparator_1bit.bdf
+242944ce935d2a22ebc7271f8d4adb85
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
+}
+# macro_sequence
+
+# end
+# entity
+comparator_4BIT
+# storage
+db|sisau.(5).cnf
+db|sisau.(5).cnf
+# case_insensitive
+# source_file
+comparator_4bit.bdf
+189d607cc28894caf9aede14e5de2c3a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparator_12BIT:inst4|comparator_4BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst2
+}
+# macro_sequence
+
+# end
+# entity
+comparator_12BIT
+# storage
+db|sisau.(6).cnf
+db|sisau.(6).cnf
+# case_insensitive
+# source_file
+comparator_12bit.bdf
+f840a2cdd0a3965698d8e78b7c6cfcc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparator_12BIT:inst4
+comparator_12BIT:inst11
+}
+# macro_sequence
+
+# end
+# entity
+generator_semnalPWM
+# storage
+db|sisau.(0).cnf
+db|sisau.(0).cnf
+# case_insensitive
+# source_file
+generator_semnalpwm.bdf
+2df0baea67ab869d321b1a3bd657811
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+generator_semnalPWM:inst7
+generator_semnalPWM:inst12
+}
+# macro_sequence
+
+# end
+# entity
+divizor_1000
+# storage
+db|sisau.(7).cnf
+db|sisau.(7).cnf
+# case_insensitive
+# source_file
+divizor_1000.bdf
+973957b29f929334ee826187a442fd2e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+divizor_1000:inst16
+divizor_1000:inst17
+}
+# macro_sequence
+
+# end
+# entity
+divizor_5
+# storage
+db|sisau.(9).cnf
+db|sisau.(9).cnf
+# case_insensitive
+# source_file
+divizor_5.bdf
+a1d3714c63a8167c662db11e8c6f1e8f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+divizor_5:inst18
+}
+# macro_sequence
+
+# end
+# entity
+divizor_10_test
+# storage
+db|sisau.(10).cnf
+db|sisau.(10).cnf
+# case_insensitive
+# source_file
+divizor_10_test.bdf
+ddf84caeebc0607b4039535c46679a9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Logica_miscare
+# storage
+db|sisau.(11).cnf
+db|sisau.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+test_logicadirectie.v
+62c4a8b3f4a049d14d706f7f8680511b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Selectie_proba
+# storage
+db|sisau.(13).cnf
+db|sisau.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+selectie_proba.v
+9b5f7d70e0154238223c54125888a8ef
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Selectie_proba:inst1
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# case_insensitive
+# source_file
+main.bdf
+22828d46e17b1d48ca689bb8b4c7ae8e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Logica_miscare
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+logica_miscare.v
+26395fb4de5fa419e68125f57912b36
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Logica_miscare:inst9
+}
+# macro_sequence
+
+# end
+# complete
+

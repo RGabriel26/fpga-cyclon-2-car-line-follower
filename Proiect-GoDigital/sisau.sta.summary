@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -0.377
+TNS   : -0.741
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -0.302
+TNS   : -0.550
+
+Type  : Slow 1200mV 85C Model Setup 'divizor_10:inst2|inst12'
+Slack : -0.237
+TNS   : -0.582
+
+Type  : Slow 1200mV 85C Model Setup 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : -0.036
+TNS   : -0.093
+
+Type  : Slow 1200mV 85C Model Hold 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -0.633
+TNS   : -1.190
+
+Type  : Slow 1200mV 85C Model Hold 'divizor_10:inst2|inst12'
+Slack : -0.161
+TNS   : -0.258
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divizor_10:inst2|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Setup 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -0.225
+TNS   : -0.342
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -0.155
+TNS   : -0.249
+
+Type  : Slow 1200mV 0C Model Setup 'divizor_10:inst2|inst12'
+Slack : -0.102
+TNS   : -0.203
+
+Type  : Slow 1200mV 0C Model Setup 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -0.567
+TNS   : -1.055
+
+Type  : Slow 1200mV 0C Model Hold 'divizor_10:inst2|inst12'
+Slack : -0.102
+TNS   : -0.134
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divizor_10:inst2|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Setup 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divizor_10:inst2|inst12'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -0.293
+TNS   : -0.583
+
+Type  : Fast 1200mV 0C Model Hold 'divizor_10:inst2|inst12'
+Slack : -0.063
+TNS   : -0.148
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.045
+TNS   : -0.087
+
+Type  : Fast 1200mV 0C Model Hold 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.412
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divizor_10:inst2|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst1|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'numarator_1000:inst|numarator_10:inst|inst12'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

@@ -1,0 +1,383 @@
+Analysis & Synthesis report for sisau
+Sun Apr 07 17:09:07 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Apr 07 17:09:07 2024        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; sisau                                        ;
+; Top-level Entity Name              ; main                                         ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 44                                           ;
+;     Total combinational functions  ; 44                                           ;
+;     Dedicated logic registers      ; 23                                           ;
+; Total registers                    ; 23                                           ;
+; Total pins                         ; 46                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C5T144C8        ;                    ;
+; Top-level entity name                                                      ; main               ; sisau              ;
+; Family name                                                                ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/main.bdf                ;
+; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_10.bdf          ;
+; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_1000.bdf        ;
+; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/numarator_10.bdf        ;
+; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/numarator_1000.bdf      ;
+; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_1BIT.bdf     ;
+; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_4BIT.bdf     ;
+; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_12BIT.bdf    ;
+; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/generator_semnalPWM.bdf ;
+; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_5.bdf           ;
+; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/Logica_miscare.v        ;
+; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/Selectie_proba.v        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                ;
++---------------------------------------------+----------------------------------------------+
+; Resource                                    ; Usage                                        ;
++---------------------------------------------+----------------------------------------------+
+; Estimated Total logic elements              ; 44                                           ;
+;                                             ;                                              ;
+; Total combinational functions               ; 44                                           ;
+; Logic element usage by number of LUT inputs ;                                              ;
+;     -- 4 input functions                    ; 14                                           ;
+;     -- 3 input functions                    ; 16                                           ;
+;     -- <=2 input functions                  ; 14                                           ;
+;                                             ;                                              ;
+; Logic elements by mode                      ;                                              ;
+;     -- normal mode                          ; 44                                           ;
+;     -- arithmetic mode                      ; 0                                            ;
+;                                             ;                                              ;
+; Total registers                             ; 23                                           ;
+;     -- Dedicated logic registers            ; 23                                           ;
+;     -- I/O registers                        ; 0                                            ;
+;                                             ;                                              ;
+; I/O pins                                    ; 46                                           ;
+; Maximum fan-out node                        ; numarator_1000:inst|numarator_10:inst2|inst9 ;
+; Maximum fan-out                             ; 7                                            ;
+; Total fan-out                               ; 198                                          ;
+; Average fan-out                             ; 1.75                                         ;
++---------------------------------------------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; |main                           ; 44 (0)            ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |main                                        ; work         ;
+;    |Logica_miscare:inst9|       ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst9                   ; work         ;
+;    |Selectie_proba:inst1|       ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                   ; work         ;
+;    |divizor_10:inst2|           ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_10:inst2                       ;              ;
+;    |generator_semnalPWM:inst12| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_semnalPWM:inst12             ;              ;
+;    |generator_semnalPWM:inst7|  ; 6 (6)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_semnalPWM:inst7              ;              ;
+;    |numarator_1000:inst|        ; 15 (3)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|numarator_1000:inst                    ;              ;
+;       |numarator_10:inst1|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|numarator_1000:inst|numarator_10:inst1 ;              ;
+;       |numarator_10:inst2|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|numarator_1000:inst|numarator_10:inst2 ;              ;
+;       |numarator_10:inst|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|numarator_1000:inst|numarator_10:inst  ;              ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                    ;
++----------------------------------------------------+------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                      ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------------------------+------------------------+
+; Logica_miscare:inst9|directie_driverB[0]           ; Logica_miscare:inst9|directie_driverA[1] ; yes                    ;
+; Logica_miscare:inst9|directie_driverB[1]           ; Logica_miscare:inst9|directie_driverA[1] ; yes                    ;
+; Logica_miscare:inst9|directie_driverA[0]           ; Logica_miscare:inst9|directie_driverA[1] ; yes                    ;
+; Logica_miscare:inst9|directie_driverA[1]           ; Logica_miscare:inst9|directie_driverA[1] ; yes                    ;
+; Logica_miscare:inst9|stanga                        ; Logica_miscare:inst9|stanga              ; yes                    ;
+; Logica_miscare:inst9|dreapta                       ; Logica_miscare:inst9|stanga              ; yes                    ;
+; Number of user-specified and inferred latches = 6  ;                                          ;                        ;
++----------------------------------------------------+------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 23    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst9|directie_driverB[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Apr 07 17:09:06 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
+Info: Found 1 design units, including 1 entities, in source file main.bdf
+    Info: Found entity 1: main
+Info: Found 1 design units, including 1 entities, in source file divizor_10.bdf
+    Info: Found entity 1: divizor_10
+Info: Found 1 design units, including 1 entities, in source file divizor_10_test.bdf
+    Info: Found entity 1: divizor_10_test
+Info: Found 1 design units, including 1 entities, in source file divizor_1000.bdf
+    Info: Found entity 1: divizor_1000
+Info: Found 1 design units, including 1 entities, in source file numarator_10.bdf
+    Info: Found entity 1: numarator_10
+Info: Found 1 design units, including 1 entities, in source file numarator_1000.bdf
+    Info: Found entity 1: numarator_1000
+Info: Found 1 design units, including 1 entities, in source file comparator_1bit.bdf
+    Info: Found entity 1: comparator_1BIT
+Info: Found 1 design units, including 1 entities, in source file comparator_4bit.bdf
+    Info: Found entity 1: comparator_4BIT
+Info: Found 1 design units, including 1 entities, in source file comparator_12bit.bdf
+    Info: Found entity 1: comparator_12BIT
+Info: Found 1 design units, including 1 entities, in source file generator_semnalpwm.bdf
+    Info: Found entity 1: generator_semnalPWM
+Info: Found 1 design units, including 1 entities, in source file blocuri_temporare.bdf
+    Info: Found entity 1: blocuri_temporare
+Info: Found 1 design units, including 1 entities, in source file divizor_5.bdf
+    Info: Found entity 1: divizor_5
+Info: Found 1 design units, including 1 entities, in source file logica_miscare.v
+    Info: Found entity 1: Logica_miscare
+Info: Found 1 design units, including 1 entities, in source file schimbare_sm.v
+    Info: Found entity 1: Schimbare_SM
+Info: Found 1 design units, including 1 entities, in source file selectie_proba.v
+    Info: Found entity 1: Selectie_proba
+Info: Elaborating entity "main" for the top level hierarchy
+Info: Elaborating entity "generator_semnalPWM" for hierarchy "generator_semnalPWM:inst7"
+Info: Elaborating entity "divizor_10" for hierarchy "divizor_10:inst2"
+Info: Elaborating entity "comparator_12BIT" for hierarchy "comparator_12BIT:inst4"
+Info: Elaborating entity "comparator_4BIT" for hierarchy "comparator_12BIT:inst4|comparator_4BIT:inst"
+Info: Elaborating entity "comparator_1BIT" for hierarchy "comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst"
+Info: Elaborating entity "numarator_1000" for hierarchy "numarator_1000:inst"
+Info: Elaborating entity "numarator_10" for hierarchy "numarator_1000:inst|numarator_10:inst2"
+Info: Elaborating entity "Logica_miscare" for hierarchy "Logica_miscare:inst9"
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(53): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(54): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(78): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(79): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(85): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "directie_driverA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "directie_driverB", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "dreapta", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "stanga", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "count_ture", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "count_ture[0]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[1]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[2]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[3]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[4]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[5]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "stanga" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "directie_driverB[0]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "directie_driverB[1]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "directie_driverA[0]" at Logica_miscare.v(44)
+Info (10041): Inferred latch for "directie_driverA[1]" at Logica_miscare.v(44)
+Info: Elaborating entity "Selectie_proba" for hierarchy "Selectie_proba:inst1"
+Info: Elaborating entity "divizor_1000" for hierarchy "divizor_1000:inst16"
+Info: Elaborating entity "divizor_5" for hierarchy "divizor_5:inst18"
+Warning: Latch Logica_miscare:inst9|directie_driverB[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
+Warning: Latch Logica_miscare:inst9|directie_driverB[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
+Warning: Latch Logica_miscare:inst9|directie_driverA[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
+Warning: Latch Logica_miscare:inst9|directie_driverA[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
+Warning: Latch Logica_miscare:inst9|stanga has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
+Warning: Latch Logica_miscare:inst9|dreapta has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BA[11]" is stuck at VCC
+    Warning (13410): Pin "BA[10]" is stuck at GND
+    Warning (13410): Pin "BA[9]" is stuck at GND
+    Warning (13410): Pin "BA[8]" is stuck at VCC
+    Warning (13410): Pin "BA[7]" is stuck at VCC
+    Warning (13410): Pin "BA[6]" is stuck at GND
+    Warning (13410): Pin "BA[5]" is stuck at GND
+    Warning (13410): Pin "BA[4]" is stuck at VCC
+    Warning (13410): Pin "BA[3]" is stuck at VCC
+    Warning (13410): Pin "BA[2]" is stuck at GND
+    Warning (13410): Pin "BA[1]" is stuck at GND
+    Warning (13410): Pin "BA[0]" is stuck at VCC
+Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
+Info: Generated suppressed messages file C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.map.smsg
+Warning: Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "senzon_1"
+    Warning (15610): No output dependent on input pin "buton"
+Info: Implemented 90 device resources after synthesis - the final resource count might be different
+    Info: Implemented 7 input pins
+    Info: Implemented 39 output pins
+    Info: Implemented 44 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 222 megabytes
+    Info: Processing ended: Sun Apr 07 17:09:07 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.map.smsg.
+
+
