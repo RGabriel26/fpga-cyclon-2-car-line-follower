@@ -18,12 +18,13 @@ module Selectie_proba(
 	
 		//DE IMPLEMENTAT UN TIMER CARE SA NU PERMITA CITIREA ALTOR SEMNALE DE TACT TIMP DE 1 SECUNDA
 		// -POTI FOLOSI DEJA SEMNALUL DE 1HZ SAU SA RECREEZI UN DIVIZOR DE TENSIUNE IN VERILOG (MAI VERSATIL)
+		// -IN CURS ESTE CONCEPTUL DE INSTRUCTIUNE WAIT ; PAGINA 204
 		
 	
 		//incrementarea variabilei circuit care va stoca tipul de circuit pe care masina se va deplasa
 		//si resetarea acestui registru cand ce detecteaza alta apasare si valoarea din registru este maxima (3 binar)
 		//circuit <= (circuit == 3) ? 0 : circuit + 2'b01;
-		circuit <= circuit + 2'b01;
+		circuit = circuit + 2'b01;
 		
 		//informarea in exterior prin leduri a tipului de circuit 
 		// led1 - aprins - proba linie dreapta

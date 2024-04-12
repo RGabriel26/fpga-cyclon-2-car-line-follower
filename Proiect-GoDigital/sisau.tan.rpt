@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for sisau
-Sun Apr 07 17:09:12 2024
+Fri Apr 12 17:39:16 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -178,13 +178,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+------------------------------------------------+---------------------------------+---------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
 ; Slack ; Actual fmax (period)                           ; From                            ; To                              ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
 +-------+------------------------------------------------+---------------------------------+---------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
-; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|led1       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.932 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|led1       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.933 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|led3       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.930 ns                ;
 ; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|led2       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.929 ns                ;
-; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|led3       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.926 ns                ;
 ; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|circuit[1] ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.769 ns                ;
-; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led3       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.769 ns                ;
-; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led2       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.765 ns                ;
-; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led1       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.763 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led2       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.769 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led3       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.765 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|led1       ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.760 ns                ;
 ; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[1] ; Selectie_proba:inst1|circuit[1] ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.501 ns                ;
 ; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; Selectie_proba:inst1|circuit[0] ; Selectie_proba:inst1|circuit[0] ; senzor_5   ; senzor_5 ; None                        ; None                      ; 0.501 ns                ;
 +-------+------------------------------------------------+---------------------------------+---------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
@@ -333,7 +333,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; N/A   ; None         ; 9.504 ns   ; Logica_miscare:inst9|directie_driverB[0]      ; C_IN1_D2 ; senzor_4   ;
 ; N/A   ; None         ; 9.443 ns   ; Selectie_proba:inst1|led3                     ; led3     ; senzor_5   ;
 ; N/A   ; None         ; 9.031 ns   ; Selectie_proba:inst1|led2                     ; led2     ; senzor_5   ;
-; N/A   ; None         ; 9.030 ns   ; Selectie_proba:inst1|led1                     ; led1     ; senzor_5   ;
+; N/A   ; None         ; 9.017 ns   ; Selectie_proba:inst1|led1                     ; led1     ; senzor_5   ;
 +-------+--------------+------------+-----------------------------------------------+----------+------------+
 
 
@@ -381,7 +381,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Apr 07 17:09:12 2024
+    Info: Processing started: Fri Apr 12 17:39:16 2024
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off sisau -c sisau --timing_analysis_only
 Warning: Timing Analysis is analyzing one or more combinational loops as latches
     Warning: Node "Logica_miscare:inst9|stanga" is a latch
@@ -456,16 +456,16 @@ Info: Clock "clk" has Internal fmax of 120.48 MHz between source register "gener
     Info: + Micro setup delay of destination is -0.040 ns
 Info: Clock "senzor_5" Internal fmax is restricted to 360.1 MHz between source register "Selectie_proba:inst1|circuit[1]" and destination register "Selectie_proba:inst1|led1"
     Info: fmax restricted to clock pin edge rate 2.777 ns. Expand message to see actual delay path.
-        Info: + Longest register to register delay is 0.932 ns
+        Info: + Longest register to register delay is 0.933 ns
             Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X27_Y11_N9; Fanout = 4; REG Node = 'Selectie_proba:inst1|circuit[1]'
-            Info: 2: + IC(0.454 ns) + CELL(0.370 ns) = 0.824 ns; Loc. = LCCOMB_X27_Y11_N24; Fanout = 1; COMB Node = 'Selectie_proba:inst1|Decoder0~0'
-            Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 0.932 ns; Loc. = LCFF_X27_Y11_N25; Fanout = 1; REG Node = 'Selectie_proba:inst1|led1'
-            Info: Total cell delay = 0.478 ns ( 51.29 % )
-            Info: Total interconnect delay = 0.454 ns ( 48.71 % )
+            Info: 2: + IC(0.455 ns) + CELL(0.370 ns) = 0.825 ns; Loc. = LCCOMB_X27_Y11_N16; Fanout = 1; COMB Node = 'Selectie_proba:inst1|Decoder0~0'
+            Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 0.933 ns; Loc. = LCFF_X27_Y11_N17; Fanout = 1; REG Node = 'Selectie_proba:inst1|led1'
+            Info: Total cell delay = 0.478 ns ( 51.23 % )
+            Info: Total interconnect delay = 0.455 ns ( 48.77 % )
         Info: - Smallest clock skew is 0.000 ns
             Info: + Shortest clock path from clock "senzor_5" to destination register is 2.441 ns
                 Info: 1: + IC(0.000 ns) + CELL(0.935 ns) = 0.935 ns; Loc. = PIN_99; Fanout = 5; CLK Node = 'senzor_5'
-                Info: 2: + IC(0.840 ns) + CELL(0.666 ns) = 2.441 ns; Loc. = LCFF_X27_Y11_N25; Fanout = 1; REG Node = 'Selectie_proba:inst1|led1'
+                Info: 2: + IC(0.840 ns) + CELL(0.666 ns) = 2.441 ns; Loc. = LCFF_X27_Y11_N17; Fanout = 1; REG Node = 'Selectie_proba:inst1|led1'
                 Info: Total cell delay = 1.601 ns ( 65.59 % )
                 Info: Total interconnect delay = 0.840 ns ( 34.41 % )
             Info: - Longest clock path from clock "senzor_5" to source register is 2.441 ns
@@ -632,8 +632,8 @@ Info: th for register "Logica_miscare:inst9|stanga" (data pin = "senzor_4", cloc
         Info: Total cell delay = 1.311 ns ( 17.86 % )
         Info: Total interconnect delay = 6.031 ns ( 82.14 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 173 megabytes
-    Info: Processing ended: Sun Apr 07 17:09:12 2024
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Fri Apr 12 17:39:16 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

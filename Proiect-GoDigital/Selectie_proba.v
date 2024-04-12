@@ -24,7 +24,7 @@ module Selectie_proba(
 		//incrementarea variabilei circuit care va stoca tipul de circuit pe care masina se va deplasa
 		//si resetarea acestui registru cand ce detecteaza alta apasare si valoarea din registru este maxima (3 binar)
 		//circuit <= (circuit == 3) ? 0 : circuit + 2'b01;
-		circuit <= circuit + 2'b01;
+		circuit = circuit + 2'b01;
 		
 		//informarea in exterior prin leduri a tipului de circuit 
 		// led1 - aprins - proba linie dreapta

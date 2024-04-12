@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Sun Apr 07 17:09:07 2024
+Fri Apr 12 17:39:11 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -17,7 +17,6 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,7 +42,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 07 17:09:07 2024        ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 12 17:39:11 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
@@ -150,24 +149,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/main.bdf                ;
-; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_10.bdf          ;
-; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_1000.bdf        ;
-; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/numarator_10.bdf        ;
-; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/numarator_1000.bdf      ;
-; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_1BIT.bdf     ;
-; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_4BIT.bdf     ;
-; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/comparator_12BIT.bdf    ;
-; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/generator_semnalPWM.bdf ;
-; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/divizor_5.bdf           ;
-; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/Logica_miscare.v        ;
-; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/Selectie_proba.v        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.bdf                ;
+; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_10.bdf          ;
+; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_1000.bdf        ;
+; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/numarator_10.bdf        ;
+; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/numarator_1000.bdf      ;
+; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_1BIT.bdf     ;
+; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_4BIT.bdf     ;
+; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_12BIT.bdf    ;
+; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/generator_semnalPWM.bdf ;
+; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_5.bdf           ;
+; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/Logica_miscare.v        ;
+; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/Selectie_proba.v        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -264,7 +263,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Apr 07 17:09:06 2024
+    Info: Processing started: Fri Apr 12 17:39:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -292,8 +291,6 @@ Info: Found 1 design units, including 1 entities, in source file divizor_5.bdf
     Info: Found entity 1: divizor_5
 Info: Found 1 design units, including 1 entities, in source file logica_miscare.v
     Info: Found entity 1: Logica_miscare
-Info: Found 1 design units, including 1 entities, in source file schimbare_sm.v
-    Info: Found entity 1: Schimbare_SM
 Info: Found 1 design units, including 1 entities, in source file selectie_proba.v
     Info: Found entity 1: Selectie_proba
 Info: Elaborating entity "main" for the top level hierarchy
@@ -305,30 +302,31 @@ Info: Elaborating entity "comparator_1BIT" for hierarchy "comparator_12BIT:inst4
 Info: Elaborating entity "numarator_1000" for hierarchy "numarator_1000:inst"
 Info: Elaborating entity "numarator_10" for hierarchy "numarator_1000:inst|numarator_10:inst2"
 Info: Elaborating entity "Logica_miscare" for hierarchy "Logica_miscare:inst9"
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(53): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(54): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(78): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(79): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(85): truncated value with size 32 to match size of target (8)
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "directie_driverA", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "directie_driverB", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "dreapta", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "stanga", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(44): inferring latch(es) for variable "count_ture", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "count_ture[0]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[1]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[2]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[3]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[4]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[5]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "stanga" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "directie_driverB[0]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "directie_driverB[1]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "directie_driverA[0]" at Logica_miscare.v(44)
-Info (10041): Inferred latch for "directie_driverA[1]" at Logica_miscare.v(44)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(58): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(59): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(83): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(84): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(90): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(49): inferring latch(es) for variable "directie_driverA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(49): inferring latch(es) for variable "directie_driverB", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(49): inferring latch(es) for variable "dreapta", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(49): inferring latch(es) for variable "stanga", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(49): inferring latch(es) for variable "count_ture", which holds its previous value in one or more paths through the always construct
+Warning (10034): Output port "factor_duty_cycle" at Logica_miscare.v(23) has no driver
+Info (10041): Inferred latch for "directie_driverB[0]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "directie_driverB[1]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "directie_driverA[0]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "directie_driverA[1]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[0]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[1]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[2]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[3]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[4]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[5]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(89)
+Info (10041): Inferred latch for "stanga" at Logica_miscare.v(64)
+Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(64)
 Info: Elaborating entity "Selectie_proba" for hierarchy "Selectie_proba:inst1"
 Info: Elaborating entity "divizor_1000" for hierarchy "divizor_1000:inst16"
 Info: Elaborating entity "divizor_5" for hierarchy "divizor_5:inst18"
@@ -360,7 +358,6 @@ Warning: Output pins are stuck at VCC or GND
 Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
-Info: Generated suppressed messages file C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.map.smsg
 Warning: Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "senzon_1"
     Warning (15610): No output dependent on input pin "buton"
@@ -368,16 +365,10 @@ Info: Implemented 90 device resources after synthesis - the final resource count
     Info: Implemented 7 input pins
     Info: Implemented 39 output pins
     Info: Implemented 44 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 41 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 42 warnings
     Info: Peak virtual memory: 222 megabytes
-    Info: Processing ended: Sun Apr 07 17:09:07 2024
+    Info: Processing ended: Fri Apr 12 17:39:11 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/gabri/OneDrive/Desktop/GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.map.smsg.
 
 
