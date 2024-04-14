@@ -14,7 +14,7 @@ module Selectie_proba(
 	
 	//in practica trebuie un timer pentru a bloca semnalele multiple de tact, trebuie ceva de a bloca timo de o secunda
 	//alte semnale de tact prin inputul buton
-	always @(posedge tact_senzor5) begin 
+	always @(posedge buton) begin 
 	
 		//DE IMPLEMENTAT UN TIMER CARE SA NU PERMITA CITIREA ALTOR SEMNALE DE TACT TIMP DE 1 SECUNDA
 		// -POTI FOLOSI DEJA SEMNALUL DE 1HZ SAU SA RECREEZI UN DIVIZOR DE TENSIUNE IN VERILOG (MAI VERSATIL)

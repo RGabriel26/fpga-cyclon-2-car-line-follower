@@ -18,8 +18,9 @@ module Logica_miscare(
     output reg stop, 
     output reg [7:0] count_ture, //indica numarul de ture pe care masina l-a realizat si care va fi folosit pentru afisare
     
-    output reg [8:0] factor_dc_driverA,
-    output reg [8:0] factor_dc_driverB //iesire care va fi folosita pentru a scoate factorul de comparatie pentru a crea semnalul pwm 
+    //iesiri pentru factorul de umolere a semnalului PWM (duty cycle)
+    output reg [12:0] factor_dc_driverA,
+    output reg [12:0] factor_dc_driverB //iesire care va fi folosita pentru a scoate factorul de comparatie pentru a crea semnalul pwm 
 										//semnal binar de 12 biti combinat in  comparatorul de 12 biti cu starea numaratorului de 12 biti
 );
 //variabile locale
