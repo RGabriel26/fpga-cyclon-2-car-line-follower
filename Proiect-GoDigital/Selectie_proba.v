@@ -1,7 +1,5 @@
 module Selectie_proba(
 	input buton, //buton care selecteaza tipul de traseu pentru proba x
-	//intrare de testare semnal tact 
-	input tact_senzor5,
 	
 	output reg [1:0] circuit,
 	output reg led1,led2,led3 //outputuri pentru informarea exterioara a traseului selectat
@@ -14,7 +12,7 @@ module Selectie_proba(
 	
 	//in practica trebuie un timer pentru a bloca semnalele multiple de tact, trebuie ceva de a bloca timo de o secunda
 	//alte semnale de tact prin inputul buton
-	always @(posedge tact_senzor5) begin 
+	always @(posedge buton) begin 
 	
 		//DE IMPLEMENTAT UN TIMER CARE SA NU PERMITA CITIREA ALTOR SEMNALE DE TACT TIMP DE 1 SECUNDA
 		// -POTI FOLOSI DEJA SEMNALUL DE 1HZ SAU SA RECREEZI UN DIVIZOR DE TENSIUNE IN VERILOG (MAI VERSATIL)

@@ -289,21 +289,37 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-main
+Logica_miscare
 # storage
-db|sisau.(8).cnf
-db|sisau.(8).cnf
-# case_insensitive
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
 # source_file
-main.bdf
-22828d46e17b1d48ca689bb8b4c7ae8e
-26
+logica_miscare.v
+b58a3a5f9ada22ecc2602bb3cdac212e
+8
 # internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # hierarchies {
-|
+Logica_miscare:inst6
 }
 # macro_sequence
 
@@ -320,7 +336,7 @@ ON
 # case_sensitive
 # source_file
 selectie_proba.v
-8bb16a672ce3c25d783eb34ab06c518
+80a1b96e9645783a5372d78cdaa1557c
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -345,37 +361,21 @@ Selectie_proba:inst1
 
 # end
 # entity
-Logica_miscare
+main
 # storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# case_insensitive
 # source_file
-logica_miscare.v
-677b30fcc3b0750392632836b0e74b
-8
+main.bdf
+8b272d61e5626998d6377b95e0ad72
+26
 # internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # hierarchies {
-Logica_miscare:inst9
+|
 }
 # macro_sequence
 
