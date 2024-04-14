@@ -5,27 +5,37 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.049 ns
+Actual Time    : 3.395 ns
 From           : senzor_2
-To             : Logica_miscare:inst6|directie_driverA[1]
+To             : Logica_miscare:inst6|dreapta
 From Clock     : --
-To Clock       : senzor_4
+To Clock       : senzor_3
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 22.034 ns
-From           : generator_semnalPWM:inst7|inst15
-To             : PWM_B
+Actual Time    : 18.394 ns
+From           : numarator_1000:inst|numarator_10:inst2|inst11
+To             : A[10]
 From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.156 ns
+From           : senzor_2
+To             : B_IN4_D1
+From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.983 ns
+Actual Time    : -2.098 ns
 From           : senzor_4
 To             : Logica_miscare:inst6|stanga
 From Clock     : --
@@ -35,41 +45,11 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 123.76 MHz ( period = 8.080 ns )
-From           : generator_semnalPWM:inst12|inst15
-To             : generator_semnalPWM:inst12|inst15
+Actual Time    : 285.71 MHz ( period = 3.500 ns )
+From           : numarator_1000:inst|numarator_10:inst1|inst10
+To             : numarator_1000:inst|numarator_10:inst1|inst12
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'senzor_3'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 324.04 MHz ( period = 3.086 ns )
-From           : Logica_miscare:inst6|stanga
-To             : Logica_miscare:inst6|directie_driverB[1]
-From Clock     : senzor_3
-To Clock       : senzor_3
-Failed Paths   : 0
-
-Type           : Clock Setup: 'senzor_2'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 339.44 MHz ( period = 2.946 ns )
-From           : Logica_miscare:inst6|stanga
-To             : Logica_miscare:inst6|directie_driverB[1]
-From Clock     : senzor_2
-To Clock       : senzor_2
-Failed Paths   : 0
-
-Type           : Clock Setup: 'senzor_4'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
-From           : Logica_miscare:inst6|stanga
-To             : Logica_miscare:inst6|directie_driverB[1]
-From Clock     : senzor_4
-To Clock       : senzor_4
 Failed Paths   : 0
 
 Type           : Clock Setup: 'buton'
@@ -77,7 +57,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
 From           : Selectie_proba:inst1|circuit[1]
-To             : Selectie_proba:inst1|led1
+To             : Selectie_proba:inst1|led2
 From Clock     : buton
 To Clock       : buton
 Failed Paths   : 0
@@ -86,11 +66,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : generator_semnalPWM:inst7|inst15
-To             : generator_semnalPWM:inst7|inst15
+From           : numarator_1000:inst|numarator_10:inst|inst9
+To             : numarator_1000:inst|numarator_10:inst|inst11
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 2
+Failed Paths   : 6
 
 Type           : Total number of failed paths
 Slack          : 
@@ -100,7 +80,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 2
+Failed Paths   : 6
 
 --------------------------------------------------------------------------------------
 

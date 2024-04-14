@@ -1,6 +1,8 @@
 module Logica_miscare(
 	    /* ########### semnalele de input ############# 
-	 !!! LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA !!!
+	
+	 >>>> LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA <<<<
+	 
 	senzor_1 / senzor_5 -> folosit pentru a detecta linia de semnalizare de curba spre dreapta sau stanga
 						   sau pentru a detecta un linia de finish a circuitului (cand ambii senzori sunt in 1 logic)
 	
@@ -14,7 +16,8 @@ module Logica_miscare(
 					
 	circuit -> semnal provenit de la alt bloc logic care va determina tipul de circuit pe care urmeaza sa se deplaseze masinuta
 	
-	########### semnalele de output ############# 				   
+	########### semnalele de output ############# 		
+			   
 	directie_driverA -> 
 	directie_driverB -> 
 	semnal_dreapta -> 
@@ -61,8 +64,8 @@ initial begin
 	directie_driverB = 2'b01;
 	//initializarea factorului de comparatie cu numarul obtinut din numarator
 	//initializare cu 999 asta inseamna starea maxima de comparat in comparator ceea ce ofera un semnal PWM aproape de 100% ca duty cycle
-	factor_dc_driverA = 12'b100110011001; // procentajul de duty cycle a semnalului PWM a driverului A
-	factor_dc_driverB = 12'b100110011001; // procentajul de duty cycle a semnalului PWM a driverului B
+	factor_dc_driverA = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului A
+	factor_dc_driverB = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului B
 	
 end 
 
@@ -72,57 +75,83 @@ end
 
 //FOLOSIREA TRIBUIRILOR NEBLOCANTE (<=) CRED CA POATE GENERA PROBLEME IN RESETAREA REGISTRILOR
 	
+//logica directiei
 always @* begin
-	//LOGICA DE POZITIONARE PE TRASEUL CORECT
-	if(senzor_3 == 1) begin		
-		//conditii de schimbare
-		//excluderea cazului in care senzorii sunt simultan activati
-		//TREBUIE TESTAT
-		if({senzor_2, senzor_4} != 2'b11) begin
-			//instructiuni de pozitionare
-			// directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			// directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
-			
-			// comanda de rotire prin modificarea semnalului PWM
-			factor_dc_driverA = (senzor_2 == 1) ? 12'b0111_0101_0000 : 12'b100110011001; 
-			factor_dc_driverB = (senzor_4 == 1) ? 12'b0111_0101_0000 : 12'b100110011001; 
-			// cand senzorul destinat repozitionarii nu mai detecteaza o neregularitate in directia masinii
-			// adica daca masina este pozitionata pe directia corecta
-			// si senzorul pentru directie este in 0 logic
-			// semnalul de umplere a semnalului PWM va fi 999
-			// ceea ce genereaza un semnal la iesire de ~100%
-
-			//resetarea registrilor unde a fost memorata unltima detectie a curbei
-			dreapta = (senzor_2 == 1) ? 1 : 0;
-			stanga = (senzor_4 == 1) ? 1 : 0;
+	//conditie ca senzorul se afla pe traseul corect
+	if(senzor_3 == 1) begin
+		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
+		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
+		
+		//conditie de rotire spre dreapta
+		if(senzor_2 == 1) begin
+			directie_driverA = 2'b01;
+			dreapta = 1;
 		end
-	end else begin
-	//logica de cautat a traseului cand senzor_3 nu se mai afla pe linia neagra a traseului
-		//cautare spre dreapta sau spre stanga in functie de ultima directie detectata si salvata in registre
+		//resetarea directiei pentru driverul A
+		else begin 
+			directie_driverA = 2'b10;
+			dreapta = 0;
+		end
+		
+		//conditie de mers spre stanga
+		if(senzor_4 == 1) begin
+			directie_driverB = 2'b01;
+			stanga = 1;
+		end
+		//resetarea directiei pentru driverul B
+		else begin 
+			directie_driverB = 2'b10;
+			stanga = 0; 
+		end
+	end
+	else begin
+	//logica de cautat traseul
+		//cautare spre dreapta in functie de ultima directie cautata
 		if(dreapta == 1 | stanga == 1) begin
-			//instructiuni de pozitionare folosind informatiile din registre dreapta/stanga
-			if(dreapta == 1) begin
-				directie_driverA = 2'b01;
-				directie_driverB = 2'b10;
+			//posibil ca sensutile sa trebuiasca puse invers
+			if(dreapta == 1) begin 
+			directie_driverA = 2'b01;
+			directie_driverB = 2'b10;
 			end
 			if(stanga == 1) begin
 				directie_driverA = 2'b10;
 				directie_driverB = 2'b01;
 			end
-			//resetarea registrilor se realizeaza in conditiile de pozitionare
-		end 
-		else begin 
-			//instructiuni de pozitionare
-			//repozitionare in cazul in care registrele au fost resetate
-			//pentru a asigura pozitionare pe traseul corect
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
-			//resetarea registrilor unde a fost memorata unltima detectie a curbei
-			dreapta = (senzor_2 == 1) ? 1 : 0;
-			stanga = (senzor_4 == 1) ? 1 : 0;
+			//resetarea registrilor se realizeaza in conditia ca senzorul_1 sa fie in 1 logic
+			//trebuie TESTAT
 		end
+		//logica de rotire pentru cautarea traseului in caul in care senor_3 iese de pe traseu
+		//si nu a fost inregistrata o curba pentru ghidare
+		else begin
+		//masina va merge inapoi
+			//directie_driverA = 2'b01;
+			//directie_driverB = 2'b01;
+		
+		//TEST REPOZITIONARE
+		//conditie de rotire spre dreapta
+			if(senzor_2 == 1) begin
+				directie_driverA = 2'b01;
+				dreapta = 1;
+			end
+			//resetarea directiei pentru driverul A
+			else begin 
+				directie_driverA = 2'b10;
+				dreapta = 0;
+			end
+		
+			//conditie de mers spre stanga
+			if(senzor_4 == 1) begin
+				directie_driverB = 2'b01;
+				stanga = 1;
+			end
+			//resetarea directiei pentru driverul B
+			else begin 
+				directie_driverB = 2'b10;
+				stanga = 0; 
+			end
+		end
+		
 	end
-	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	if (senzor_1 == 1 & senzor_5 == 1) begin 
 		count_ture = count_ture + 1;

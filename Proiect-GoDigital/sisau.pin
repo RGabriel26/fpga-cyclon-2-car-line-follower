@@ -74,7 +74,7 @@ GND*                         : 4         :        :                   :         
 VCCIO1                       : 5         : power  :                   : 3.3V    : 1         :                
 GND                          : 6         : gnd    :                   :         :           :                
 led2                         : 7         : output : 3.3-V LVTTL       :         : 1         : Y              
-factor_driverB[4]            : 8         : output : 3.3-V LVTTL       :         : 1         : N              
+factor_driverB[5]            : 8         : output : 3.3-V LVTTL       :         : 1         : N              
 led1                         : 9         : output : 3.3-V LVTTL       :         : 1         : Y              
 TDO                          : 10        : output :                   :         : 1         :                
 TMS                          : 11        : input  :                   :         : 1         :                
@@ -91,13 +91,13 @@ GND+                         : 21        :        :                   :         
 GND+                         : 22        :        :                   :         : 1         :                
 VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
 GND*                         : 24        :        :                   :         : 1         :                
-factor_driverA[1]            : 25        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 26        :        :                   :         : 1         :                
+factor_driverA[2]            : 25        : output : 3.3-V LVTTL       :         : 1         : N              
+A[4]                         : 26        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 27        :        :                   :         : 1         :                
 GND*                         : 28        :        :                   :         : 1         :                
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
-factor_driverA[2]            : 31        : output : 3.3-V LVTTL       :         : 1         : N              
+A[1]                         : 31        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 32        :        :                   :         : 1         :                
 GND                          : 33        : gnd    :                   :         :           :                
 GND_PLL1                     : 34        : gnd    :                   :         :           :                
@@ -106,63 +106,63 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-GND*                         : 40        :        :                   :         : 4         :                
-factor_driverA[8]            : 41        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverB[9]            : 42        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : 43        :        :                   :         : 4         :                
-GND*                         : 44        :        :                   :         : 4         :                
-factor_driverA[9]            : 45        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverB[0]            : 40        : output : 3.3-V LVTTL       :         : 4         : N              
+A[7]                         : 41        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 42        :        :                   :         : 4         :                
+factor_driverA[0]            : 43        : output : 3.3-V LVTTL       :         : 4         : N              
+A[2]                         : 44        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 45        :        :                   :         : 4         :                
 VCCIO4                       : 46        : power  :                   : 3.3V    : 4         :                
-GND*                         : 47        :        :                   :         : 4         :                
-factor_driverB[11]           : 48        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverB[10]           : 47        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverA[6]            : 48        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
-factor_driverB[1]            : 51        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverB[7]            : 52        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverB[3]            : 51        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverB[8]            : 52        : output : 3.3-V LVTTL       :         : 4         : N              
 A[5]                         : 53        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 54        : power  :                   : 3.3V    : 4         :                
-factor_driverA[4]            : 55        : output : 3.3-V LVTTL       :         : 4         : N              
+A[9]                         : 55        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 56        : gnd    :                   :         :           :                
-factor_driverB[2]            : 57        : output : 3.3-V LVTTL       :         : 4         : N              
-A[8]                         : 58        : output : 3.3-V LVTTL       :         : 4         : N              
-A[0]                         : 59        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverA[11]           : 60        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 57        :        :                   :         : 4         :                
+factor_driverA[4]            : 58        : output : 3.3-V LVTTL       :         : 4         : N              
+A[10]                        : 59        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 60        :        :                   :         : 4         :                
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
 GND*                         : 63        :        :                   :         : 4         :                
-factor_driverA[6]            : 64        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverB[8]            : 65        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverA[8]            : 64        : output : 3.3-V LVTTL       :         : 4         : N              
+circuit[1]                   : 65        : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : 66        : power  :                   : 3.3V    : 4         :                
-GND*                         : 67        :        :                   :         : 4         :                
+factor_driverB[4]            : 67        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 68        : gnd    :                   :         :           :                
 circuit[0]                   : 69        : output : 3.3-V LVTTL       :         : 4         : N              
 buton                        : 70        : input  : 3.3-V LVTTL       :         : 4         : Y              
-factor_driverA[5]            : 71        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverA[0]            : 72        : output : 3.3-V LVTTL       :         : 4         : N              
-factor_driverB[5]            : 73        : output : 3.3-V LVTTL       :         : 3         : N              
-factor_driverB[0]            : 74        : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 75        :        :                   :         : 3         :                
+factor_driverA[7]            : 71        : output : 3.3-V LVTTL       :         : 4         : N              
+factor_driverB[7]            : 72        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 73        :        :                   :         : 3         :                
+factor_driverB[1]            : 74        : output : 3.3-V LVTTL       :         : 3         : N              
+factor_driverB[6]            : 75        : output : 3.3-V LVTTL       :         : 3         : N              
 ~LVDS41p/nCEO~               : 76        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-GND*                         : 79        :        :                   :         : 3         :                
-GND*                         : 80        :        :                   :         : 3         :                
-A[3]                         : 81        : output : 3.3-V LVTTL       :         : 3         : N              
+factor_driverA[1]            : 79        : output : 3.3-V LVTTL       :         : 3         : N              
+A[8]                         : 80        : output : 3.3-V LVTTL       :         : 3         : N              
+factor_driverA[3]            : 81        : output : 3.3-V LVTTL       :         : 3         : N              
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
-A[2]                         : 86        : output : 3.3-V LVTTL       :         : 3         : N              
-A[7]                         : 87        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 86        :        :                   :         : 3         :                
+factor_driverA[10]           : 87        : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : 88        :        :                   :         : 3         :                
 GND+                         : 89        :        :                   :         : 3         :                
 GND+                         : 90        :        :                   :         : 3         :                
 GND+                         : 91        :        :                   :         : 3         :                
-factor_driverB[3]            : 92        : output : 3.3-V LVTTL       :         : 3         : N              
-A[11]                        : 93        : output : 3.3-V LVTTL       :         : 3         : N              
-A[9]                         : 94        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 92        :        :                   :         : 3         :                
+GND*                         : 93        :        :                   :         : 3         :                
+GND*                         : 94        :        :                   :         : 3         :                
 VCCIO3                       : 95        : power  :                   : 3.3V    : 3         :                
-GND*                         : 96        :        :                   :         : 3         :                
+A[11]                        : 96        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : 97        :        :                   :         : 3         :                
 GND                          : 98        : gnd    :                   :         :           :                
 senzor_5                     : 99        : input  : 3.3-V LVTTL       :         : 3         : Y              
@@ -186,16 +186,16 @@ VCCIO2                       : 116       : power  :                   : 3.3V    
 GND                          : 117       : gnd    :                   :         :           :                
 PWM_C                        : 118       : output : 3.3-V LVTTL       :         : 2         : Y              
 PWM_D                        : 119       : output : 3.3-V LVTTL       :         : 2         : Y              
-A[1]                         : 120       : output : 3.3-V LVTTL       :         : 2         : N              
-A[4]                         : 121       : output : 3.3-V LVTTL       :         : 2         : N              
-factor_driverA[10]           : 122       : output : 3.3-V LVTTL       :         : 2         : N              
+A[6]                         : 120       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverB[9]            : 121       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverA[11]           : 122       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-A[6]                         : 125       : output : 3.3-V LVTTL       :         : 2         : N              
-circuit[1]                   : 126       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverB[2]            : 125       : output : 3.3-V LVTTL       :         : 2         : N              
+A[0]                         : 126       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 127       : power  :                   : 3.3V    : 2         :                
 GND                          : 128       : gnd    :                   :         :           :                
-factor_driverB[10]           : 129       : output : 3.3-V LVTTL       :         : 2         : N              
+A[3]                         : 129       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
 A_IN1_D1                     : 132       : output : 3.3-V LVTTL       :         : 2         : Y              
@@ -205,9 +205,9 @@ B_IN4_D1                     : 135       : output : 3.3-V LVTTL       :         
 PWM_A                        : 136       : output : 3.3-V LVTTL       :         : 2         : Y              
 PWM_B                        : 137       : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
-A[10]                        : 139       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverB[11]           : 139       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 140       : gnd    :                   :         :           :                
-factor_driverA[7]            : 141       : output : 3.3-V LVTTL       :         : 2         : N              
-factor_driverA[3]            : 142       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverA[9]            : 141       : output : 3.3-V LVTTL       :         : 2         : N              
+factor_driverA[5]            : 142       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 143       :        :                   :         : 2         :                
-factor_driverB[6]            : 144       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 144       :        :                   :         : 2         :                

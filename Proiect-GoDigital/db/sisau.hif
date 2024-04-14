@@ -102,18 +102,6 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
 comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
 comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
 comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
@@ -126,6 +114,18 @@ comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
 comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
 comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
 comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
 }
 # macro_sequence
 
@@ -145,12 +145,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst4|comparator_4BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst2
 comparator_12BIT:inst11|comparator_4BIT:inst
 comparator_12BIT:inst11|comparator_4BIT:inst1
 comparator_12BIT:inst11|comparator_4BIT:inst2
+comparator_12BIT:inst4|comparator_4BIT:inst
+comparator_12BIT:inst4|comparator_4BIT:inst1
+comparator_12BIT:inst4|comparator_4BIT:inst2
 }
 # macro_sequence
 
@@ -170,8 +170,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst4
 comparator_12BIT:inst11
+comparator_12BIT:inst4
 }
 # macro_sequence
 
@@ -191,8 +191,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-generator_semnalPWM:inst7
 generator_semnalPWM:inst12
+generator_semnalPWM:inst7
 }
 # macro_sequence
 
@@ -289,42 +289,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-Logica_miscare
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-logica_miscare.v
-b58a3a5f9ada22ecc2602bb3cdac212e
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
 Selectie_proba
 # storage
 db|sisau.(13).cnf
@@ -368,7 +332,7 @@ db|sisau.(8).cnf
 # case_insensitive
 # source_file
 main.bdf
-8b272d61e5626998d6377b95e0ad72
+19834fa9c3699ec919d41b2f11fdb2a
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -376,6 +340,42 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+Logica_miscare
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+logica_miscare.v
+cba9ffce3c73222d83fc871746ff9050
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Logica_miscare:inst6
 }
 # macro_sequence
 

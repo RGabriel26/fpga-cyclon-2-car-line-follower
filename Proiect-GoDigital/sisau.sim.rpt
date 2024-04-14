@@ -1,5 +1,5 @@
 Simulator report for sisau
-Sun Apr 14 17:21:59 2024
+Sun Apr 14 22:40:46 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 ms       ;
-; Simulation Netlist Size     ; 130 nodes    ;
-; Simulation Coverage         ;      79.84 % ;
-; Total Number of Transitions ; 539557       ;
+; Simulation Netlist Size     ; 122 nodes    ;
+; Simulation Coverage         ;      75.00 % ;
+; Total Number of Transitions ; 586753       ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 ; Device                      ; EP2C5T144C8  ;
@@ -95,13 +95,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      79.84 % ;
-; Total nodes checked                                 ; 130          ;
-; Total output ports checked                          ; 124          ;
-; Total output ports with complete 1/0-value coverage ; 99           ;
-; Total output ports with no 1/0-value coverage       ; 24           ;
-; Total output ports with no 1-value coverage         ; 25           ;
-; Total output ports with no 0-value coverage         ; 24           ;
+; Total coverage as a percentage                      ;      75.00 % ;
+; Total nodes checked                                 ; 122          ;
+; Total output ports checked                          ; 116          ;
+; Total output ports with complete 1/0-value coverage ; 87           ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 28           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -111,7 +111,9 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +---------------------------------------------------------+---------------------------------------------------------+------------------+
 ; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
 +---------------------------------------------------------+---------------------------------------------------------+------------------+
-; |main|generator_semnalPWM:inst7|inst15                  ; |main|generator_semnalPWM:inst7|inst15                  ; regout           ;
+; |main|Selectie_proba:inst1|led1                         ; |main|Selectie_proba:inst1|led1                         ; regout           ;
+; |main|Selectie_proba:inst1|led2                         ; |main|Selectie_proba:inst1|led2                         ; regout           ;
+; |main|Selectie_proba:inst1|led3                         ; |main|Selectie_proba:inst1|led3                         ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst12     ; |main|numarator_1000:inst|numarator_10:inst2|inst12     ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst11     ; |main|numarator_1000:inst|numarator_10:inst2|inst11     ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst10     ; |main|numarator_1000:inst|numarator_10:inst2|inst10     ; regout           ;
@@ -124,12 +126,15 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|numarator_1000:inst|numarator_10:inst|inst11      ; |main|numarator_1000:inst|numarator_10:inst|inst11      ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst10      ; |main|numarator_1000:inst|numarator_10:inst|inst10      ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst9       ; |main|numarator_1000:inst|numarator_10:inst|inst9       ; regout           ;
-; |main|generator_semnalPWM:inst12|inst15                 ; |main|generator_semnalPWM:inst12|inst15                 ; regout           ;
-; |main|Selectie_proba:inst1|led1                         ; |main|Selectie_proba:inst1|led1                         ; regout           ;
-; |main|Selectie_proba:inst1|led2                         ; |main|Selectie_proba:inst1|led2                         ; regout           ;
-; |main|Selectie_proba:inst1|led3                         ; |main|Selectie_proba:inst1|led3                         ; regout           ;
 ; |main|Selectie_proba:inst1|circuit[1]                   ; |main|Selectie_proba:inst1|circuit[1]                   ; regout           ;
 ; |main|Selectie_proba:inst1|circuit[0]                   ; |main|Selectie_proba:inst1|circuit[0]                   ; regout           ;
+; |main|Logica_miscare:inst6|directie_driverB[0]~0        ; |main|Logica_miscare:inst6|directie_driverB[0]~0        ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[1]~0        ; |main|Logica_miscare:inst6|directie_driverA[1]~0        ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~1        ; |main|Logica_miscare:inst6|directie_driverA[0]~1        ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[1]~2        ; |main|Logica_miscare:inst6|directie_driverA[1]~2        ; combout          ;
+; |main|Selectie_proba:inst1|Decoder0~0                   ; |main|Selectie_proba:inst1|Decoder0~0                   ; combout          ;
+; |main|Selectie_proba:inst1|Decoder0~1                   ; |main|Selectie_proba:inst1|Decoder0~1                   ; combout          ;
+; |main|Selectie_proba:inst1|Decoder0~2                   ; |main|Selectie_proba:inst1|Decoder0~2                   ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst12~0   ; |main|numarator_1000:inst|numarator_10:inst2|inst12~0   ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst11~0   ; |main|numarator_1000:inst|numarator_10:inst2|inst11~0   ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst10~0   ; |main|numarator_1000:inst|numarator_10:inst2|inst10~0   ; combout          ;
@@ -140,40 +145,34 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|divizor_10:inst2|inst12                           ; |main|divizor_10:inst2|inst12                           ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst11~0    ; |main|numarator_1000:inst|numarator_10:inst|inst11~0    ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst10~0    ; |main|numarator_1000:inst|numarator_10:inst|inst10~0    ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~0        ; |main|Logica_miscare:inst6|directie_driverB[0]~0        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~0        ; |main|Logica_miscare:inst6|directie_driverA[1]~0        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~1        ; |main|Logica_miscare:inst6|directie_driverA[0]~1        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~2        ; |main|Logica_miscare:inst6|directie_driverA[1]~2        ; combout          ;
-; |main|Selectie_proba:inst1|Decoder0~0                   ; |main|Selectie_proba:inst1|Decoder0~0                   ; combout          ;
-; |main|Selectie_proba:inst1|Decoder0~1                   ; |main|Selectie_proba:inst1|Decoder0~1                   ; combout          ;
-; |main|Selectie_proba:inst1|Decoder0~2                   ; |main|Selectie_proba:inst1|Decoder0~2                   ; combout          ;
 ; |main|Selectie_proba:inst1|circuit[1]~0                 ; |main|Selectie_proba:inst1|circuit[1]~0                 ; combout          ;
-; |main|numarator_1000:inst|inst3~0                       ; |main|numarator_1000:inst|inst3~0                       ; combout          ;
-; |main|generator_semnalPWM:inst7|inst6~0                 ; |main|generator_semnalPWM:inst7|inst6~0                 ; combout          ;
-; |main|generator_semnalPWM:inst7|inst6~1                 ; |main|generator_semnalPWM:inst7|inst6~1                 ; combout          ;
-; |main|generator_semnalPWM:inst7|inst6~2                 ; |main|generator_semnalPWM:inst7|inst6~2                 ; combout          ;
-; |main|generator_semnalPWM:inst7|inst6~3                 ; |main|generator_semnalPWM:inst7|inst6~3                 ; combout          ;
-; |main|generator_semnalPWM:inst7|inst                    ; |main|generator_semnalPWM:inst7|inst                    ; combout          ;
+; |main|Logica_miscare:inst6|stanga~1                     ; |main|Logica_miscare:inst6|stanga~1                     ; combout          ;
 ; |main|numarator_1000:inst|inst13                        ; |main|numarator_1000:inst|inst13                        ; combout          ;
 ; |main|numarator_1000:inst|inst12                        ; |main|numarator_1000:inst|inst12                        ; combout          ;
 ; |main|divizor_10:inst2|inst10                           ; |main|divizor_10:inst2|inst10                           ; regout           ;
 ; |main|divizor_10:inst2|inst11                           ; |main|divizor_10:inst2|inst11                           ; regout           ;
 ; |main|divizor_10:inst2|inst9                            ; |main|divizor_10:inst2|inst9                            ; regout           ;
 ; |main|divizor_10:inst2|inst12~0                         ; |main|divizor_10:inst2|inst12~0                         ; combout          ;
-; |main|Logica_miscare:inst6|stanga~1                     ; |main|Logica_miscare:inst6|stanga~1                     ; combout          ;
 ; |main|divizor_10:inst2|inst10~0                         ; |main|divizor_10:inst2|inst10~0                         ; combout          ;
 ; |main|divizor_10:inst2|inst11~0                         ; |main|divizor_10:inst2|inst11~0                         ; combout          ;
-; |main|generator_semnalPWM:inst7|inst15~0                ; |main|generator_semnalPWM:inst7|inst15~0                ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst9~0    ; |main|numarator_1000:inst|numarator_10:inst2|inst9~0    ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst1|inst9~0    ; |main|numarator_1000:inst|numarator_10:inst1|inst9~0    ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst9~0     ; |main|numarator_1000:inst|numarator_10:inst|inst9~0     ; combout          ;
-; |main|generator_semnalPWM:inst12|inst15~0               ; |main|generator_semnalPWM:inst12|inst15~0               ; combout          ;
 ; |main|Selectie_proba:inst1|circuit[0]~1                 ; |main|Selectie_proba:inst1|circuit[0]~1                 ; combout          ;
 ; |main|divizor_10:inst2|inst9~0                          ; |main|divizor_10:inst2|inst9~0                          ; combout          ;
-; |main|generator_semnalPWM:inst12|inst                   ; |main|generator_semnalPWM:inst12|inst                   ; combout          ;
 ; |main|Logica_miscare:inst6|stanga                       ; |main|Logica_miscare:inst6|stanga                       ; combout          ;
 ; |main|Logica_miscare:inst6|dreapta                      ; |main|Logica_miscare:inst6|dreapta                      ; combout          ;
-; |main|PWM_B                                             ; |main|PWM_B                                             ; padio            ;
+; |main|C_IN1_D2                                          ; |main|C_IN1_D2                                          ; padio            ;
+; |main|C_IN2_D2                                          ; |main|C_IN2_D2                                          ; padio            ;
+; |main|D_IN3_D2                                          ; |main|D_IN3_D2                                          ; padio            ;
+; |main|D_IN4_D2                                          ; |main|D_IN4_D2                                          ; padio            ;
+; |main|A_IN1_D1                                          ; |main|A_IN1_D1                                          ; padio            ;
+; |main|A_IN2_D1                                          ; |main|A_IN2_D1                                          ; padio            ;
+; |main|B_IN3_D1                                          ; |main|B_IN3_D1                                          ; padio            ;
+; |main|B_IN4_D1                                          ; |main|B_IN4_D1                                          ; padio            ;
+; |main|led1                                              ; |main|led1                                              ; padio            ;
+; |main|led2                                              ; |main|led2                                              ; padio            ;
+; |main|led3                                              ; |main|led3                                              ; padio            ;
 ; |main|A[11]                                             ; |main|A[11]                                             ; padio            ;
 ; |main|A[10]                                             ; |main|A[10]                                             ; padio            ;
 ; |main|A[9]                                              ; |main|A[9]                                              ; padio            ;
@@ -186,20 +185,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|A[2]                                              ; |main|A[2]                                              ; padio            ;
 ; |main|A[1]                                              ; |main|A[1]                                              ; padio            ;
 ; |main|A[0]                                              ; |main|A[0]                                              ; padio            ;
-; |main|PWM_A                                             ; |main|PWM_A                                             ; padio            ;
-; |main|PWM_C                                             ; |main|PWM_C                                             ; padio            ;
-; |main|C_IN1_D2                                          ; |main|C_IN1_D2                                          ; padio            ;
-; |main|C_IN2_D2                                          ; |main|C_IN2_D2                                          ; padio            ;
-; |main|D_IN3_D2                                          ; |main|D_IN3_D2                                          ; padio            ;
-; |main|D_IN4_D2                                          ; |main|D_IN4_D2                                          ; padio            ;
-; |main|A_IN1_D1                                          ; |main|A_IN1_D1                                          ; padio            ;
-; |main|A_IN2_D1                                          ; |main|A_IN2_D1                                          ; padio            ;
-; |main|B_IN3_D1                                          ; |main|B_IN3_D1                                          ; padio            ;
-; |main|B_IN4_D1                                          ; |main|B_IN4_D1                                          ; padio            ;
-; |main|PWM_D                                             ; |main|PWM_D                                             ; padio            ;
-; |main|led1                                              ; |main|led1                                              ; padio            ;
-; |main|led2                                              ; |main|led2                                              ; padio            ;
-; |main|led3                                              ; |main|led3                                              ; padio            ;
 ; |main|circuit[1]                                        ; |main|circuit[1]                                        ; padio            ;
 ; |main|circuit[0]                                        ; |main|circuit[0]                                        ; padio            ;
 ; |main|senzor_4                                          ; |main|senzor_4~corein                                   ; combout          ;
@@ -207,9 +192,12 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|senzor_2                                          ; |main|senzor_2~corein                                   ; combout          ;
 ; |main|buton                                             ; |main|buton~corein                                      ; combout          ;
 ; |main|clk                                               ; |main|clk~corein                                        ; combout          ;
-; |main|Logica_miscare:inst6|stanga~1clkctrl              ; |main|Logica_miscare:inst6|stanga~1clkctrl              ; outclk           ;
+; |main|numarator_1000:inst|inst13~clkctrl                ; |main|numarator_1000:inst|inst13~clkctrl                ; outclk           ;
+; |main|divizor_10:inst2|inst12~clkctrl                   ; |main|divizor_10:inst2|inst12~clkctrl                   ; outclk           ;
 ; |main|Logica_miscare:inst6|directie_driverA[1]~0clkctrl ; |main|Logica_miscare:inst6|directie_driverA[1]~0clkctrl ; outclk           ;
 ; |main|clk~clkctrl                                       ; |main|clk~clkctrl                                       ; outclk           ;
+; |main|numarator_1000:inst|inst12~clkctrl                ; |main|numarator_1000:inst|inst12~clkctrl                ; outclk           ;
+; |main|Logica_miscare:inst6|stanga~1clkctrl              ; |main|Logica_miscare:inst6|stanga~1clkctrl              ; outclk           ;
 +---------------------------------------------------------+---------------------------------------------------------+------------------+
 
 
@@ -220,6 +208,10 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; Node Name                           ; Output Port Name                    ; Output Port Type ;
 +-------------------------------------+-------------------------------------+------------------+
 ; |main|Logica_miscare:inst6|stanga~0 ; |main|Logica_miscare:inst6|stanga~0 ; combout          ;
+; |main|PWM_B                         ; |main|PWM_B                         ; padio            ;
+; |main|PWM_A                         ; |main|PWM_A                         ; padio            ;
+; |main|PWM_C                         ; |main|PWM_C                         ; padio            ;
+; |main|PWM_D                         ; |main|PWM_D                         ; padio            ;
 ; |main|factor_driverA[11]            ; |main|factor_driverA[11]            ; padio            ;
 ; |main|factor_driverA[10]            ; |main|factor_driverA[10]            ; padio            ;
 ; |main|factor_driverA[9]             ; |main|factor_driverA[9]             ; padio            ;
@@ -253,6 +245,10 @@ The following table displays output ports that do not toggle to 0 during simulat
 +--------------------------+--------------------------+------------------+
 ; Node Name                ; Output Port Name         ; Output Port Type ;
 +--------------------------+--------------------------+------------------+
+; |main|PWM_B              ; |main|PWM_B              ; padio            ;
+; |main|PWM_A              ; |main|PWM_A              ; padio            ;
+; |main|PWM_C              ; |main|PWM_C              ; padio            ;
+; |main|PWM_D              ; |main|PWM_D              ; padio            ;
 ; |main|factor_driverA[11] ; |main|factor_driverA[11] ; padio            ;
 ; |main|factor_driverA[10] ; |main|factor_driverA[10] ; padio            ;
 ; |main|factor_driverA[9]  ; |main|factor_driverA[9]  ; padio            ;
@@ -293,18 +289,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Apr 14 17:21:56 2024
+    Info: Processing started: Sun Apr 14 22:40:40 2024
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off sisau -c sisau
-Info: Using vector source file "C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.vwf"
+Info: Using vector source file "C:/Users/Maria/Desktop/Proiect-GoDigital/sisau-car-godigital/Proiect-GoDigital/main.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      79.84 %
-Info: Number of transitions in simulation is 539557
+Info: Simulation coverage is      75.00 %
+Info: Number of transitions in simulation is 586753
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 152 megabytes
-    Info: Processing ended: Sun Apr 14 17:21:59 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 147 megabytes
+    Info: Processing ended: Sun Apr 14 22:40:46 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 
