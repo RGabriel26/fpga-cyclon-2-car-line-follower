@@ -18,14 +18,14 @@ module Logica_miscare(
 	
 	########### semnalele de output ############# 		
 			   
-	directie_driverA -> 
-	directie_driverB -> 
-	semnal_dreapta -> 
-	semnal_stanga ->
-	stop -> 
-	count_ture -> 
-	factor_dc_driverA ->
-	factor_dc_driverA ->
+	directie_driverA -> iesire pentru stabilirea sensurilor motoarelor aferente driverului A
+	directie_driverB -> iesire pentru stabilirea sensurilor motoarelor aferente driverului B
+	semnal_dreapta -> semnal pentru semnalizarea spre dreapta
+	semnal_stanga -> semnla pentru semnalizarea spre stanga
+	stop -> semnal de semnalizare a franii
+	count_ture -> semnal pe 2 biti pentru a afisarea numarului de ture parcurse
+	factor_dc_driverA -> numar pe 12 biti pentru compararea in comparator pentru stabilirea factorului de umplere pentru driverul A
+	factor_dc_driverA -> numar pe 12 biti pentru compararea in comparator pentru stabilirea factorului de umplere pentru driverul B
 	
 	
 	*/
@@ -60,8 +60,8 @@ initial begin
 	stop = 0;
 	count_ture = 0;
 	//initializare cu starea de mers inainte
-	directie_driverA = 2'b01;
-	directie_driverB = 2'b01;
+	directie_driverA = 2'b10;
+	directie_driverB = 2'b10;
 	//initializarea factorului de comparatie cu numarul obtinut din numarator
 	//initializare cu 999 asta inseamna starea maxima de comparat in comparator ceea ce ofera un semnal PWM aproape de 100% ca duty cycle
 	factor_dc_driverA = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului A
@@ -81,7 +81,16 @@ always @* begin
 	if(senzor_3 == 1) begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
-		
+		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
+			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
+			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			
+			dreapta = (senzor_2 == 1) ? 1 : 0;
+			stanga = (senzor_4 == 1) ? 1: 0;
+		end else begin //tratarea cazului cand senzorii sunt simultan in 1 logic
+			directie_driverA = 2'b10;
+			directie_driverB = 2'b10;
+		end
 		//conditie de rotire spre dreapta
 		if(senzor_2 == 1) begin
 			directie_driverA = 2'b01;

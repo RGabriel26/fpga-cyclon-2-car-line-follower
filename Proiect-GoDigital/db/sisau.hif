@@ -33,9 +33,6 @@ a9f71d90979adb2a835aa29a14eadfe8
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-numarator_1000:inst
-}
 # macro_sequence
 
 # end
@@ -52,17 +49,6 @@ numarator_10.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-numarator_1000:inst|numarator_10:inst2
-numarator_1000:inst|numarator_10:inst1
-numarator_1000:inst|numarator_10:inst
-divizor_1000:inst16|numarator_10:inst2
-divizor_1000:inst16|numarator_10:inst1
-divizor_1000:inst16|numarator_10:inst
-divizor_1000:inst17|numarator_10:inst2
-divizor_1000:inst17|numarator_10:inst1
-divizor_1000:inst17|numarator_10:inst
 }
 # macro_sequence
 
@@ -81,9 +67,6 @@ e52468159ab8edfd4cf217ad7ae2ab1a
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-divizor_10:inst2
-}
 # macro_sequence
 
 # end
@@ -100,32 +83,6 @@ comparator_1bit.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
 }
 # macro_sequence
 
@@ -144,14 +101,6 @@ comparator_4bit.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-comparator_12BIT:inst11|comparator_4BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst2
-comparator_12BIT:inst4|comparator_4BIT:inst
-comparator_12BIT:inst4|comparator_4BIT:inst1
-comparator_12BIT:inst4|comparator_4BIT:inst2
-}
 # macro_sequence
 
 # end
@@ -168,10 +117,6 @@ f840a2cdd0a3965698d8e78b7c6cfcc
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-comparator_12BIT:inst11
-comparator_12BIT:inst4
 }
 # macro_sequence
 
@@ -190,10 +135,6 @@ generator_semnalpwm.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-generator_semnalPWM:inst12
-generator_semnalPWM:inst7
-}
 # macro_sequence
 
 # end
@@ -211,10 +152,6 @@ divizor_1000.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-divizor_1000:inst16
-divizor_1000:inst17
-}
 # macro_sequence
 
 # end
@@ -231,9 +168,6 @@ a1d3714c63a8167c662db11e8c6f1e8f
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-divizor_5:inst18
 }
 # macro_sequence
 
@@ -289,62 +223,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-Selectie_proba
-# storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-selectie_proba.v
-80a1b96e9645783a5372d78cdaa1557c
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Selectie_proba:inst1
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(8).cnf
-db|sisau.(8).cnf
-# case_insensitive
-# source_file
-main.bdf
-19834fa9c3699ec919d41b2f11fdb2a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 Logica_miscare
 # storage
 db|sisau.(12).cnf
@@ -356,7 +234,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-cba9ffce3c73222d83fc871746ff9050
+431f5e88f287e69d3fb348cc4ac285e3
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -374,8 +252,42 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+divizor_frecventa
+# storage
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# case_insensitive
+# source_file
+divizor_frecventa.bdf
+9f8621fede156808737dc2a5b9bf33
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+debouncing
+# storage
+db|sisau.(14).cnf
+db|sisau.(14).cnf
+# case_insensitive
+# source_file
+debouncing.bdf
+ce33ade43dfc6f883253ca3a928cc59c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-Logica_miscare:inst6
+|
 }
 # macro_sequence
 

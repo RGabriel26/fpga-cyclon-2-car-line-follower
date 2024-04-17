@@ -1,6 +1,6 @@
 module Selectie_proba(
 	input buton, //buton care selecteaza tipul de traseu pentru proba x
-	
+		
 	output reg [1:0] circuit,
 	output reg led1,led2,led3 //outputuri pentru informarea exterioara a traseului selectat
 	
