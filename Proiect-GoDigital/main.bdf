@@ -123,23 +123,6 @@ applicable agreement for further details.
 	(annotation_block (location)(rect -136 912 -88 928))
 )
 (pin
-	(input)
-	(rect -240 592 -72 608)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "buton" (rect 5 0 32 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -296 608 -248 624))
-)
-(pin
 	(output)
 	(rect 1888 128 2064 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -457,6 +440,24 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12)(line_width 1))
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
+)
+(pin
+	(bidir)
+	(rect -360 592 -184 608)
+	(text "BIDIR" (rect 151 0 175 10)(font "Arial" (font_size 6)))
+	(text "buton" (rect 5 0 32 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 120 4)(pt 98 4)(line_width 1))
+		(line (pt 176 8)(pt 124 8)(line_width 1))
+		(line (pt 120 12)(pt 98 12)(line_width 1))
+		(line (pt 98 4)(pt 94 8)(line_width 1))
+		(line (pt 98 12)(pt 94 8)(line_width 1))
+		(line (pt 120 4)(pt 124 8)(line_width 1))
+		(line (pt 124 8)(pt 120 12)(line_width 1))
+	)
+	(flipy)
+	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
 )
 (symbol
 	(rect 560 264 696 520)
@@ -1544,10 +1545,6 @@ applicable agreement for further details.
 	(pt -40 616)
 )
 (connector
-	(pt -40 600)
-	(pt -72 600)
-)
-(connector
 	(text "1Hz" (rect 338 312 356 324)(font "Arial" ))
 	(pt 328 328)
 	(pt 352 328)
@@ -1563,6 +1560,10 @@ applicable agreement for further details.
 (connector
 	(pt 144 296)
 	(pt 192 296)
+)
+(connector
+	(pt -184 600)
+	(pt -40 600)
 )
 (junction (pt 520 296))
 (junction (pt 824 800))

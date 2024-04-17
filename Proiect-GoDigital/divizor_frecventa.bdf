@@ -250,3 +250,4 @@ applicable agreement for further details.
 (junction (pt 520 256))
 (text "Pentru divizor_10 se obtine o frecventa PWM de 5k HZ" (rect 960 248 1270 262)(font "Arial" (font_size 8)))
 (text "Pentru divizor_100 se obtine o frecventa PWM de 500 HZ" (rect 960 288 1285 302)(font "Arial" (font_size 8)))
+(text "Semnal pentru filtrarea semnalelor de apasare a unui buton" (rect 968 400 1303 414)(font "Arial" (font_size 8)))
