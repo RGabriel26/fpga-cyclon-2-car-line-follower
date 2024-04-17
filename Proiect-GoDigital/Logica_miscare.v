@@ -139,8 +139,9 @@ always @* begin
 		//instructiune ce se realizeaza deja mai sus 
 		
 		//conditie de resetare a numarului de cicluri
-		if (circuit == 2'b00)
+		if (circuit == 2'b00) begin
 			count_ture = 0;
+		end
 	end
 	
 	//OUTPUT SEMNALA DE INFORMARE
