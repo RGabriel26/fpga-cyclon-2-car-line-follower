@@ -66,12 +66,27 @@ set_location_assignment PIN_115 -to D_IN4_D2
 set_location_assignment PIN_118 -to PWM_C
 set_location_assignment PIN_119 -to PWM_D
 set_global_assignment -name MISC_FILE "D:/Proiect-GoDigital/Proiect-GoDigital/Proiect-GoDigital/sisau.dpf"
+set_global_assignment -name MISC_FILE "D:/FACULTATE/An_3/Materiale Concurs Go-Digital/Proiect-GoDigital/Proiect-GoDigital/sisau.dpf"
+set_location_assignment PIN_104 -to senzon_1
+set_location_assignment PIN_103 -to senzor_2
+set_location_assignment PIN_101 -to senzor_3
+set_location_assignment PIN_100 -to senzor_4
+set_location_assignment PIN_99 -to senzor_5
+set_global_assignment -name MISC_FILE "C:/Users/Maria/Desktop/GoDigital/teste/Proiect-GoDigital_telecomanda/sisau.dpf"
+set_global_assignment -name MISC_FILE "C:/Users/gabri/OneDrive/Desktop/GoDigital/teste/Proiect-GoDigital_comanda_senzori_v2/Proiect-GoDigital/sisau.dpf"
+set_location_assignment PIN_9 -to led1
+set_location_assignment PIN_7 -to led2
+set_location_assignment PIN_3 -to led3
+set_location_assignment PIN_97 -to buton
+set_global_assignment -name MISC_FILE "C:/Users/Maria/Desktop/Proiect-GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.dpf"
 set_global_assignment -name BDF_FILE main.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE main.vwf
 set_global_assignment -name BDF_FILE divizor_10.bdf
 set_global_assignment -name BDF_FILE divizor_10_test.bdf
 set_global_assignment -name BDF_FILE divizor_1000.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE divizor_1000.vwf
+set_global_assignment -name BDF_FILE divizor_frecventa.bdf
+set_global_assignment -name BDF_FILE debouncing.bdf
 set_global_assignment -name BDF_FILE numarator_10.bdf
 set_global_assignment -name BDF_FILE numarator_1000.bdf
 set_global_assignment -name BDF_FILE comparator_1BIT.bdf
@@ -81,30 +96,11 @@ set_global_assignment -name BDF_FILE generator_semnalPWM.bdf
 set_global_assignment -name BDF_FILE blocuri_temporare.bdf
 set_global_assignment -name BDF_FILE divizor_5.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE divizor_5.vwf
-set_global_assignment -name MISC_FILE "D:/FACULTATE/An_3/Materiale Concurs Go-Digital/Proiect-GoDigital/Proiect-GoDigital/sisau.dpf"
-set_location_assignment PIN_104 -to senzon_1
-set_location_assignment PIN_103 -to senzor_2
-set_location_assignment PIN_101 -to senzor_3
-set_location_assignment PIN_100 -to senzor_4
-set_location_assignment PIN_99 -to senzor_5
-set_location_assignment PIN_72 -to dreapta
-set_location_assignment PIN_71 -to stanga
-set_global_assignment -name MISC_FILE "C:/Users/Maria/Desktop/GoDigital/teste/Proiect-GoDigital_telecomanda/sisau.dpf"
-set_location_assignment PIN_40 -to out_senzor1
-set_location_assignment PIN_41 -to out_senzor2
-set_location_assignment PIN_42 -to out_senzor3
-set_location_assignment PIN_43 -to out_senzor4
-set_location_assignment PIN_44 -to out_senzor5
-set_global_assignment -name MISC_FILE "C:/Users/gabri/OneDrive/Desktop/GoDigital/teste/Proiect-GoDigital_comanda_senzori_v2/Proiect-GoDigital/sisau.dpf"
+set_global_assignment -name VERILOG_FILE Logica_miscare.v
+set_global_assignment -name VERILOG_FILE Selectie_proba.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VERILOG_FILE Logica_miscare.v
-set_global_assignment -name VERILOG_FILE Selectie_proba.v
-set_location_assignment PIN_9 -to led1
-set_location_assignment PIN_7 -to led2
-set_location_assignment PIN_3 -to led3
-set_location_assignment PIN_70 -to buton
-set_global_assignment -name MISC_FILE "C:/Users/Maria/Desktop/Proiect-GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/sisau.dpf"
+set_global_assignment -name MISC_FILE "C:/Users/Maria/Desktop/Proiect-GoDigital/sisau-car-godigital/Proiect-GoDigital/sisau.dpf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

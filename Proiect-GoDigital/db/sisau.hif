@@ -54,15 +54,15 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2
+divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1
+divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst
+divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2
+divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1
+divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst
 numarator_1000:inst|numarator_10:inst2
 numarator_1000:inst|numarator_10:inst1
 numarator_1000:inst|numarator_10:inst
-divizor_1000:inst16|numarator_10:inst2
-divizor_1000:inst16|numarator_10:inst1
-divizor_1000:inst16|numarator_10:inst
-divizor_1000:inst17|numarator_10:inst2
-divizor_1000:inst17|numarator_10:inst1
-divizor_1000:inst17|numarator_10:inst
 }
 # macro_sequence
 
@@ -82,7 +82,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-divizor_10:inst2
+divizor_frecventa:inst2|divizor_10:inst
+divizor_frecventa:inst2|divizor_10:inst4
 }
 # macro_sequence
 
@@ -102,18 +103,6 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
-comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
 comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
 comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
 comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
@@ -126,6 +115,18 @@ comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
 comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
 comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
 comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
 }
 # macro_sequence
 
@@ -145,12 +146,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst11|comparator_4BIT:inst
-comparator_12BIT:inst11|comparator_4BIT:inst1
-comparator_12BIT:inst11|comparator_4BIT:inst2
 comparator_12BIT:inst4|comparator_4BIT:inst
 comparator_12BIT:inst4|comparator_4BIT:inst1
 comparator_12BIT:inst4|comparator_4BIT:inst2
+comparator_12BIT:inst11|comparator_4BIT:inst
+comparator_12BIT:inst11|comparator_4BIT:inst1
+comparator_12BIT:inst11|comparator_4BIT:inst2
 }
 # macro_sequence
 
@@ -170,8 +171,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-comparator_12BIT:inst11
 comparator_12BIT:inst4
+comparator_12BIT:inst11
 }
 # macro_sequence
 
@@ -191,8 +192,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-generator_semnalPWM:inst12
 generator_semnalPWM:inst7
+generator_semnalPWM:inst12
 }
 # macro_sequence
 
@@ -212,8 +213,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-divizor_1000:inst16
-divizor_1000:inst17
+divizor_frecventa:inst2|divizor_1000:inst2
+divizor_frecventa:inst2|divizor_1000:inst1
 }
 # macro_sequence
 
@@ -233,7 +234,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-divizor_5:inst18
+divizor_frecventa:inst2|divizor_5:inst3
 }
 # macro_sequence
 
@@ -289,10 +290,30 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
+debouncing
+# storage
+db|sisau.(14).cnf
+db|sisau.(14).cnf
+# case_insensitive
+# source_file
+debouncing.bdf
+ce33ade43dfc6f883253ca3a928cc59c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+debouncing:inst5
+}
+# macro_sequence
+
+# end
+# entity
 Selectie_proba
 # storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
+db|sisau.(15).cnf
+db|sisau.(15).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -300,7 +321,7 @@ ON
 # case_sensitive
 # source_file
 selectie_proba.v
-80a1b96e9645783a5372d78cdaa1557c
+4797e3a592acc4e5be07d349e2f2fe3
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -325,14 +346,34 @@ Selectie_proba:inst1
 
 # end
 # entity
-main
+divizor_frecventa
 # storage
 db|sisau.(8).cnf
 db|sisau.(8).cnf
 # case_insensitive
 # source_file
+divizor_frecventa.bdf
+a7b91e39ad91e2183676da3fa510fa79
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+divizor_frecventa:inst2
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(13).cnf
+db|sisau.(13).cnf
+# case_insensitive
+# source_file
 main.bdf
-19834fa9c3699ec919d41b2f11fdb2a
+f290703c6bf7731cab5126b5aababeb
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -356,7 +397,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-cba9ffce3c73222d83fc871746ff9050
+842952346cd2dce9e62e67bf25182
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
