@@ -169,7 +169,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 600 208 648 240)
+	(rect 592 208 640 240)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -254,18 +254,6 @@ applicable agreement for further details.
 	(pt 504 296)
 )
 (connector
-	(pt 576 224)
-	(pt 600 224)
-)
-(connector
-	(pt 648 224)
-	(pt 656 224)
-)
-(connector
-	(pt 656 224)
-	(pt 656 208)
-)
-(connector
 	(pt 656 208)
 	(pt 672 208)
 )
@@ -288,6 +276,18 @@ applicable agreement for further details.
 (connector
 	(pt 736 200)
 	(pt 776 200)
+)
+(connector
+	(pt 576 224)
+	(pt 592 224)
+)
+(connector
+	(pt 656 208)
+	(pt 656 224)
+)
+(connector
+	(pt 640 224)
+	(pt 656 224)
 )
 (junction (pt 344 296))
 (junction (pt 424 224))
