@@ -124,7 +124,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -80 600 88 616)
+	(rect -104 600 64 616)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "buton_selectie" (rect 5 0 75 12)(font "Arial" ))
 	(pt 168 8)
@@ -136,8 +136,8 @@ applicable agreement for further details.
 		(line (pt 117 4)(pt 121 8)(line_width 1))
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
-	(text "GND" (rect 136 7 157 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -128 616 -80 632))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -152 616 -104 632))
 )
 (pin
 	(output)
@@ -1098,9 +1098,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 184 264 344 392)
+	(rect 184 264 320 360)
 	(text "divizor_frecventa" (rect 5 0 105 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1109,35 +1109,28 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
-		(pt 160 32)
+		(pt 136 32)
 		(output)
 		(text "divizor_10" (rect 0 0 59 14)(font "Arial" (font_size 8)))
-		(text "divizor_10" (rect 80 27 139 41)(font "Arial" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 1))
+		(text "divizor_10" (rect 56 27 115 41)(font "Arial" (font_size 8)))
+		(line (pt 136 32)(pt 120 32)(line_width 1))
 	)
 	(port
-		(pt 160 48)
+		(pt 136 48)
 		(output)
 		(text "divizor_100" (rect 0 0 66 14)(font "Arial" (font_size 8)))
-		(text "divizor_100" (rect 73 43 139 57)(font "Arial" (font_size 8)))
-		(line (pt 160 48)(pt 144 48)(line_width 1))
+		(text "divizor_100" (rect 49 43 115 57)(font "Arial" (font_size 8)))
+		(line (pt 136 48)(pt 120 48)(line_width 1))
 	)
 	(port
-		(pt 160 64)
+		(pt 136 64)
 		(output)
 		(text "1HZ" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "1HZ" (rect 116 59 139 73)(font "Arial" (font_size 8)))
-		(line (pt 160 64)(pt 144 64)(line_width 1))
-	)
-	(port
-		(pt 160 80)
-		(output)
-		(text "tact_debouncing" (rect 0 0 94 14)(font "Arial" (font_size 8)))
-		(text "tact_debouncing" (rect 45 75 139 89)(font "Arial" (font_size 8)))
-		(line (pt 160 80)(pt 144 80)(line_width 1))
+		(text "1HZ" (rect 92 59 115 73)(font "Arial" (font_size 8)))
+		(line (pt 136 64)(pt 120 64)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 112)(line_width 1))
+		(rectangle (rect 16 16 120 80)(line_width 1))
 	)
 )
 (connector
@@ -1351,23 +1344,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 144 296)
-	(pt 184 296)
-)
-(connector
-	(pt 520 296)
-	(pt 560 296)
-)
-(connector
-	(pt 344 296)
-	(pt 520 296)
-)
-(connector
-	(text "tact_debouncing" (rect 354 328 434 340)(font "Arial" ))
-	(pt 344 344)
-	(pt 432 344)
-)
-(connector
 	(pt 520 608)
 	(pt 512 608)
 )
@@ -1378,10 +1354,6 @@ applicable agreement for further details.
 (connector
 	(pt 512 640)
 	(pt 632 640)
-)
-(connector
-	(pt 88 608)
-	(pt 216 608)
 )
 (connector
 	(text "tact_debouncing" (rect 146 608 226 620)(font "Arial" ))
@@ -1570,6 +1542,27 @@ applicable agreement for further details.
 	(pt 1632 624)
 	(pt 1680 624)
 	(bus)
+)
+(connector
+	(pt 64 608)
+	(pt 216 608)
+)
+(connector
+	(pt 144 296)
+	(pt 184 296)
+)
+(connector
+	(pt 520 296)
+	(pt 560 296)
+)
+(connector
+	(pt 320 296)
+	(pt 520 296)
+)
+(connector
+	(text "tact_debouncing" (rect 346 312 426 324)(font "Arial" ))
+	(pt 320 328)
+	(pt 424 328)
 )
 (junction (pt 520 296))
 (junction (pt 824 800))

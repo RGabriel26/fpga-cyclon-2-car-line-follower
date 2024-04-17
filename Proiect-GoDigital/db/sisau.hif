@@ -240,23 +240,6 @@ divizor_frecventa:inst2|divizor_5:inst3
 
 # end
 # entity
-divizor_10_test
-# storage
-db|sisau.(10).cnf
-db|sisau.(10).cnf
-# case_insensitive
-# source_file
-divizor_10_test.bdf
-ddf84caeebc0607b4039535c46679a9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 Logica_miscare
 # storage
 db|sisau.(11).cnf
@@ -369,7 +352,7 @@ db|sisau.(8).cnf
 # case_insensitive
 # source_file
 divizor_frecventa.bdf
-433ac0212ad2495cc27263e371fa946
+8832bac76116abf48d5826ac24e45d33
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -382,42 +365,6 @@ divizor_frecventa:inst2
 
 # end
 # entity
-divizor_2
-# storage
-db|sisau.(14).cnf
-db|sisau.(14).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-divizor_2.v
-9c45b2b2da53c7fc519ffea326aac1d
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-divizor_frecventa:inst2|divizor_2:inst5
-}
-# macro_sequence
-
-# end
-# entity
 debouncing
 # storage
 db|sisau.(16).cnf
@@ -425,7 +372,7 @@ db|sisau.(16).cnf
 # case_insensitive
 # source_file
 debouncing.bdf
-804c0ee6bb629de286d237552c32c56
+2f156effd1b27d48946f7f74d1cb6621
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -445,7 +392,7 @@ db|sisau.(13).cnf
 # case_insensitive
 # source_file
 main.bdf
-d92c5b33b539f0754c42ea5c8a3ee18d
+2137e58aeedd2969d9322bfef5ba06d
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
