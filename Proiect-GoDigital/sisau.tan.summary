@@ -5,7 +5,7 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.408 ns
+Actual Time    : 3.184 ns
 From           : senzor_2
 To             : Logica_miscare:inst6|dreapta
 From Clock     : --
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 27.684 ns
-From           : Selectie_proba:inst1|circuit[1]
-To             : circuit[1]
+Actual Time    : 20.548 ns
+From           : generator_semnalPWM:inst7|inst15
+To             : PWM_B
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.197 ns
+Actual Time    : 14.208 ns
 From           : senzor_2
 To             : B_IN4_D1
 From Clock     : --
@@ -35,19 +35,19 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.654 ns
-From           : buton
-To             : debouncing:inst5|inst
+Actual Time    : -0.803 ns
+From           : senzor_4
+To             : Logica_miscare:inst6|stanga
 From Clock     : --
-To Clock       : clk
+To Clock       : senzor_3
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 102.24 MHz ( period = 9.781 ns )
-From           : generator_semnalPWM:inst12|inst15
-To             : generator_semnalPWM:inst12|inst15
+Actual Time    : 121.20 MHz ( period = 8.251 ns )
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -60,7 +60,7 @@ From           : generator_semnalPWM:inst7|inst15
 To             : generator_semnalPWM:inst7|inst15
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 14
+Failed Paths   : 6
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +70,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 14
+Failed Paths   : 6
 
 --------------------------------------------------------------------------------------
 

@@ -54,6 +54,7 @@ B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 PWM_D <= generator_semnalPWM:inst12.out_PWM
 led1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+buton_selectie => debouncing:inst5.press_in
 led2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 led3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 circuit[0] <= Selectie_proba:inst1.circuit[0]
@@ -77,6 +78,7 @@ divizor_10 <= divizor_10:inst.next_tact
 clk => divizor_10:inst.in_clk
 1HZ <= divizor_5:inst3.next_tact
 divizor_100 <= divizor_10:inst4.next_tact
+tact_debouncing <= divizor_2:inst5.out
 
 
 |main|divizor_frecventa:inst2|divizor_10:inst
@@ -174,6 +176,11 @@ Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 |main|divizor_frecventa:inst2|divizor_10:inst4
 next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 in_clk => inst1.IN0
+
+
+|main|divizor_frecventa:inst2|divizor_2:inst5
+clock => ~NO_FANOUT~
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|comparator_12BIT:inst4
