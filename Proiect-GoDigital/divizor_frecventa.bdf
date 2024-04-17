@@ -84,22 +84,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
-(pin
-	(output)
-	(rect 776 496 952 512)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "tact_debouncing" (rect 90 0 170 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
 (symbol
 	(rect 376 224 512 320)
 	(text "divizor_10" (rect 5 0 64 14)(font "Arial" (font_size 8)))
@@ -210,28 +194,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 120 80)(line_width 1))
 	)
 )
-(symbol
-	(rect 664 472 760 568)
-	(text "divizor_2" (rect 5 0 48 12)(font "Arial" ))
-	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clock" (rect 0 0 25 12)(font "Arial" ))
-		(text "clock" (rect 21 27 46 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "out" (rect 0 0 15 12)(font "Arial" ))
-		(text "out" (rect 60 27 75 39)(font "Arial" ))
-		(line (pt 96 32)(pt 80 32)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80)(line_width 1))
-	)
-)
 (connector
 	(pt 776 296)
 	(pt 768 296)
@@ -281,28 +243,11 @@ applicable agreement for further details.
 	(pt 376 256)
 )
 (connector
-	(pt 664 504)
-	(pt 640 504)
-)
-(connector
-	(pt 640 504)
-	(pt 640 400)
-)
-(connector
-	(pt 648 400)
-	(pt 640 400)
-)
-(connector
-	(pt 640 400)
 	(pt 632 400)
-)
-(connector
-	(pt 760 504)
-	(pt 776 504)
+	(pt 648 400)
 )
 (junction (pt 520 296))
 (junction (pt 520 256))
-(junction (pt 640 400))
 (text "Pentru divizor_10 se obtine o frecventa PWM de 5k HZ" (rect 960 248 1270 262)(font "Arial" (font_size 8)))
 (text "Pentru divizor_100 se obtine o frecventa PWM de 500 HZ" (rect 960 288 1285 302)(font "Arial" (font_size 8)))
-(text "Semnal pentru filtrarea semnalelor de apasare a unui buton" (rect 960 496 1295 510)(font "Arial" (font_size 8)))
+(text "Semnal pentru filtrarea semnalelor de apasare a unui buton" (rect 776 376 1111 390)(font "Arial" (font_size 8)))

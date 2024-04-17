@@ -226,10 +226,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 352 224)
-	(pt 264 224)
-)
-(connector
 	(pt 344 296)
 	(pt 344 240)
 )
@@ -243,14 +239,6 @@ applicable agreement for further details.
 )
 (connector
 	(pt 504 240)
-	(pt 504 296)
-)
-(connector
-	(pt 264 296)
-	(pt 344 296)
-)
-(connector
-	(pt 344 296)
 	(pt 504 296)
 )
 (connector
@@ -288,6 +276,18 @@ applicable agreement for further details.
 (connector
 	(pt 640 224)
 	(pt 656 224)
+)
+(connector
+	(pt 344 296)
+	(pt 504 296)
+)
+(connector
+	(pt 264 224)
+	(pt 352 224)
+)
+(connector
+	(pt 264 296)
+	(pt 344 296)
 )
 (junction (pt 344 296))
 (junction (pt 424 224))
