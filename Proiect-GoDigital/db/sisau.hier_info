@@ -30,6 +30,7 @@ senzor_2 => Logica_miscare:inst6.senzor_2
 senzor_3 => Logica_miscare:inst6.senzor_3
 senzor_4 => Logica_miscare:inst6.senzor_4
 senzor_5 => Logica_miscare:inst6.senzor_5
+buton_selectie => debouncing:inst5.press_in
 PWM_A <= generator_semnalPWM:inst7.out_PWM
 PWM_C <= generator_semnalPWM:inst12.out_PWM
 factor_driverB[0] <= Logica_miscare:inst6.factor_dc_driverB[0]
@@ -53,10 +54,12 @@ A_IN2_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 PWM_D <= generator_semnalPWM:inst12.out_PWM
-led1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-buton_selectie => debouncing:inst5.press_in
-led2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-led3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 circuit[0] <= Selectie_proba:inst1.circuit[0]
 circuit[1] <= Selectie_proba:inst1.circuit[1]
 
@@ -495,6 +498,26 @@ factor_dc_driverB[10] <= <GND>
 factor_dc_driverB[11] <= <VCC>
 
 
+|main|Selectie_proba:inst1
+buton => led3~reg0.CLK
+buton => led2~reg0.CLK
+buton => led1~reg0.CLK
+buton => circuit[0]~reg0.CLK
+buton => circuit[1]~reg0.CLK
+circuit[0] <= circuit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+circuit[1] <= circuit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|debouncing:inst5
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
+
+
 |main|generator_semnalPWM:inst12
 tact_CBB_PWM <= inst.DB_MAX_OUTPUT_PORT_TYPE
 EGAL => inst6.IN0
@@ -701,25 +724,5 @@ B => inst9.IN0
 B => inst.IN1
 B => inst10.IN1
 A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|Selectie_proba:inst1
-buton => led3~reg0.CLK
-buton => led2~reg0.CLK
-buton => led1~reg0.CLK
-buton => circuit[0]~reg0.CLK
-buton => circuit[1]~reg0.CLK
-circuit[0] <= circuit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-circuit[1] <= circuit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|debouncing:inst5
-press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-clock => inst.CLK
-clock => inst1.CLK
-press_in => inst.DATAIN
 
 

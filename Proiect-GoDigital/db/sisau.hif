@@ -387,12 +387,12 @@ debouncing:inst5
 # entity
 main
 # storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
+db|sisau.(10).cnf
+db|sisau.(10).cnf
 # case_insensitive
 # source_file
 main.bdf
-2137e58aeedd2969d9322bfef5ba06d
+17122edabe664aff41fd52802df72dcd
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
