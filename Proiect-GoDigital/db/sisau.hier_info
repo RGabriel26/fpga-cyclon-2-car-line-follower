@@ -13,6 +13,7 @@ A[8] <= numarator_1000:inst.S0
 A[9] <= numarator_1000:inst.S1
 A[10] <= numarator_1000:inst.S2
 A[11] <= numarator_1000:inst.S3
+buton_START_STOP => debouncing:inst16.press_in
 factor_driverA[0] <= Logica_miscare:inst6.factor_dc_driverA[0]
 factor_driverA[1] <= Logica_miscare:inst6.factor_dc_driverA[1]
 factor_driverA[2] <= Logica_miscare:inst6.factor_dc_driverA[2]
@@ -430,6 +431,18 @@ in_clk => inst1.IN0
 Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|START_STOP:inst15
+START/STOP <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+TACT => inst.CLK
+
+
+|main|debouncing:inst16
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
 
 
 |main|Logica_miscare:inst6

@@ -379,7 +379,28 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+debouncing:inst16
 debouncing:inst5
+}
+# macro_sequence
+
+# end
+# entity
+START_STOP
+# storage
+db|sisau.(10).cnf
+db|sisau.(10).cnf
+# case_insensitive
+# source_file
+start_stop.bdf
+cda27696f9886cb47572378f6f51710
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+START_STOP:inst15
 }
 # macro_sequence
 
@@ -387,12 +408,12 @@ debouncing:inst5
 # entity
 main
 # storage
-db|sisau.(10).cnf
-db|sisau.(10).cnf
+db|sisau.(13).cnf
+db|sisau.(13).cnf
 # case_insensitive
 # source_file
 main.bdf
-17122edabe664aff41fd52802df72dcd
+602c955af6d75d1cb1d46479fad30e7
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
