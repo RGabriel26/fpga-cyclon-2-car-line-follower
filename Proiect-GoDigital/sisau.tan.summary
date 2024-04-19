@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.371 ns
-From           : senzor_2
-To             : Logica_miscare:inst6|dreapta
+Actual Time    : 5.440 ns
+From           : senzor_4
+To             : Logica_miscare:inst6|factor_dc_driverB[11]
 From Clock     : --
 To Clock       : senzor_4
 Failed Paths   : 0
@@ -15,29 +15,19 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 33.400 ns
-From           : Selectie_proba:inst1|circuit[0]
+Actual Time    : 36.273 ns
+From           : Logica_miscare:inst6|directie_driverA[1]
 To             : B_IN4_D1
 From Clock     : clk
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 16.734 ns
-From           : senzon_1
-To             : A_IN1_D1
-From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.028 ns
-From           : buton_selectie
-To             : debouncing:inst5|inst
+Actual Time    : 25.089 ns
+From           : senzon_1
+To             : Logica_miscare:inst6|directie_driverB[0]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 133.92 MHz ( period = 7.467 ns )
-From           : generator_semnalPWM:inst12|inst15
-To             : generator_semnalPWM:inst12|inst15
+Actual Time    : 129.85 MHz ( period = 7.701 ns )
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -55,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzor_5'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 211.33 MHz ( period = 4.732 ns )
-From           : Logica_miscare:inst6|count_ture[1]
-To             : Logica_miscare:inst6|count_ture[5]
+Actual Time    : 181.06 MHz ( period = 5.523 ns )
+From           : Logica_miscare:inst6|count_ture[2]
+To             : Logica_miscare:inst6|count_ture[4]
 From Clock     : senzor_5
 To Clock       : senzor_5
 Failed Paths   : 0
@@ -65,22 +55,102 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzon_1'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 211.33 MHz ( period = 4.732 ns )
-From           : Logica_miscare:inst6|count_ture[1]
-To             : Logica_miscare:inst6|count_ture[5]
+Actual Time    : 181.06 MHz ( period = 5.523 ns )
+From           : Logica_miscare:inst6|count_ture[2]
+To             : Logica_miscare:inst6|count_ture[4]
 From Clock     : senzon_1
 To Clock       : senzon_1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'senzor_2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_2
+To Clock       : senzor_2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'senzor_3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_3
+To Clock       : senzor_3
+Failed Paths   : 0
+
+Type           : Clock Setup: 'senzor_4'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_4
+To Clock       : senzor_4
 Failed Paths   : 0
 
 Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : generator_semnalPWM:inst12|inst15
-To             : generator_semnalPWM:inst12|inst15
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 9
+Failed Paths   : 28
+
+Type           : Clock Hold: 'senzon_1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Logica_miscare:inst6|count_ture[5]
+To             : Logica_miscare:inst6|directie_driverB[1]
+From Clock     : senzon_1
+To Clock       : senzon_1
+Failed Paths   : 32
+
+Type           : Clock Hold: 'senzor_5'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Logica_miscare:inst6|count_ture[5]
+To             : Logica_miscare:inst6|directie_driverB[1]
+From Clock     : senzor_5
+To Clock       : senzor_5
+Failed Paths   : 32
+
+Type           : Clock Hold: 'senzor_4'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_4
+To Clock       : senzor_4
+Failed Paths   : 3
+
+Type           : Clock Hold: 'senzor_3'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_3
+To Clock       : senzor_3
+Failed Paths   : 7
+
+Type           : Clock Hold: 'senzor_2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : generator_semnalPWM:inst7|inst15
+To             : generator_semnalPWM:inst7|inst15
+From Clock     : senzor_2
+To Clock       : senzor_2
+Failed Paths   : 3
 
 Type           : Total number of failed paths
 Slack          : 
@@ -90,7 +160,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 9
+Failed Paths   : 105
 
 --------------------------------------------------------------------------------------
 

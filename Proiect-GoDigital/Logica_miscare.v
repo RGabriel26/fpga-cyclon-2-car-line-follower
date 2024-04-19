@@ -1,7 +1,7 @@
 module Logica_miscare(
-	    /* ########### semnalele de input ############# 
+	/*############ semnalele de input ############# 
 	
-	 >>>> LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA <<<<
+	>>>> LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA <<<<
 	 
 	senzor_1 / senzor_5 -> folosit pentru a detecta linia de semnalizare de curba spre dreapta sau stanga
 						   sau pentru a detecta un linia de finish a circuitului (cand ambii senzori sunt in 1 logic)
@@ -87,8 +87,12 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			//directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
+			//directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			
+			//modificarea factorului de duty cycle pentru cele doua drivere pentru a realiza curba prin PWM
+			factor_dc_driverA = (senzor_2 == 1) ? 12'h750 : 12'h999;
+			factor_dc_driverB = (senzor_4 == 1) ? 12'h750 : 12'h999;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
