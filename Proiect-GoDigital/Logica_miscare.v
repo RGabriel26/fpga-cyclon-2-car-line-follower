@@ -32,6 +32,7 @@ module Logica_miscare(
 	dreapta / stanga -> sunt registrii de 1 bit care memoreaza ultima activare a senzorului de dreapta sau de stanga 
 						in cazul in care senzor_3 este pe traseu
 	
+	!!! TREBUIE VERIFICAT CUM SE TREBUIE POPULAT REGISTRUL CARE DA SENSUL DE ROTATIE A MOTOARELOR
 	
 	*/
     input senzor_1, 
@@ -87,9 +88,9 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			//directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			//directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
-			
+			//setarea sensurilor motoarelor pentru directia inainte
+			directie_driverA = 2'b10;
+			directie_driverB = 2'b10;
 			//modificarea factorului de duty cycle pentru cele doua drivere pentru a realiza curba prin PWM
 			factor_dc_driverA = (senzor_2 == 1) ? 12'h750 : 12'h999;
 			factor_dc_driverB = (senzor_4 == 1) ? 12'h750 : 12'h999;
@@ -103,6 +104,9 @@ always @* begin
 		end
 	end
 	else begin // cazul cand senzor_3 iese de pe circuit(0 logic)
+		//resetarea factorilor de duty cycle pentru semnalul PWM a celor 2 drivere 
+		factor_dc_driverA = 12'h999;
+		factor_dc_driverB = 12'h999;
 		//cautare spre dreapta in functie de ultima directie cautata
 		if(dreapta == 1 | stanga == 1) begin
 			//posibil ca sensutile sa trebuiasca puse invers
@@ -124,6 +128,9 @@ always @* begin
 			end
 		end
 	end
+	
+	
+	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	if (senzor_1 == 1 & senzor_5 == 1) begin 
 		count_ture = count_ture + 1;
