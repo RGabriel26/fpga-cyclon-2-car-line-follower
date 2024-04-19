@@ -140,8 +140,6 @@ always @* begin
 		
 		//conditie de resetare a numarului de cicluri
 		if (circuit == 2'b00) begin
-			directie_driverA = 2'b00;
-			directie_driverB = 2'b00;
 			count_ture = 0;
 		end
 	end
