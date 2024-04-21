@@ -155,6 +155,8 @@ always @* begin
 	semnal_stanga = senzor_5;
 	
 	//semnalul de stop
+	//cand masina nu mai este centrata pe linia neagra => adica cand senzor_3 nu mai este pe traseu
+	// AR TREBUI SA SE TRIMITA SEMNAL DE STOP MEREU CAND MASINA SE REPOZITIONEAZA ??? 
 	stop = ~senzor_3;
 end
 

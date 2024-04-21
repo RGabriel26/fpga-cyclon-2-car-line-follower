@@ -13,6 +13,8 @@ A[8] <= numarator_1000:inst.S0
 A[9] <= numarator_1000:inst.S1
 A[10] <= numarator_1000:inst.S2
 A[11] <= numarator_1000:inst.S3
+START_STOP <= START_STOP:inst15.START/STOP
+buton_START_STOP => debouncing:inst16.press_in
 factor_driverA[0] <= Logica_miscare:inst6.factor_dc_driverA[0]
 factor_driverA[1] <= Logica_miscare:inst6.factor_dc_driverA[1]
 factor_driverA[2] <= Logica_miscare:inst6.factor_dc_driverA[2]
@@ -54,9 +56,9 @@ A_IN2_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 PWM_D <= generator_semnalPWM:inst12.out_PWM
-info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -430,6 +432,18 @@ in_clk => inst1.IN0
 Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|START_STOP:inst15
+START/STOP <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+TACT => inst.CLK
+
+
+|main|debouncing:inst16
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
 
 
 |main|Logica_miscare:inst6

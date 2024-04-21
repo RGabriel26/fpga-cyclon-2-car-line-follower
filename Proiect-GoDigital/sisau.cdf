@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Cfg)
-		Device PartName(EP2C5T144) Path("C:/Users/Maria/Desktop/Proiect-GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/") File("sisau.sof") MfrSpec(OpMask(1));
+	P ActionCode(Ign)
+		Device PartName(EP2C5) MfrSpec(OpMask(0) SEC_Device(EPCS4) Child_OpMask(1 1) SFLPath("C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/output_file.jic"));
 
 ChainEnd;
 
