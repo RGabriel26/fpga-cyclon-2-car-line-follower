@@ -370,26 +370,6 @@ START_STOP:inst15
 
 # end
 # entity
-main
-# storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
-# case_insensitive
-# source_file
-main.bdf
-602c955af6d75d1cb1d46479fad30e7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 Logica_miscare
 # storage
 db|sisau.(12).cnf
@@ -421,6 +401,26 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(13).cnf
+db|sisau.(13).cnf
+# case_insensitive
+# source_file
+main.bdf
+68322850c2663127592e74a6f6d09ad3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

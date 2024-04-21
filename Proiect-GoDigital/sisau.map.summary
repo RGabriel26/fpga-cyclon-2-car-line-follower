@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Fri Apr 19 13:35:57 2024
+Analysis & Synthesis Status : Successful - Sun Apr 21 20:43:44 2024
 Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
 Revision Name : sisau
 Top-level Entity Name : main
@@ -7,7 +7,7 @@ Total logic elements : 111
     Total combinational functions : 107
     Dedicated logic registers : 55
 Total registers : 55
-Total pins : 64
+Total pins : 65
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
