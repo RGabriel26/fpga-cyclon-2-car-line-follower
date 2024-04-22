@@ -350,26 +350,6 @@ debouncing:inst5
 
 # end
 # entity
-START_STOP
-# storage
-db|sisau.(10).cnf
-db|sisau.(10).cnf
-# case_insensitive
-# source_file
-start_stop.bdf
-cda27696f9886cb47572378f6f51710
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-START_STOP:inst15
-}
-# macro_sequence
-
-# end
-# entity
 Logica_miscare
 # storage
 db|sisau.(12).cnf
@@ -421,6 +401,26 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+START_STOP
+# storage
+db|sisau.(10).cnf
+db|sisau.(10).cnf
+# case_insensitive
+# source_file
+start_stop.bdf
+48a187e6f65b506848f0c9a01d466587
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+START_STOP:inst15
 }
 # macro_sequence
 
