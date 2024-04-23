@@ -370,6 +370,26 @@ START_STOP:inst15
 
 # end
 # entity
+main
+# storage
+db|sisau.(13).cnf
+db|sisau.(13).cnf
+# case_insensitive
+# source_file
+main.bdf
+68322850c2663127592e74a6f6d09ad3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Logica_miscare
 # storage
 db|sisau.(12).cnf
@@ -381,7 +401,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-d244b42235e2df3d2a97b97631976a8
+231629fe2ca54df3db553b1daf2b33c0
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -401,26 +421,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
-# case_insensitive
-# source_file
-main.bdf
-68322850c2663127592e74a6f6d09ad3
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
