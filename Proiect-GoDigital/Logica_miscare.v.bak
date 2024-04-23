@@ -87,8 +87,8 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			directie_driverA = (senzor_2 == 1) ? 2'b00 : 2'b10;
+			directie_driverB = (senzor_4 == 1) ? 2'b00 : 2'b10;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
@@ -102,14 +102,14 @@ always @* begin
 		//cautare spre dreapta in functie de ultima directie cautata
 		if(dreapta == 1 | stanga == 1) begin
 			//posibil ca sensutile sa trebuiasca puse invers
-			directie_driverA = (dreapta == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (stanga == 1) ? 2'b01 : 2'b10;
+			directie_driverA = (dreapta == 1) ? 2'b0 : 2'b10;
+			directie_driverB = (stanga == 1) ? 2'b0 : 2'b10;
 			//resetarea registrilor se realizeaza in conditia ca senzorul_1 sa fie in 1 logic
 			//trebuie TESTAT
 		end else begin
 			if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-				directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-				directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+				directie_driverA = (senzor_2 == 1) ? 2'b0 : 2'b10;
+				directie_driverB = (senzor_4 == 1) ? 2'b0 : 2'b10;
 				
 				dreapta = (senzor_2 == 1) ? 1 : 0;
 				stanga = (senzor_4 == 1) ? 1: 0;

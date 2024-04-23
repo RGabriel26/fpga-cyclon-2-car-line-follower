@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Wed Apr 24 00:13:39 2024
+Wed Apr 24 01:16:19 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 24 00:13:39 2024        ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 24 01:16:19 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
@@ -144,32 +144,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
-; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.bdf                ;
-; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_10.bdf          ;
-; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_1000.bdf        ;
-; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_frecventa.bdf   ;
-; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/debouncing.bdf          ;
-; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/numarator_10.bdf        ;
-; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/numarator_1000.bdf      ;
-; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_1BIT.bdf     ;
-; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_4BIT.bdf     ;
-; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/comparator_12BIT.bdf    ;
-; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/generator_semnalPWM.bdf ;
-; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/divizor_5.bdf           ;
-; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/START_STOP.bdf          ;
-; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/Logica_miscare.v        ;
-; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/Selectie_proba.v        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/main.bdf                ;
+; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/divizor_10.bdf          ;
+; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/divizor_1000.bdf        ;
+; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/divizor_frecventa.bdf   ;
+; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/debouncing.bdf          ;
+; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/numarator_10.bdf        ;
+; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/numarator_1000.bdf      ;
+; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/comparator_1BIT.bdf     ;
+; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/comparator_4BIT.bdf     ;
+; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/comparator_12BIT.bdf    ;
+; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/generator_semnalPWM.bdf ;
+; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/divizor_5.bdf           ;
+; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/START_STOP.bdf          ;
+; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/Logica_miscare.v        ;
+; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-0_repozitionare/Proiect-GoDigital/Selectie_proba.v        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -283,7 +283,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 24 00:13:38 2024
+    Info: Processing started: Wed Apr 24 01:16:13 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -390,9 +390,9 @@ Info: Implemented 173 device resources after synthesis - the final resource coun
     Info: Implemented 57 output pins
     Info: Implemented 108 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 223 megabytes
-    Info: Processing ended: Wed Apr 24 00:13:39 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 220 megabytes
+    Info: Processing ended: Wed Apr 24 01:16:19 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 
