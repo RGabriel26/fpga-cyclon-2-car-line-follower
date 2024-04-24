@@ -8035,11 +8035,11 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 VECTOR("C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TESTPWM/Proiect-GoDigital/db/sisau.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 1000000000;
+		ZBEGIN = 484375000;
+		ZEND = 515625000;
 		NUMERATOR = 880;
-		DENOMINATOR = 1000000000;
-		TOP_INDEX = 18;
+		DENOMINATOR = 31250000;
+		TOP_INDEX = 21;
 	}
 	CLOCK{
 		PERIOD = 10000;
