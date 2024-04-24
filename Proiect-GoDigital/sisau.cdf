@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C5T144) Path("C:/Users/Maria/Desktop/Proiect-GoDigital/Proiect-GoDigital-optimizare v1/Proiect-GoDigital/") File("sisau.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C5T144) Path("C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TESTPWM/Proiect-GoDigital/") File("sisau.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

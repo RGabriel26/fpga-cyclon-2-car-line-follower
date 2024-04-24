@@ -372,12 +372,12 @@ START_STOP:inst15
 # entity
 main
 # storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
+db|sisau.(12).cnf
+db|sisau.(12).cnf
 # case_insensitive
 # source_file
 main.bdf
-602c955af6d75d1cb1d46479fad30e7
+bb464b3042beca35a8a1ffa92c590b5
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -392,8 +392,8 @@ AUTO
 # entity
 Logica_miscare
 # storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
+db|sisau.(13).cnf
+db|sisau.(13).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -401,7 +401,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-a6af3db9d299a85bb1c9951121a3ca
+b77a8ca7b21bca994e58d921af5c6d1
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

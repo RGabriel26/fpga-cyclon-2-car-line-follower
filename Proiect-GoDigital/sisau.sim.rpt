@@ -1,5 +1,5 @@
 Simulator report for sisau
-Fri Apr 19 15:54:22 2024
+Wed Apr 24 18:08:42 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 ms       ;
-; Simulation Netlist Size     ; 249 nodes    ;
-; Simulation Coverage         ;      58.33 % ;
-; Total Number of Transitions ; 573328       ;
+; Simulation Netlist Size     ; 252 nodes    ;
+; Simulation Coverage         ;      58.30 % ;
+; Total Number of Transitions ; 555075       ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 ; Device                      ; EP2C5T144C8  ;
@@ -95,13 +95,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      58.33 % ;
-; Total nodes checked                                 ; 249          ;
-; Total output ports checked                          ; 252          ;
-; Total output ports with complete 1/0-value coverage ; 147          ;
-; Total output ports with no 1/0-value coverage       ; 104          ;
-; Total output ports with no 1-value coverage         ; 104          ;
-; Total output ports with no 0-value coverage         ; 105          ;
+; Total coverage as a percentage                      ;      58.30 % ;
+; Total nodes checked                                 ; 252          ;
+; Total output ports checked                          ; 259          ;
+; Total output ports with complete 1/0-value coverage ; 151          ;
+; Total output ports with no 1/0-value coverage       ; 106          ;
+; Total output ports with no 1-value coverage         ; 106          ;
+; Total output ports with no 0-value coverage         ; 108          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -127,6 +127,12 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|numarator_1000:inst|numarator_10:inst|inst9                                  ; |main|numarator_1000:inst|numarator_10:inst|inst9                                  ; regout           ;
 ; |main|generator_semnalPWM:inst12|inst15                                            ; |main|generator_semnalPWM:inst12|inst15                                            ; regout           ;
 ; |main|generator_semnalPWM:inst12|inst3                                             ; |main|generator_semnalPWM:inst12|inst3                                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB~0                                      ; |main|Logica_miscare:inst6|directie_driverB~0                                      ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[0]~1                                   ; |main|Logica_miscare:inst6|directie_driverB[0]~1                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA~8                                      ; |main|Logica_miscare:inst6|directie_driverA~8                                      ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~9                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~9                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[1]~10                                  ; |main|Logica_miscare:inst6|directie_driverA[1]~10                                  ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst12~0                              ; |main|numarator_1000:inst|numarator_10:inst2|inst12~0                              ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst11~0                              ; |main|numarator_1000:inst|numarator_10:inst2|inst11~0                              ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst2|inst10~0                              ; |main|numarator_1000:inst|numarator_10:inst2|inst10~0                              ; combout          ;
@@ -134,17 +140,11 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|numarator_1000:inst|numarator_10:inst1|inst11~0                              ; |main|numarator_1000:inst|numarator_10:inst1|inst11~0                              ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst1|inst10~0                              ; |main|numarator_1000:inst|numarator_10:inst1|inst10~0                              ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst12~0                               ; |main|numarator_1000:inst|numarator_10:inst|inst12~0                               ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12                              ; regout           ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst11~0                               ; |main|numarator_1000:inst|numarator_10:inst|inst11~0                               ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst10~0                               ; |main|numarator_1000:inst|numarator_10:inst|inst10~0                               ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB~0                                      ; |main|Logica_miscare:inst6|directie_driverB~0                                      ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB~1                                      ; |main|Logica_miscare:inst6|directie_driverB~1                                      ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~2                                   ; |main|Logica_miscare:inst6|directie_driverB[0]~2                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~2                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~2                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[1]~4                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~4                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA~3                                      ; |main|Logica_miscare:inst6|directie_driverA~3                                      ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~5                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~5                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB~4                                      ; |main|Logica_miscare:inst6|directie_driverB~4                                      ; combout          ;
+; |main|Logica_miscare:inst6|stanga~0                                                ; |main|Logica_miscare:inst6|stanga~0                                                ; combout          ;
 ; |main|numarator_1000:inst|inst3~0                                                  ; |main|numarator_1000:inst|inst3~0                                                  ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst6~0                                           ; |main|generator_semnalPWM:inst12|inst6~0                                           ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst6~1                                           ; |main|generator_semnalPWM:inst12|inst6~1                                           ; combout          ;
@@ -155,21 +155,26 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|generator_semnalPWM:inst7|inst                                               ; |main|generator_semnalPWM:inst7|inst                                               ; combout          ;
 ; |main|numarator_1000:inst|inst13                                                   ; |main|numarator_1000:inst|inst13                                                   ; combout          ;
 ; |main|numarator_1000:inst|inst12                                                   ; |main|numarator_1000:inst|inst12                                                   ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10                              ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11                              ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9                               ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; regout           ;
 ; |main|generator_semnalPWM:inst12|inst6~2                                           ; |main|generator_semnalPWM:inst12|inst6~2                                           ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst6~3                                           ; |main|generator_semnalPWM:inst12|inst6~3                                           ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst6~4                                           ; |main|generator_semnalPWM:inst12|inst6~4                                           ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst6~5                                           ; |main|generator_semnalPWM:inst12|inst6~5                                           ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst                                              ; |main|generator_semnalPWM:inst12|inst                                              ; combout          ;
-; |main|Logica_miscare:inst6|stanga~0                                                ; |main|Logica_miscare:inst6|stanga~0                                                ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst10          ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst10          ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9           ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9           ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12         ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12         ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst10~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst10~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst11~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst11~0        ; combout          ;
@@ -189,7 +194,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst11~0       ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst11~0       ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10          ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10          ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11          ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11          ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9           ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9           ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11~0        ; combout          ;
@@ -198,11 +202,11 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|numarator_1000:inst|numarator_10:inst1|inst9~0                               ; |main|numarator_1000:inst|numarator_10:inst1|inst9~0                               ; combout          ;
 ; |main|numarator_1000:inst|numarator_10:inst|inst9~0                                ; |main|numarator_1000:inst|numarator_10:inst|inst9~0                                ; combout          ;
 ; |main|generator_semnalPWM:inst12|inst15~0                                          ; |main|generator_semnalPWM:inst12|inst15~0                                          ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~0                              ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~0                              ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9~0         ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9~0         ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst9~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst9~0        ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9~0         ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9~0         ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[11]                                   ; |main|Logica_miscare:inst6|factor_dc_driverA[11]                                   ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[10]                                   ; |main|Logica_miscare:inst6|factor_dc_driverA[10]                                   ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverB[11]                                   ; |main|Logica_miscare:inst6|factor_dc_driverB[11]                                   ; combout          ;
@@ -247,16 +251,16 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|B_IN3_D1                                                                     ; |main|B_IN3_D1                                                                     ; padio            ;
 ; |main|B_IN4_D1                                                                     ; |main|B_IN4_D1                                                                     ; padio            ;
 ; |main|PWM_D                                                                        ; |main|PWM_D                                                                        ; padio            ;
-; |main|senzor_2                                                                     ; |main|senzor_2~corein                                                              ; combout          ;
 ; |main|senzor_4                                                                     ; |main|senzor_4~corein                                                              ; combout          ;
+; |main|senzor_2                                                                     ; |main|senzor_2~corein                                                              ; combout          ;
 ; |main|senzor_3                                                                     ; |main|senzor_3~corein                                                              ; combout          ;
-; |main|clk                                                                          ; |main|clk~corein                                                                   ; combout          ;
 ; |main|buton_START_STOP                                                             ; |main|buton_START_STOP~corein                                                      ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; outclk           ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~2clkctrl                            ; |main|Logica_miscare:inst6|directie_driverA[1]~2clkctrl                            ; outclk           ;
+; |main|clk                                                                          ; |main|clk~corein                                                                   ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; outclk           ;
 ; |main|clk~clkctrl                                                                  ; |main|clk~clkctrl                                                                  ; outclk           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~clkctrl  ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~clkctrl  ; outclk           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12~clkctrl ; outclk           ;
+; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; outclk           ;
 ; |main|debouncing:inst16|inst~feeder                                                ; |main|debouncing:inst16|inst~feeder                                                ; combout          ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
@@ -283,21 +287,24 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |main|Logica_miscare:inst6|Add0~12                                                 ; |main|Logica_miscare:inst6|Add0~13                                                 ; cout             ;
 ; |main|Logica_miscare:inst6|Add0~14                                                 ; |main|Logica_miscare:inst6|Add0~14                                                 ; combout          ;
 ; |main|START_STOP:inst15|inst                                                       ; |main|START_STOP:inst15|inst                                                       ; regout           ;
+; |main|Selectie_proba:inst1|circuit[1]                                              ; |main|Selectie_proba:inst1|circuit[1]                                              ; regout           ;
+; |main|Selectie_proba:inst1|circuit[0]                                              ; |main|Selectie_proba:inst1|circuit[0]                                              ; regout           ;
+; |main|Selectie_proba:inst1|Decoder0~0                                              ; |main|Selectie_proba:inst1|Decoder0~0                                              ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; combout          ;
+; |main|Selectie_proba:inst1|Decoder0~1                                              ; |main|Selectie_proba:inst1|Decoder0~1                                              ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~1                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~1                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~5                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~5                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[1]~2                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~2                                   ; combout          ;
 ; |main|Selectie_proba:inst1|led1                                                    ; |main|Selectie_proba:inst1|led1                                                    ; regout           ;
 ; |main|Selectie_proba:inst1|led2                                                    ; |main|Selectie_proba:inst1|led2                                                    ; regout           ;
 ; |main|Selectie_proba:inst1|led3                                                    ; |main|Selectie_proba:inst1|led3                                                    ; regout           ;
-; |main|Selectie_proba:inst1|circuit[1]                                              ; |main|Selectie_proba:inst1|circuit[1]                                              ; regout           ;
-; |main|Selectie_proba:inst1|circuit[0]                                              ; |main|Selectie_proba:inst1|circuit[0]                                              ; regout           ;
+; |main|Logica_miscare:inst6|Equal5~0                                                ; |main|Logica_miscare:inst6|Equal5~0                                                ; combout          ;
 ; |main|Logica_miscare:inst6|always0~0                                               ; |main|Logica_miscare:inst6|always0~0                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~1                                               ; |main|Logica_miscare:inst6|always0~1                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~2                                               ; |main|Logica_miscare:inst6|always0~2                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~3                                               ; |main|Logica_miscare:inst6|always0~3                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~4                                               ; |main|Logica_miscare:inst6|always0~4                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~5                                               ; |main|Logica_miscare:inst6|always0~5                                               ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~1                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~1                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; combout          ;
-; |main|Selectie_proba:inst1|Decoder0~0                                              ; |main|Selectie_proba:inst1|Decoder0~0                                              ; combout          ;
 ; |main|Selectie_proba:inst1|circuit[1]~0                                            ; |main|Selectie_proba:inst1|circuit[1]~0                                            ; combout          ;
 ; |main|debouncing:inst16|inst                                                       ; |main|debouncing:inst16|inst                                                       ; regout           ;
 ; |main|debouncing:inst16|inst1                                                      ; |main|debouncing:inst16|inst1                                                      ; regout           ;
@@ -338,14 +345,14 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |main|Selectie_proba:inst1|circuit[0]~1                                            ; |main|Selectie_proba:inst1|circuit[0]~1                                            ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst9~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[7]                                           ; |main|Logica_miscare:inst6|count_ture[7]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[6]                                           ; |main|Logica_miscare:inst6|count_ture[6]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[5]                                           ; |main|Logica_miscare:inst6|count_ture[5]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[4]                                           ; |main|Logica_miscare:inst6|count_ture[4]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[3]                                           ; |main|Logica_miscare:inst6|count_ture[3]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[2]                                           ; |main|Logica_miscare:inst6|count_ture[2]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[1]                                           ; |main|Logica_miscare:inst6|count_ture[1]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[0]                                           ; |main|Logica_miscare:inst6|count_ture[0]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[4]                                           ; |main|Logica_miscare:inst6|count_ture[4]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[3]                                           ; |main|Logica_miscare:inst6|count_ture[3]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[5]                                           ; |main|Logica_miscare:inst6|count_ture[5]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[6]                                           ; |main|Logica_miscare:inst6|count_ture[6]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[7]                                           ; |main|Logica_miscare:inst6|count_ture[7]                                           ; combout          ;
 ; |main|factor_driverA[8]                                                            ; |main|factor_driverA[8]                                                            ; padio            ;
 ; |main|factor_driverA[5]                                                            ; |main|factor_driverA[5]                                                            ; padio            ;
 ; |main|factor_driverA[4]                                                            ; |main|factor_driverA[4]                                                            ; padio            ;
@@ -368,9 +375,8 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |main|senzor_5                                                                     ; |main|senzor_5~corein                                                              ; combout          ;
 ; |main|buton_selectie                                                               ; |main|buton_selectie~corein                                                        ; combout          ;
 ; |main|debouncing:inst5|inst3~clkctrl                                               ; |main|debouncing:inst5|inst3~clkctrl                                               ; outclk           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~clkctrl  ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~clkctrl  ; outclk           ;
+; |main|Logica_miscare:inst6|always0~0clkctrl                                        ; |main|Logica_miscare:inst6|always0~0clkctrl                                        ; outclk           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12~clkctrl ; outclk           ;
-; |main|debouncing:inst5|inst~feeder                                                 ; |main|debouncing:inst5|inst~feeder                                                 ; combout          ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
 
@@ -396,21 +402,24 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|Logica_miscare:inst6|Add0~12                                                 ; |main|Logica_miscare:inst6|Add0~13                                                 ; cout             ;
 ; |main|Logica_miscare:inst6|Add0~14                                                 ; |main|Logica_miscare:inst6|Add0~14                                                 ; combout          ;
 ; |main|START_STOP:inst15|inst                                                       ; |main|START_STOP:inst15|inst                                                       ; regout           ;
+; |main|Selectie_proba:inst1|circuit[1]                                              ; |main|Selectie_proba:inst1|circuit[1]                                              ; regout           ;
+; |main|Selectie_proba:inst1|circuit[0]                                              ; |main|Selectie_proba:inst1|circuit[0]                                              ; regout           ;
+; |main|Selectie_proba:inst1|Decoder0~0                                              ; |main|Selectie_proba:inst1|Decoder0~0                                              ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; combout          ;
+; |main|Selectie_proba:inst1|Decoder0~1                                              ; |main|Selectie_proba:inst1|Decoder0~1                                              ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~1                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~1                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~4                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~5                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~5                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[1]~2                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~2                                   ; combout          ;
 ; |main|Selectie_proba:inst1|led1                                                    ; |main|Selectie_proba:inst1|led1                                                    ; regout           ;
 ; |main|Selectie_proba:inst1|led2                                                    ; |main|Selectie_proba:inst1|led2                                                    ; regout           ;
 ; |main|Selectie_proba:inst1|led3                                                    ; |main|Selectie_proba:inst1|led3                                                    ; regout           ;
-; |main|Selectie_proba:inst1|circuit[1]                                              ; |main|Selectie_proba:inst1|circuit[1]                                              ; regout           ;
-; |main|Selectie_proba:inst1|circuit[0]                                              ; |main|Selectie_proba:inst1|circuit[0]                                              ; regout           ;
+; |main|Logica_miscare:inst6|Equal5~0                                                ; |main|Logica_miscare:inst6|Equal5~0                                                ; combout          ;
 ; |main|Logica_miscare:inst6|always0~0                                               ; |main|Logica_miscare:inst6|always0~0                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~1                                               ; |main|Logica_miscare:inst6|always0~1                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~2                                               ; |main|Logica_miscare:inst6|always0~2                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~3                                               ; |main|Logica_miscare:inst6|always0~3                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~4                                               ; |main|Logica_miscare:inst6|always0~4                                               ; combout          ;
-; |main|Logica_miscare:inst6|always0~5                                               ; |main|Logica_miscare:inst6|always0~5                                               ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~0                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~1                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~1                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~3                                   ; combout          ;
-; |main|Selectie_proba:inst1|Decoder0~0                                              ; |main|Selectie_proba:inst1|Decoder0~0                                              ; combout          ;
 ; |main|Selectie_proba:inst1|circuit[1]~0                                            ; |main|Selectie_proba:inst1|circuit[1]~0                                            ; combout          ;
 ; |main|debouncing:inst16|inst                                                       ; |main|debouncing:inst16|inst                                                       ; regout           ;
 ; |main|debouncing:inst16|inst1                                                      ; |main|debouncing:inst16|inst1                                                      ; regout           ;
@@ -440,6 +449,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst10~0       ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst10~0       ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst11~0       ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst11~0       ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst11          ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst11          ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~0        ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture~16                                           ; |main|Logica_miscare:inst6|count_ture~16                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture~17                                           ; |main|Logica_miscare:inst6|count_ture~17                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture~18                                           ; |main|Logica_miscare:inst6|count_ture~18                                           ; combout          ;
@@ -452,14 +462,14 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|Selectie_proba:inst1|circuit[0]~1                                            ; |main|Selectie_proba:inst1|circuit[0]~1                                            ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst9~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[7]                                           ; |main|Logica_miscare:inst6|count_ture[7]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[6]                                           ; |main|Logica_miscare:inst6|count_ture[6]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[5]                                           ; |main|Logica_miscare:inst6|count_ture[5]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[4]                                           ; |main|Logica_miscare:inst6|count_ture[4]                                           ; combout          ;
+; |main|Logica_miscare:inst6|count_ture[3]                                           ; |main|Logica_miscare:inst6|count_ture[3]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[2]                                           ; |main|Logica_miscare:inst6|count_ture[2]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[1]                                           ; |main|Logica_miscare:inst6|count_ture[1]                                           ; combout          ;
 ; |main|Logica_miscare:inst6|count_ture[0]                                           ; |main|Logica_miscare:inst6|count_ture[0]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[4]                                           ; |main|Logica_miscare:inst6|count_ture[4]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[3]                                           ; |main|Logica_miscare:inst6|count_ture[3]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[5]                                           ; |main|Logica_miscare:inst6|count_ture[5]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[6]                                           ; |main|Logica_miscare:inst6|count_ture[6]                                           ; combout          ;
-; |main|Logica_miscare:inst6|count_ture[7]                                           ; |main|Logica_miscare:inst6|count_ture[7]                                           ; combout          ;
 ; |main|factor_driverA[8]                                                            ; |main|factor_driverA[8]                                                            ; padio            ;
 ; |main|factor_driverA[5]                                                            ; |main|factor_driverA[5]                                                            ; padio            ;
 ; |main|factor_driverA[4]                                                            ; |main|factor_driverA[4]                                                            ; padio            ;
@@ -482,9 +492,8 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|senzor_5                                                                     ; |main|senzor_5~corein                                                              ; combout          ;
 ; |main|buton_selectie                                                               ; |main|buton_selectie~corein                                                        ; combout          ;
 ; |main|debouncing:inst5|inst3~clkctrl                                               ; |main|debouncing:inst5|inst3~clkctrl                                               ; outclk           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~clkctrl  ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12~clkctrl  ; outclk           ;
+; |main|Logica_miscare:inst6|always0~0clkctrl                                        ; |main|Logica_miscare:inst6|always0~0clkctrl                                        ; outclk           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12~clkctrl ; outclk           ;
-; |main|debouncing:inst5|inst~feeder                                                 ; |main|debouncing:inst5|inst~feeder                                                 ; combout          ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
 
@@ -501,18 +510,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Apr 19 15:54:19 2024
+    Info: Processing started: Wed Apr 24 18:08:36 2024
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off sisau -c sisau
-Info: Using vector source file "C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.vwf"
+Info: Using vector source file "C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TESTPWM/Proiect-GoDigital/main.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      58.33 %
-Info: Number of transitions in simulation is 573328
+Info: Simulation coverage is      58.30 %
+Info: Number of transitions in simulation is 555075
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 151 megabytes
-    Info: Processing ended: Fri Apr 19 15:54:22 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 149 megabytes
+    Info: Processing ended: Wed Apr 24 18:08:42 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 
