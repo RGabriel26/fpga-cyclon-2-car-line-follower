@@ -1,5 +1,11 @@
 module Logica_miscare(
-	    /* ########### semnalele de input ############# 
+	    /* 
+	VERSIUNEA: 
+	-SCHIMBAREA DIRECTIEI DE DEPLASARE SE REALIZEAZA IN 2 MODURI
+		- DACA SENZOR_3 ESTE PE LINIE ATUNCI SE OPRESC ROTILE DIN INTERIORUL CURBEI
+		- DACA SENZOR_3 ESTE IN AFARA LINIEI ATUNCI ROTILE DIN INTERIORUL CURBEI SE INVART INVERS
+	
+	########### semnalele de input ############# 
 	
 	 >>>> LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA <<<<
 	 
@@ -87,8 +93,8 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			directie_driverA = (senzor_2 == 1) ? 2'b00 : 2'b10;
+			directie_driverB = (senzor_4 == 1) ? 2'b00 : 2'b10;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
