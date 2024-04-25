@@ -1,5 +1,19 @@
 module Logica_miscare(
-	/*############ semnalele de input ############# 
+	/*
+	Versiune PWM: 
+	- PENTRU REALIZAREA CURBELOR, ROTIREA MASINII PE DIRECTIA CORECTA SE REALIZEAZA PRIN ROTIREA ROTILOR INTERIOARE
+	  CURBEI IN SENS INVERS DEPLASARII CU UN SEMNAL DE PWM MAI MIC DECAT 100% 
+	  (trebuie testata valoarea corespunzatoare pentru practica)
+	- ROTIREA ROTILOR IN SENS INVERS SE REALIZEAZA ATAT IN CAZUL IN CARE SENZOR_3 ESTE PE LINIA NEAGRA SAU NU, 
+	  DAR CU VALORI DIFERITE DE PWM
+	  >>>CAZUL IN CARE SENZOR_3 ESTE PE CIRCUIT, ROTILE INTERIOARE VOR PRIMI UN PWM MAI MIC DECAT IN CAZUL IN 
+		 CARE SE DORESTE O CURBA MAI BRUSCA
+		 
+	- semnalele PWM pentru motoarele in cazul curbelor
+		* cand senzor_3 == 1 : 650 (65%)
+		* cand senzor_3 == 0 : 800 (80%) 
+	
+	############ semnalele de input ############# 
 	
 	>>>> LOGICA SEMNALELOR DE LA IESIREA SENZORILOR ESTE INVERSATA <<<<
 	 
@@ -88,12 +102,12 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			//setarea sensurilor motoarelor pentru directia inainte
-			directie_driverA = 2'b10;
-			directie_driverB = 2'b10;
+			//setarea sensurilor motoarelor pentru directia inainte sau inapoi
+			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
+			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
 			//modificarea factorului de duty cycle pentru cele doua drivere pentru a realiza curba prin PWM
-			factor_dc_driverA = (senzor_2 == 1) ? 12'h750 : 12'h000;
-			factor_dc_driverB = (senzor_4 == 1) ? 12'h750 : 12'h000;
+			factor_dc_driverA = (senzor_2 == 1) ? 12'h650 : 12'h998;
+			factor_dc_driverB = (senzor_4 == 1) ? 12'h650 : 12'h998;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
@@ -119,8 +133,10 @@ always @* begin
 				directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
 				directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
 				
-				dreapta = (senzor_2 == 1) ? 1 : 0;
-				stanga = (senzor_4 == 1) ? 1: 0;
+				factor_dc_driverA = (senzor_2 == 1) ? 12'h800 : 12'h998;
+				factor_dc_driverB = (senzor_4 == 1) ? 12'h800 : 12'h998;
+			
+				// !TEST - am eliminat popularea registrilor pentru memorarea ultimului semnal de stanga sau dreapta
 			end else begin //tratarea cazului cand senzorii sunt simultan in 1 logic
 				//masina va continua sa mearga in fata
 				directie_driverA = 2'b10;
