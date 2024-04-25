@@ -92,8 +92,8 @@ always @* begin
 			directie_driverA = 2'b10;
 			directie_driverB = 2'b10;
 			//modificarea factorului de duty cycle pentru cele doua drivere pentru a realiza curba prin PWM
-			factor_dc_driverA = (senzor_2 == 1) ? 12'h750 : 12'h998;
-			factor_dc_driverB = (senzor_4 == 1) ? 12'h750 : 12'h998;
+			factor_dc_driverA = (senzor_2 == 1) ? 12'h998 : 12'h700;
+			factor_dc_driverB = (senzor_4 == 1) ? 12'h998 : 12'h700;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
