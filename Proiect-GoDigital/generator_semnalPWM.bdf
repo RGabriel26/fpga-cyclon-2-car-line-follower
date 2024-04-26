@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 392 440 560 456)
+	(rect 400 440 568 456)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "ACTIV" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -349,16 +349,8 @@ applicable agreement for further details.
 	(pt 832 400)
 )
 (connector
-	(pt 824 448)
-	(pt 824 400)
-)
-(connector
 	(pt 656 392)
 	(pt 648 392)
-)
-(connector
-	(pt 656 408)
-	(pt 560 408)
 )
 (connector
 	(pt 560 352)
@@ -389,10 +381,6 @@ applicable agreement for further details.
 	(pt 648 392)
 )
 (connector
-	(pt 784 440)
-	(pt 784 448)
-)
-(connector
 	(pt 752 384)
 	(pt 744 384)
 )
@@ -407,18 +395,6 @@ applicable agreement for further details.
 (connector
 	(pt 728 328)
 	(pt 984 328)
-)
-(connector
-	(pt 560 448)
-	(pt 784 448)
-)
-(connector
-	(pt 784 448)
-	(pt 824 448)
-)
-(connector
-	(pt 824 448)
-	(pt 904 448)
 )
 (connector
 	(pt 744 360)
@@ -444,8 +420,32 @@ applicable agreement for further details.
 	(pt 648 344)
 	(pt 984 344)
 )
+(connector
+	(pt 560 408)
+	(pt 656 408)
+)
+(connector
+	(pt 824 400)
+	(pt 824 448)
+)
+(connector
+	(pt 784 440)
+	(pt 784 448)
+)
+(connector
+	(pt 568 448)
+	(pt 784 448)
+)
+(connector
+	(pt 784 448)
+	(pt 824 448)
+)
+(connector
+	(pt 824 448)
+	(pt 904 448)
+)
 (junction (pt 824 448))
-(junction (pt 784 448))
 (junction (pt 744 384))
 (junction (pt 728 400))
 (junction (pt 648 344))
+(junction (pt 784 448))

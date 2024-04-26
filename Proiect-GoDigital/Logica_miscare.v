@@ -84,8 +84,8 @@ initial begin
 	directie_driverB = 2'b10;
 	//initializarea factorului de comparatie cu numarul obtinut din numarator
 	//initializare cu 999 asta inseamna starea maxima de comparat in comparator ceea ce ofera un semnal PWM aproape de 100% ca duty cycle
-	factor_dc_driverA = 12'h998; // procentajul de duty cycle a semnalului PWM a driverului A
-	factor_dc_driverB = 12'h998; // procentajul de duty cycle a semnalului PWM a driverului B
+	factor_dc_driverA = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului A
+	factor_dc_driverB = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului B
 	
 end 
 
@@ -106,8 +106,8 @@ always @* begin
 			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
 			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
 			//modificarea factorului de duty cycle pentru cele doua drivere pentru a realiza curba prin PWM
-			factor_dc_driverA = (senzor_2 == 1) ? 12'h650 : 12'h998;
-			factor_dc_driverB = (senzor_4 == 1) ? 12'h650 : 12'h998;
+			factor_dc_driverA = (senzor_2 == 1) ? 12'h650 : 12'h999;
+			factor_dc_driverB = (senzor_4 == 1) ? 12'h650 : 12'h999;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
@@ -119,8 +119,8 @@ always @* begin
 	end
 	else begin // cazul cand senzor_3 iese de pe circuit(0 logic)
 		//resetarea factorilor de duty cycle pentru semnalul PWM a celor 2 drivere 
-		factor_dc_driverA = 12'h998;
-		factor_dc_driverB = 12'h998;
+		factor_dc_driverA = 12'h999;
+		factor_dc_driverB = 12'h999;
 		//cautare spre dreapta in functie de ultima directie cautata
 		if(dreapta == 1 | stanga == 1) begin
 			//posibil ca sensutile sa trebuiasca puse invers
@@ -133,8 +133,8 @@ always @* begin
 				directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
 				directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
 				
-				factor_dc_driverA = (senzor_2 == 1) ? 12'h800 : 12'h998;
-				factor_dc_driverB = (senzor_4 == 1) ? 12'h800 : 12'h998;
+				factor_dc_driverA = (senzor_2 == 1) ? 12'h800 : 12'h999;
+				factor_dc_driverB = (senzor_4 == 1) ? 12'h800 : 12'h999;
 			
 				// !TEST - am eliminat popularea registrilor pentru memorarea ultimului semnal de stanga sau dreapta
 			end else begin //tratarea cazului cand senzorii sunt simultan in 1 logic

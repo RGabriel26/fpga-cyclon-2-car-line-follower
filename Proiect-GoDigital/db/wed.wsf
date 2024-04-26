@@ -7469,14 +7469,14 @@ VECTOR("C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TESTPWM/Proiect-GoD
 	}
 }
 
-VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/db/sisau.sim.cvwf")
+VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000000;
-		NUMERATOR = 1516;
-		DENOMINATOR = 1000000000;
-		TOP_INDEX = 15;
+		ZEND = 5000000000;
+		NUMERATOR = 1317;
+		DENOMINATOR = 5000000000;
+		TOP_INDEX = 1;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -7495,7 +7495,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A";
+		SIGNAL = "test_numA";
 		INDEX = 1;
 		FORMAT = T;
 		SCALE = 1;
@@ -7503,7 +7503,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[11]";
+		SIGNAL = "test_numA[11]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -7511,7 +7511,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[10]";
+		SIGNAL = "test_numA[10]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -7519,7 +7519,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[9]";
+		SIGNAL = "test_numA[9]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -7527,7 +7527,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[8]";
+		SIGNAL = "test_numA[8]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -7535,7 +7535,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[7]";
+		SIGNAL = "test_numA[7]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -7543,7 +7543,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[6]";
+		SIGNAL = "test_numA[6]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -7551,7 +7551,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[5]";
+		SIGNAL = "test_numA[5]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -7559,7 +7559,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[4]";
+		SIGNAL = "test_numA[4]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -7567,7 +7567,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[3]";
+		SIGNAL = "test_numA[3]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -7575,7 +7575,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[2]";
+		SIGNAL = "test_numA[2]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -7583,7 +7583,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[1]";
+		SIGNAL = "test_numA[1]";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -7591,7 +7591,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[0]";
+		SIGNAL = "test_numA[0]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -7599,7 +7599,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A_IN1_D1";
+		SIGNAL = "buton_selectie";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -7607,7 +7607,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A_IN2_D1";
+		SIGNAL = "buton_START_STOP";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -7615,7 +7615,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "B_IN3_D1";
+		SIGNAL = "A_IN1_D1";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -7623,7 +7623,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "B_IN4_D1";
+		SIGNAL = "A_IN2_D1";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -7631,7 +7631,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_IN1_D2";
+		SIGNAL = "B_IN3_D1";
 		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
@@ -7639,7 +7639,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_IN2_D2";
+		SIGNAL = "B_IN4_D1";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -7647,7 +7647,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "D_IN3_D2";
+		SIGNAL = "C_IN1_D2";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -7655,7 +7655,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "D_IN4_D2";
+		SIGNAL = "C_IN2_D2";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -7663,7 +7663,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_A";
+		SIGNAL = "D_IN3_D2";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -7671,7 +7671,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_B";
+		SIGNAL = "D_IN4_D2";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -7679,7 +7679,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_C";
+		SIGNAL = "PWM_A";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -7687,7 +7687,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_D";
+		SIGNAL = "PWM_B";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -7695,7 +7695,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzon_1";
+		SIGNAL = "PWM_C";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -7703,7 +7703,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_2";
+		SIGNAL = "PWM_D";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -7711,7 +7711,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_3";
+		SIGNAL = "senzon_1";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -7719,7 +7719,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_4";
+		SIGNAL = "senzor_2";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -7727,7 +7727,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_5";
+		SIGNAL = "senzor_3";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -7735,15 +7735,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit";
+		SIGNAL = "senzor_4";
 		INDEX = 31;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit[1]";
+		SIGNAL = "senzor_5";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -7751,23 +7751,23 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit[0]";
+		SIGNAL = "circuit";
 		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "factor_driverA";
-		INDEX = 34;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[11]";
+		SIGNAL = "circuit[1]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "circuit[0]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -7775,7 +7775,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[10]";
+		SIGNAL = "info_circuit1";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -7783,7 +7783,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[9]";
+		SIGNAL = "info_circuit2";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -7791,7 +7791,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[8]";
+		SIGNAL = "info_circuit3";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -7799,7 +7799,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[7]";
+		SIGNAL = "info_circuit1_board";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -7807,7 +7807,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[6]";
+		SIGNAL = "info_circuit2_board";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -7815,7 +7815,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[5]";
+		SIGNAL = "info_circuit3_board";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -7823,15 +7823,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[4]";
+		SIGNAL = "test_factorDCA";
 		INDEX = 42;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[3]";
+		SIGNAL = "test_factorDCA[11]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -7839,7 +7839,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[2]";
+		SIGNAL = "test_factorDCA[10]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -7847,7 +7847,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[1]";
+		SIGNAL = "test_factorDCA[9]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -7855,7 +7855,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[0]";
+		SIGNAL = "test_factorDCA[8]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -7863,15 +7863,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB";
+		SIGNAL = "test_factorDCA[7]";
 		INDEX = 47;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[11]";
+		SIGNAL = "test_factorDCA[6]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -7879,7 +7879,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[10]";
+		SIGNAL = "test_factorDCA[5]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -7887,7 +7887,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[9]";
+		SIGNAL = "test_factorDCA[4]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -7895,7 +7895,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[8]";
+		SIGNAL = "test_factorDCA[3]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -7903,7 +7903,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[7]";
+		SIGNAL = "test_factorDCA[2]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -7911,7 +7911,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[6]";
+		SIGNAL = "test_factorDCA[1]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -7919,7 +7919,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[5]";
+		SIGNAL = "test_factorDCA[0]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -7927,15 +7927,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[4]";
+		SIGNAL = "test_factorDCB";
 		INDEX = 55;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[3]";
+		SIGNAL = "test_factorDCB[11]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -7943,7 +7943,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[2]";
+		SIGNAL = "test_factorDCB[10]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -7951,7 +7951,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[1]";
+		SIGNAL = "test_factorDCB[9]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -7959,7 +7959,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[0]";
+		SIGNAL = "test_factorDCB[8]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -7967,7 +7967,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit1";
+		SIGNAL = "test_factorDCB[7]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -7975,7 +7975,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit2";
+		SIGNAL = "test_factorDCB[6]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -7983,7 +7983,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit3";
+		SIGNAL = "test_factorDCB[5]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -7991,7 +7991,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit1_board";
+		SIGNAL = "test_factorDCB[4]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -7999,7 +7999,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit2_board";
+		SIGNAL = "test_factorDCB[3]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -8007,7 +8007,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit3_board";
+		SIGNAL = "test_factorDCB[2]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -8015,7 +8015,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "buton_selectie";
+		SIGNAL = "test_factorDCB[1]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -8023,7 +8023,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "buton_START_STOP";
+		SIGNAL = "test_factorDCB[0]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -8032,14 +8032,14 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 	}
 }
 
-VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/main.vwf")
+VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-GoDigital/db/sisau.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
 		ZEND = 5000000000;
-		NUMERATOR = 1015;
+		NUMERATOR = 833;
 		DENOMINATOR = 5000000000;
-		TOP_INDEX = 21;
+		TOP_INDEX = 17;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -8058,7 +8058,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A";
+		SIGNAL = "test_numA";
 		INDEX = 1;
 		FORMAT = T;
 		SCALE = 1;
@@ -8066,7 +8066,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[11]";
+		SIGNAL = "test_numA[11]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -8074,7 +8074,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[10]";
+		SIGNAL = "test_numA[10]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -8082,7 +8082,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[9]";
+		SIGNAL = "test_numA[9]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -8090,7 +8090,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[8]";
+		SIGNAL = "test_numA[8]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -8098,7 +8098,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[7]";
+		SIGNAL = "test_numA[7]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -8106,7 +8106,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[6]";
+		SIGNAL = "test_numA[6]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -8114,7 +8114,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[5]";
+		SIGNAL = "test_numA[5]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -8122,7 +8122,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[4]";
+		SIGNAL = "test_numA[4]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -8130,7 +8130,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[3]";
+		SIGNAL = "test_numA[3]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -8138,7 +8138,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[2]";
+		SIGNAL = "test_numA[2]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -8146,7 +8146,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[1]";
+		SIGNAL = "test_numA[1]";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -8154,7 +8154,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A[0]";
+		SIGNAL = "test_numA[0]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -8162,7 +8162,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A_IN1_D1";
+		SIGNAL = "buton_selectie";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -8170,7 +8170,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "A_IN2_D1";
+		SIGNAL = "buton_START_STOP";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -8178,7 +8178,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "B_IN3_D1";
+		SIGNAL = "A_IN1_D1";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -8186,7 +8186,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "B_IN4_D1";
+		SIGNAL = "A_IN2_D1";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -8194,7 +8194,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_IN1_D2";
+		SIGNAL = "B_IN3_D1";
 		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
@@ -8202,7 +8202,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_IN2_D2";
+		SIGNAL = "B_IN4_D1";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -8210,7 +8210,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "D_IN3_D2";
+		SIGNAL = "C_IN1_D2";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -8218,7 +8218,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "D_IN4_D2";
+		SIGNAL = "C_IN2_D2";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -8226,7 +8226,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_A";
+		SIGNAL = "D_IN3_D2";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -8234,7 +8234,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_B";
+		SIGNAL = "D_IN4_D2";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -8242,7 +8242,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_C";
+		SIGNAL = "PWM_A";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -8250,7 +8250,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_D";
+		SIGNAL = "PWM_B";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -8258,7 +8258,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzon_1";
+		SIGNAL = "PWM_C";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -8266,7 +8266,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_2";
+		SIGNAL = "PWM_D";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -8274,7 +8274,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_3";
+		SIGNAL = "senzon_1";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -8282,7 +8282,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_4";
+		SIGNAL = "senzor_2";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -8290,7 +8290,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_5";
+		SIGNAL = "senzor_3";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -8298,15 +8298,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit";
+		SIGNAL = "senzor_4";
 		INDEX = 31;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit[1]";
+		SIGNAL = "senzor_5";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -8314,23 +8314,23 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "circuit[0]";
+		SIGNAL = "circuit";
 		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "factor_driverA";
-		INDEX = 34;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[11]";
+		SIGNAL = "circuit[1]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "circuit[0]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -8338,7 +8338,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[10]";
+		SIGNAL = "info_circuit1";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -8346,7 +8346,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[9]";
+		SIGNAL = "info_circuit2";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -8354,7 +8354,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[8]";
+		SIGNAL = "info_circuit3";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -8362,7 +8362,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[7]";
+		SIGNAL = "info_circuit1_board";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -8370,7 +8370,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[6]";
+		SIGNAL = "info_circuit2_board";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -8378,7 +8378,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[5]";
+		SIGNAL = "info_circuit3_board";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -8386,15 +8386,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[4]";
+		SIGNAL = "test_factorDCA";
 		INDEX = 42;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[3]";
+		SIGNAL = "test_factorDCA[11]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -8402,7 +8402,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[2]";
+		SIGNAL = "test_factorDCA[10]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -8410,7 +8410,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[1]";
+		SIGNAL = "test_factorDCA[9]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -8418,7 +8418,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverA[0]";
+		SIGNAL = "test_factorDCA[8]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -8426,15 +8426,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB";
+		SIGNAL = "test_factorDCA[7]";
 		INDEX = 47;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[11]";
+		SIGNAL = "test_factorDCA[6]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -8442,7 +8442,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[10]";
+		SIGNAL = "test_factorDCA[5]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -8450,7 +8450,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[9]";
+		SIGNAL = "test_factorDCA[4]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -8458,7 +8458,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[8]";
+		SIGNAL = "test_factorDCA[3]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -8466,7 +8466,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[7]";
+		SIGNAL = "test_factorDCA[2]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -8474,7 +8474,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[6]";
+		SIGNAL = "test_factorDCA[1]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -8482,7 +8482,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[5]";
+		SIGNAL = "test_factorDCA[0]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -8490,15 +8490,15 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[4]";
+		SIGNAL = "test_factorDCB";
 		INDEX = 55;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[3]";
+		SIGNAL = "test_factorDCB[11]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -8506,7 +8506,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[2]";
+		SIGNAL = "test_factorDCB[10]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -8514,7 +8514,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[1]";
+		SIGNAL = "test_factorDCB[9]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -8522,7 +8522,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "factor_driverB[0]";
+		SIGNAL = "test_factorDCB[8]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -8530,7 +8530,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit1";
+		SIGNAL = "test_factorDCB[7]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -8538,7 +8538,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit2";
+		SIGNAL = "test_factorDCB[6]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -8546,7 +8546,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit3";
+		SIGNAL = "test_factorDCB[5]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -8554,7 +8554,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit1_board";
+		SIGNAL = "test_factorDCB[4]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -8562,7 +8562,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit2_board";
+		SIGNAL = "test_factorDCB[3]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -8570,7 +8570,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "info_circuit3_board";
+		SIGNAL = "test_factorDCB[2]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -8578,7 +8578,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "buton_selectie";
+		SIGNAL = "test_factorDCB[1]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -8586,7 +8586,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital/Proiect-Go
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "buton_START_STOP";
+		SIGNAL = "test_factorDCB[0]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;

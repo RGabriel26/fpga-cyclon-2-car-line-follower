@@ -145,8 +145,6 @@ always @* begin
 		end
 	end
 	
-	
-	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	if (senzor_1 == 1 & senzor_5 == 1) begin 
 		count_ture = count_ture + 1;

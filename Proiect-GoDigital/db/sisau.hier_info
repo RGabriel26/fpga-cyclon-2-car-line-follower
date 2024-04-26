@@ -1,51 +1,15 @@
 |main
-PWM_B <= generator_semnalPWM:inst7.out_PWM
+PWM_B <= generator_PWM:inst.PWM_B
 clk => divizor_frecventa:inst2.clk
-A[0] <= numarator_1000:inst.U0
-A[1] <= numarator_1000:inst.U1
-A[2] <= numarator_1000:inst.U2
-A[3] <= numarator_1000:inst.U3
-A[4] <= numarator_1000:inst.Z0
-A[5] <= numarator_1000:inst.Z1
-A[6] <= numarator_1000:inst.Z2
-A[7] <= numarator_1000:inst.Z3
-A[8] <= numarator_1000:inst.S0
-A[9] <= numarator_1000:inst.S1
-A[10] <= numarator_1000:inst.S2
-A[11] <= numarator_1000:inst.S3
 buton_START_STOP => debouncing:inst16.press_in
-factor_driverA[0] <= Logica_miscare:inst6.factor_dc_driverA[0]
-factor_driverA[1] <= Logica_miscare:inst6.factor_dc_driverA[1]
-factor_driverA[2] <= Logica_miscare:inst6.factor_dc_driverA[2]
-factor_driverA[3] <= Logica_miscare:inst6.factor_dc_driverA[3]
-factor_driverA[4] <= Logica_miscare:inst6.factor_dc_driverA[4]
-factor_driverA[5] <= Logica_miscare:inst6.factor_dc_driverA[5]
-factor_driverA[6] <= Logica_miscare:inst6.factor_dc_driverA[6]
-factor_driverA[7] <= Logica_miscare:inst6.factor_dc_driverA[7]
-factor_driverA[8] <= Logica_miscare:inst6.factor_dc_driverA[8]
-factor_driverA[9] <= Logica_miscare:inst6.factor_dc_driverA[9]
-factor_driverA[10] <= Logica_miscare:inst6.factor_dc_driverA[10]
-factor_driverA[11] <= Logica_miscare:inst6.factor_dc_driverA[11]
 senzon_1 => Logica_miscare:inst6.senzor_1
 senzor_2 => Logica_miscare:inst6.senzor_2
 senzor_3 => Logica_miscare:inst6.senzor_3
 senzor_4 => Logica_miscare:inst6.senzor_4
 senzor_5 => Logica_miscare:inst6.senzor_5
 buton_selectie => debouncing:inst5.press_in
-PWM_A <= generator_semnalPWM:inst7.out_PWM
-PWM_C <= generator_semnalPWM:inst12.out_PWM
-factor_driverB[0] <= Logica_miscare:inst6.factor_dc_driverB[0]
-factor_driverB[1] <= Logica_miscare:inst6.factor_dc_driverB[1]
-factor_driverB[2] <= Logica_miscare:inst6.factor_dc_driverB[2]
-factor_driverB[3] <= Logica_miscare:inst6.factor_dc_driverB[3]
-factor_driverB[4] <= Logica_miscare:inst6.factor_dc_driverB[4]
-factor_driverB[5] <= Logica_miscare:inst6.factor_dc_driverB[5]
-factor_driverB[6] <= Logica_miscare:inst6.factor_dc_driverB[6]
-factor_driverB[7] <= Logica_miscare:inst6.factor_dc_driverB[7]
-factor_driverB[8] <= Logica_miscare:inst6.factor_dc_driverB[8]
-factor_driverB[9] <= Logica_miscare:inst6.factor_dc_driverB[9]
-factor_driverB[10] <= Logica_miscare:inst6.factor_dc_driverB[10]
-factor_driverB[11] <= Logica_miscare:inst6.factor_dc_driverB[11]
+PWM_A <= generator_PWM:inst.PWM_A
+PWM_C <= generator_PWM:inst.PWM_C
 C_IN1_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
 C_IN2_D2 <= directie_D2[1].DB_MAX_OUTPUT_PORT_TYPE
 D_IN3_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -54,7 +18,7 @@ A_IN1_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 A_IN2_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
-PWM_D <= generator_semnalPWM:inst12.out_PWM
+PWM_D <= generator_PWM:inst.PWM_D
 info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -63,9 +27,94 @@ info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 circuit[0] <= Selectie_proba:inst1.circuit[0]
 circuit[1] <= Selectie_proba:inst1.circuit[1]
+test_factorDCA[0] <= factor_driverA[0].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[1] <= factor_driverA[1].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[2] <= factor_driverA[2].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[3] <= factor_driverA[3].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[4] <= factor_driverA[4].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[5] <= factor_driverA[5].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[6] <= factor_driverA[6].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[7] <= factor_driverA[7].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[8] <= factor_driverA[8].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[9] <= factor_driverA[9].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[10] <= factor_driverA[10].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[11] <= factor_driverA[11].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[0] <= factor_driverB[0].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[1] <= factor_driverB[1].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[2] <= factor_driverB[2].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[3] <= factor_driverB[3].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[4] <= factor_driverB[4].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[5] <= factor_driverB[5].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[6] <= factor_driverB[6].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[7] <= factor_driverB[7].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[8] <= factor_driverB[8].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[9] <= factor_driverB[9].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[10] <= factor_driverB[10].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[11] <= factor_driverB[11].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[0] <= generator_PWM:inst.test_numA[0]
+test_numA[1] <= generator_PWM:inst.test_numA[1]
+test_numA[2] <= generator_PWM:inst.test_numA[2]
+test_numA[3] <= generator_PWM:inst.test_numA[3]
+test_numA[4] <= generator_PWM:inst.test_numA[4]
+test_numA[5] <= generator_PWM:inst.test_numA[5]
+test_numA[6] <= generator_PWM:inst.test_numA[6]
+test_numA[7] <= generator_PWM:inst.test_numA[7]
+test_numA[8] <= generator_PWM:inst.test_numA[8]
+test_numA[9] <= generator_PWM:inst.test_numA[9]
+test_numA[10] <= generator_PWM:inst.test_numA[10]
+test_numA[11] <= generator_PWM:inst.test_numA[11]
 
 
-|main|generator_semnalPWM:inst7
+|main|generator_PWM:inst
+PWM_A <= generator_semnalPWM:inst7.out_PWM
+CLOCK => generator_semnalPWM:inst7.clk_filtrare
+CLOCK => numarator_1000:inst.clk
+CLOCK => generator_semnalPWM:inst12.clk_filtrare
+START/STOP => numarator_1000:inst.RESET
+START/STOP => generator_semnalPWM:inst7.ACTIV
+START/STOP => generator_semnalPWM:inst12.ACTIV
+factor_driverA[0] => comparator_12BIT:inst4.Bu[0]
+factor_driverA[1] => comparator_12BIT:inst4.Bu[1]
+factor_driverA[2] => comparator_12BIT:inst4.Bu[2]
+factor_driverA[3] => comparator_12BIT:inst4.Bu[3]
+factor_driverA[4] => comparator_12BIT:inst4.Bz[0]
+factor_driverA[5] => comparator_12BIT:inst4.Bz[1]
+factor_driverA[6] => comparator_12BIT:inst4.Bz[2]
+factor_driverA[7] => comparator_12BIT:inst4.Bz[3]
+factor_driverA[8] => comparator_12BIT:inst4.Bs[0]
+factor_driverA[9] => comparator_12BIT:inst4.Bs[1]
+factor_driverA[10] => comparator_12BIT:inst4.Bs[2]
+factor_driverA[11] => comparator_12BIT:inst4.Bs[3]
+PWM_B <= generator_semnalPWM:inst7.out_PWM
+PWM_C <= generator_semnalPWM:inst12.out_PWM
+factor_driverB[0] => comparator_12BIT:inst11.Bu[0]
+factor_driverB[1] => comparator_12BIT:inst11.Bu[1]
+factor_driverB[2] => comparator_12BIT:inst11.Bu[2]
+factor_driverB[3] => comparator_12BIT:inst11.Bu[3]
+factor_driverB[4] => comparator_12BIT:inst11.Bz[0]
+factor_driverB[5] => comparator_12BIT:inst11.Bz[1]
+factor_driverB[6] => comparator_12BIT:inst11.Bz[2]
+factor_driverB[7] => comparator_12BIT:inst11.Bz[3]
+factor_driverB[8] => comparator_12BIT:inst11.Bs[0]
+factor_driverB[9] => comparator_12BIT:inst11.Bs[1]
+factor_driverB[10] => comparator_12BIT:inst11.Bs[2]
+factor_driverB[11] => comparator_12BIT:inst11.Bs[3]
+PWM_D <= generator_semnalPWM:inst12.out_PWM
+test_numA[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[8] <= A[8].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[9] <= A[9].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[10] <= A[10].DB_MAX_OUTPUT_PORT_TYPE
+test_numA[11] <= A[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|generator_semnalPWM:inst7
 tact_CBB_PWM <= inst.DB_MAX_OUTPUT_PORT_TYPE
 EGAL => inst6.IN0
 clk_filtrare => inst6.IN1
@@ -75,6 +124,466 @@ ACTIV => inst4.IN0
 ACTIV => inst15.ACLR
 ACTIV => inst3.IN1
 semnal_EGAL_filtrat <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4
+detect_EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Au[0] => comparator_4BIT:inst.A[0]
+Au[1] => comparator_4BIT:inst.A[1]
+Au[2] => comparator_4BIT:inst.A[2]
+Au[3] => comparator_4BIT:inst.A[3]
+Bu[0] => comparator_4BIT:inst.B[0]
+Bu[1] => comparator_4BIT:inst.B[1]
+Bu[2] => comparator_4BIT:inst.B[2]
+Bu[3] => comparator_4BIT:inst.B[3]
+Az[0] => comparator_4BIT:inst1.A[0]
+Az[1] => comparator_4BIT:inst1.A[1]
+Az[2] => comparator_4BIT:inst1.A[2]
+Az[3] => comparator_4BIT:inst1.A[3]
+Bz[0] => comparator_4BIT:inst1.B[0]
+Bz[1] => comparator_4BIT:inst1.B[1]
+Bz[2] => comparator_4BIT:inst1.B[2]
+Bz[3] => comparator_4BIT:inst1.B[3]
+As[0] => comparator_4BIT:inst2.A[0]
+As[1] => comparator_4BIT:inst2.A[1]
+As[2] => comparator_4BIT:inst2.A[2]
+As[3] => comparator_4BIT:inst2.A[3]
+Bs[0] => comparator_4BIT:inst2.B[0]
+Bs[1] => comparator_4BIT:inst2.B[1]
+Bs[2] => comparator_4BIT:inst2.B[2]
+Bs[3] => comparator_4BIT:inst2.B[3]
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|numarator_1000:inst
+reset_0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+clk => numarator_10:inst.in_clk
+RESET => numarator_10:inst.RESET
+RESET => numarator_10:inst1.RESET
+RESET => numarator_10:inst2.RESET
+U0 <= numarator_10:inst.Q0
+U1 <= numarator_10:inst.Q1
+U2 <= numarator_10:inst.Q2
+U3 <= numarator_10:inst.Q3
+Z0 <= numarator_10:inst1.Q0
+Z1 <= numarator_10:inst1.Q1
+Z3 <= numarator_10:inst1.Q3
+S0 <= numarator_10:inst2.Q0
+S1 <= numarator_10:inst2.Q1
+S2 <= numarator_10:inst2.Q2
+S3 <= numarator_10:inst2.Q3
+Z2 <= numarator_10:inst1.Q2
+
+
+|main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst2
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst1
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|generator_semnalPWM:inst12
+tact_CBB_PWM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+EGAL => inst6.IN0
+clk_filtrare => inst6.IN1
+reset_num => inst.IN1
+out_PWM <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+ACTIV => inst4.IN0
+ACTIV => inst15.ACLR
+ACTIV => inst3.IN1
+semnal_EGAL_filtrat <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11
+detect_EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Au[0] => comparator_4BIT:inst.A[0]
+Au[1] => comparator_4BIT:inst.A[1]
+Au[2] => comparator_4BIT:inst.A[2]
+Au[3] => comparator_4BIT:inst.A[3]
+Bu[0] => comparator_4BIT:inst.B[0]
+Bu[1] => comparator_4BIT:inst.B[1]
+Bu[2] => comparator_4BIT:inst.B[2]
+Bu[3] => comparator_4BIT:inst.B[3]
+Az[0] => comparator_4BIT:inst1.A[0]
+Az[1] => comparator_4BIT:inst1.A[1]
+Az[2] => comparator_4BIT:inst1.A[2]
+Az[3] => comparator_4BIT:inst1.A[3]
+Bz[0] => comparator_4BIT:inst1.B[0]
+Bz[1] => comparator_4BIT:inst1.B[1]
+Bz[2] => comparator_4BIT:inst1.B[2]
+Bz[3] => comparator_4BIT:inst1.B[3]
+As[0] => comparator_4BIT:inst2.A[0]
+As[1] => comparator_4BIT:inst2.A[1]
+As[2] => comparator_4BIT:inst2.A[2]
+As[3] => comparator_4BIT:inst2.A[3]
+Bs[0] => comparator_4BIT:inst2.B[0]
+Bs[1] => comparator_4BIT:inst2.B[1]
+Bs[2] => comparator_4BIT:inst2.B[2]
+Bs[3] => comparator_4BIT:inst2.B[3]
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2
+EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => comparator_1BIT:inst.A
+A[1] => comparator_1BIT:inst1.A
+A[2] => comparator_1BIT:inst2.A
+A[3] => comparator_1BIT:inst3.A
+B[0] => comparator_1BIT:inst.B
+B[1] => comparator_1BIT:inst1.B
+B[2] => comparator_1BIT:inst2.B
+B[3] => comparator_1BIT:inst3.B
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
+A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => inst10.IN0
+B => inst9.IN0
+B => inst.IN1
+B => inst10.IN1
+A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|divizor_frecventa:inst2
@@ -181,258 +690,6 @@ next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 in_clk => inst1.IN0
 
 
-|main|comparator_12BIT:inst4
-detect_EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-Au[0] => comparator_4BIT:inst.A[0]
-Au[1] => comparator_4BIT:inst.A[1]
-Au[2] => comparator_4BIT:inst.A[2]
-Au[3] => comparator_4BIT:inst.A[3]
-Bu[0] => comparator_4BIT:inst.B[0]
-Bu[1] => comparator_4BIT:inst.B[1]
-Bu[2] => comparator_4BIT:inst.B[2]
-Bu[3] => comparator_4BIT:inst.B[3]
-Az[0] => comparator_4BIT:inst1.A[0]
-Az[1] => comparator_4BIT:inst1.A[1]
-Az[2] => comparator_4BIT:inst1.A[2]
-Az[3] => comparator_4BIT:inst1.A[3]
-Bz[0] => comparator_4BIT:inst1.B[0]
-Bz[1] => comparator_4BIT:inst1.B[1]
-Bz[2] => comparator_4BIT:inst1.B[2]
-Bz[3] => comparator_4BIT:inst1.B[3]
-As[0] => comparator_4BIT:inst2.A[0]
-As[1] => comparator_4BIT:inst2.A[1]
-As[2] => comparator_4BIT:inst2.A[2]
-As[3] => comparator_4BIT:inst2.A[3]
-Bs[0] => comparator_4BIT:inst2.B[0]
-Bs[1] => comparator_4BIT:inst2.B[1]
-Bs[2] => comparator_4BIT:inst2.B[2]
-Bs[3] => comparator_4BIT:inst2.B[3]
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst1
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst2
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|numarator_1000:inst
-reset_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-clk => numarator_10:inst.in_clk
-RESET => numarator_10:inst.RESET
-RESET => numarator_10:inst1.RESET
-RESET => numarator_10:inst2.RESET
-U0 <= numarator_10:inst.Q0
-U1 <= numarator_10:inst.Q1
-U2 <= numarator_10:inst.Q2
-U3 <= numarator_10:inst.Q3
-Z0 <= numarator_10:inst1.Q0
-Z1 <= numarator_10:inst1.Q1
-Z3 <= numarator_10:inst1.Q3
-S0 <= numarator_10:inst2.Q0
-S1 <= numarator_10:inst2.Q1
-S2 <= numarator_10:inst2.Q2
-S3 <= numarator_10:inst2.Q3
-Z2 <= numarator_10:inst1.Q2
-
-
-|main|numarator_1000:inst|numarator_10:inst2
-Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-RESET => inst9.ACLR
-RESET => inst10.ACLR
-RESET => inst12.ACLR
-RESET => inst11.ACLR
-in_clk => inst1.IN0
-Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|numarator_1000:inst|numarator_10:inst1
-Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-RESET => inst9.ACLR
-RESET => inst10.ACLR
-RESET => inst12.ACLR
-RESET => inst11.ACLR
-in_clk => inst1.IN0
-Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|numarator_1000:inst|numarator_10:inst
-Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-RESET => inst9.ACLR
-RESET => inst10.ACLR
-RESET => inst12.ACLR
-RESET => inst11.ACLR
-in_clk => inst1.IN0
-Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |main|START_STOP:inst15
 START/STOP <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 TACT => inst.CLK
@@ -509,7 +766,7 @@ count_ture[4] <= count_ture[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 count_ture[5] <= count_ture[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 count_ture[6] <= count_ture[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 count_ture[7] <= count_ture[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-factor_dc_driverA[0] <= <GND>
+factor_dc_driverA[0] <= factor_dc_driverA[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[1] <= <GND>
 factor_dc_driverA[2] <= <GND>
 factor_dc_driverA[3] <= factor_dc_driverA[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
@@ -521,7 +778,7 @@ factor_dc_driverA[8] <= factor_dc_driverA[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[9] <= factor_dc_driverA[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[10] <= factor_dc_driverA[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[11] <= factor_dc_driverA[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-factor_dc_driverB[0] <= <GND>
+factor_dc_driverB[0] <= factor_dc_driverB[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverB[1] <= <GND>
 factor_dc_driverB[2] <= <GND>
 factor_dc_driverB[3] <= factor_dc_driverB[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
@@ -553,213 +810,5 @@ press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 clock => inst.CLK
 clock => inst1.CLK
 press_in => inst.DATAIN
-
-
-|main|generator_semnalPWM:inst12
-tact_CBB_PWM <= inst.DB_MAX_OUTPUT_PORT_TYPE
-EGAL => inst6.IN0
-clk_filtrare => inst6.IN1
-reset_num => inst.IN1
-out_PWM <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-ACTIV => inst4.IN0
-ACTIV => inst15.ACLR
-ACTIV => inst3.IN1
-semnal_EGAL_filtrat <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11
-detect_EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-Au[0] => comparator_4BIT:inst.A[0]
-Au[1] => comparator_4BIT:inst.A[1]
-Au[2] => comparator_4BIT:inst.A[2]
-Au[3] => comparator_4BIT:inst.A[3]
-Bu[0] => comparator_4BIT:inst.B[0]
-Bu[1] => comparator_4BIT:inst.B[1]
-Bu[2] => comparator_4BIT:inst.B[2]
-Bu[3] => comparator_4BIT:inst.B[3]
-Az[0] => comparator_4BIT:inst1.A[0]
-Az[1] => comparator_4BIT:inst1.A[1]
-Az[2] => comparator_4BIT:inst1.A[2]
-Az[3] => comparator_4BIT:inst1.A[3]
-Bz[0] => comparator_4BIT:inst1.B[0]
-Bz[1] => comparator_4BIT:inst1.B[1]
-Bz[2] => comparator_4BIT:inst1.B[2]
-Bz[3] => comparator_4BIT:inst1.B[3]
-As[0] => comparator_4BIT:inst2.A[0]
-As[1] => comparator_4BIT:inst2.A[1]
-As[2] => comparator_4BIT:inst2.A[2]
-As[3] => comparator_4BIT:inst2.A[3]
-Bs[0] => comparator_4BIT:inst2.B[0]
-Bs[1] => comparator_4BIT:inst2.B[1]
-Bs[2] => comparator_4BIT:inst2.B[2]
-Bs[3] => comparator_4BIT:inst2.B[3]
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst1
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst2
-EGAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => comparator_1BIT:inst.A
-A[1] => comparator_1BIT:inst1.A
-A[2] => comparator_1BIT:inst2.A
-A[3] => comparator_1BIT:inst3.A
-B[0] => comparator_1BIT:inst.B
-B[1] => comparator_1BIT:inst1.B
-B[2] => comparator_1BIT:inst2.B
-B[3] => comparator_1BIT:inst3.B
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
-A_egal_B <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-A => inst8.IN0
-A => inst.IN0
-A => inst10.IN0
-B => inst9.IN0
-B => inst.IN1
-B => inst10.IN1
-A_egal_Bv2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
