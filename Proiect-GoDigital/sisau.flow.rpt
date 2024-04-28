@@ -1,5 +1,5 @@
 Flow report for sisau
-Fri Apr 26 18:15:03 2024
+Sun Apr 28 22:58:21 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 26 18:15:02 2024        ;
+; Flow Status                        ; Successful - Sun Apr 28 22:58:21 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/26/2024 18:14:58 ;
+; Start date & time ; 04/28/2024 22:58:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sisau               ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                                                            ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 62619209141646.171414449847016                                                                                   ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 193569100776273.171433428108980                                                                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                                                                               ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                                                                                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/FACULTATE/An_3/Proiect-GoDigital/sisau.dpf                                                                    ; --            ; --          ; --             ;
@@ -99,11 +99,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 222 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 224 MB              ; 00:00:01                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 198 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 159 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 215 MB              ; 00:00:03                           ;
+; Fitter                  ; 00:00:05     ; 1.0                     ; 221 MB              ; 00:00:05                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 194 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 152 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:15     ; --                      ; --                  ; 00:00:10                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,10 +112,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; Gabriel          ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; Gabriel          ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; Gabriel          ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; Gabriel          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-EUGMDMC  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-EUGMDMC  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-EUGMDMC  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-EUGMDMC  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
