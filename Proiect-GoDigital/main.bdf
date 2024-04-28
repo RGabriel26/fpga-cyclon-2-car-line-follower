@@ -938,18 +938,6 @@ applicable agreement for further details.
 	(pt 224 744)
 )
 (connector
-	(text "factor_driverA[11..0]" (rect 522 752 624 764)(font "Arial" ))
-	(pt 456 760)
-	(pt 512 760)
-	(bus)
-)
-(connector
-	(text "factor_driverB[11..0]" (rect 522 768 624 780)(font "Arial" ))
-	(pt 456 776)
-	(pt 512 776)
-	(bus)
-)
-(connector
 	(pt 312 616)
 	(pt 312 600)
 	(bus)
