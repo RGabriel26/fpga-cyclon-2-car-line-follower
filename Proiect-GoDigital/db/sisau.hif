@@ -390,6 +390,26 @@ AUTO
 
 # end
 # entity
+numarator_1000
+# storage
+db|sisau.(1).cnf
+db|sisau.(1).cnf
+# case_insensitive
+# source_file
+numarator_1000.bdf
+9353583bf4215e283ae8c63ad0e6f1bf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+generator_PWM:inst|numarator_1000:inst
+}
+# macro_sequence
+
+# end
+# entity
 Logica_miscare
 # storage
 db|sisau.(13).cnf
@@ -421,26 +441,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
-numarator_1000
-# storage
-db|sisau.(1).cnf
-db|sisau.(1).cnf
-# case_insensitive
-# source_file
-numarator_1000.bdf
-9353583bf4215e283ae8c63ad0e6f1bf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-generator_PWM:inst|numarator_1000:inst
 }
 # macro_sequence
 
