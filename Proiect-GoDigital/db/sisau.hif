@@ -34,9 +34,6 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-generator_PWM:inst|numarator_1000:inst|numarator_10:inst2
-generator_PWM:inst|numarator_1000:inst|numarator_10:inst1
-generator_PWM:inst|numarator_1000:inst|numarator_10:inst
 divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2
 divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1
 divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst
@@ -82,32 +79,6 @@ comparator_1bit.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst3
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1|comparator_1BIT:inst3
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2|comparator_1BIT:inst3
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst|comparator_1BIT:inst3
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1|comparator_1BIT:inst3
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2|comparator_1BIT:inst3
-}
 # macro_sequence
 
 # end
@@ -125,14 +96,6 @@ comparator_4bit.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst2
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst1
-generator_PWM:inst|comparator_12BIT:inst11|comparator_4BIT:inst2
-}
 # macro_sequence
 
 # end
@@ -149,10 +112,6 @@ f840a2cdd0a3965698d8e78b7c6cfcc
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-generator_PWM:inst|comparator_12BIT:inst4
-generator_PWM:inst|comparator_12BIT:inst11
 }
 # macro_sequence
 
@@ -342,9 +301,6 @@ generator_pwm.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-generator_PWM:inst
-}
 # macro_sequence
 
 # end
@@ -362,30 +318,6 @@ baa28cc691cbaa753bdb49c97f10b822
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-generator_PWM:inst|generator_semnalPWM:inst7
-generator_PWM:inst|generator_semnalPWM:inst12
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# case_insensitive
-# source_file
-main.bdf
-cd83283c1571f2eac0af9349a99ab0df
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -402,9 +334,6 @@ numarator_1000.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-generator_PWM:inst|numarator_1000:inst
 }
 # macro_sequence
 
@@ -441,6 +370,62 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# case_insensitive
+# source_file
+main.bdf
+516ce92a349b807ccaa0ae513572d94
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+generator_PWM_v2
+# storage
+db|sisau.(17).cnf
+db|sisau.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+generator_pwm_v2.v
+1b6499f8bfb12ddec754e3a1855cccc8
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+generator_PWM_v2:inst
 }
 # macro_sequence
 

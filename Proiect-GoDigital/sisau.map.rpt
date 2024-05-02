@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Tue Apr 30 23:31:36 2024
+Fri May 03 00:22:28 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -17,6 +17,7 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,15 +43,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 30 23:31:36 2024        ;
+; Analysis & Synthesis Status        ; Successful - Fri May 03 00:22:28 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 129                                          ;
-;     Total combinational functions  ; 125                                          ;
-;     Dedicated logic registers      ; 55                                           ;
-; Total registers                    ; 55                                           ;
+; Total logic elements               ; 148                                          ;
+;     Total combinational functions  ; 132                                          ;
+;     Dedicated logic registers      ; 65                                           ;
+; Total registers                    ; 65                                           ;
 ; Total pins                         ; 64                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
@@ -144,94 +145,83 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
-; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/main.bdf                ;
-; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/divizor_10.bdf          ;
-; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/divizor_1000.bdf        ;
-; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/divizor_frecventa.bdf   ;
-; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/debouncing.bdf          ;
-; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/numarator_10.bdf        ;
-; numarator_1000.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/numarator_1000.bdf      ;
-; comparator_1BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/comparator_1BIT.bdf     ;
-; comparator_4BIT.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/comparator_4BIT.bdf     ;
-; comparator_12BIT.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/comparator_12BIT.bdf    ;
-; generator_semnalPWM.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/generator_semnalPWM.bdf ;
-; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/divizor_5.bdf           ;
-; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/START_STOP.bdf          ;
-; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/Logica_miscare.v        ;
-; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/Selectie_proba.v        ;
-; generator_PWM.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-GoDigital/generator_PWM.bdf       ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/main.bdf              ;
+; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/divizor_10.bdf        ;
+; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/divizor_1000.bdf      ;
+; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/divizor_frecventa.bdf ;
+; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/debouncing.bdf        ;
+; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/numarator_10.bdf      ;
+; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/divizor_5.bdf         ;
+; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/START_STOP.bdf        ;
+; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/Logica_miscare.v      ;
+; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/Selectie_proba.v      ;
+; generator_PWM_v2.v               ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/generator_PWM_v2.v    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 129      ;
-;                                             ;          ;
-; Total combinational functions               ; 125      ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 42       ;
-;     -- 3 input functions                    ; 46       ;
-;     -- <=2 input functions                  ; 37       ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 118      ;
-;     -- arithmetic mode                      ; 7        ;
-;                                             ;          ;
-; Total registers                             ; 55       ;
-;     -- Dedicated logic registers            ; 55       ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 64       ;
-; Maximum fan-out node                        ; senzor_3 ;
-; Maximum fan-out                             ; 18       ;
-; Total fan-out                               ; 539      ;
-; Average fan-out                             ; 2.21     ;
-+---------------------------------------------+----------+
++----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                  ;
++---------------------------------------------+------------------------------------------------+
+; Resource                                    ; Usage                                          ;
++---------------------------------------------+------------------------------------------------+
+; Estimated Total logic elements              ; 148                                            ;
+;                                             ;                                                ;
+; Total combinational functions               ; 132                                            ;
+; Logic element usage by number of LUT inputs ;                                                ;
+;     -- 4 input functions                    ; 41                                             ;
+;     -- 3 input functions                    ; 51                                             ;
+;     -- <=2 input functions                  ; 40                                             ;
+;                                             ;                                                ;
+; Logic elements by mode                      ;                                                ;
+;     -- normal mode                          ; 113                                            ;
+;     -- arithmetic mode                      ; 19                                             ;
+;                                             ;                                                ;
+; Total registers                             ; 65                                             ;
+;     -- Dedicated logic registers            ; 65                                             ;
+;     -- I/O registers                        ; 0                                              ;
+;                                             ;                                                ;
+; I/O pins                                    ; 64                                             ;
+; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_10:inst|inst12 ;
+; Maximum fan-out                             ; 30                                             ;
+; Total fan-out                               ; 574                                            ;
+; Average fan-out                             ; 2.20                                           ;
++---------------------------------------------+------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |main                              ; 125 (0)           ; 55 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |main                                                               ; work         ;
-;    |Logica_miscare:inst6|          ; 57 (57)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ; work         ;
-;    |START_STOP:inst15|             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ; work         ;
-;    |Selectie_proba:inst1|          ; 4 (4)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ; work         ;
-;    |debouncing:inst16|             ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst16                                             ; work         ;
-;    |debouncing:inst5|              ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst5                                              ; work         ;
-;    |divizor_frecventa:inst2|       ; 31 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ; work         ;
-;       |divizor_1000:inst1|         ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1                    ; work         ;
-;          |numarator_10:inst1|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1 ; work         ;
-;          |numarator_10:inst2|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2 ; work         ;
-;          |numarator_10:inst|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst  ; work         ;
-;       |divizor_1000:inst2|         ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2                    ; work         ;
-;          |numarator_10:inst1|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1 ; work         ;
-;          |numarator_10:inst2|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2 ; work         ;
-;          |numarator_10:inst|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst  ; work         ;
-;       |divizor_10:inst|            ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ; work         ;
-;       |divizor_5:inst3|            ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_5:inst3                       ; work         ;
-;    |generator_PWM:inst|            ; 30 (0)            ; 14 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst                                            ;              ;
-;       |generator_semnalPWM:inst12| ; 8 (8)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|generator_semnalPWM:inst12                 ;              ;
-;       |generator_semnalPWM:inst7|  ; 7 (7)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|generator_semnalPWM:inst7                  ;              ;
-;       |numarator_1000:inst|        ; 15 (3)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|numarator_1000:inst                        ;              ;
-;          |numarator_10:inst1|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst1     ;              ;
-;          |numarator_10:inst2|      ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst2     ;              ;
-;          |numarator_10:inst|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM:inst|numarator_1000:inst|numarator_10:inst      ;              ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; |main                         ; 132 (0)           ; 65 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |main                                                               ; work         ;
+;    |Logica_miscare:inst6|     ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
+;    |START_STOP:inst15|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ;              ;
+;    |Selectie_proba:inst1|     ; 4 (4)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ;              ;
+;    |debouncing:inst16|        ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst16                                             ;              ;
+;    |debouncing:inst5|         ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst5                                              ;              ;
+;    |divizor_frecventa:inst2|  ; 32 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
+;       |divizor_1000:inst1|    ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1                    ;              ;
+;          |numarator_10:inst1| ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1 ;              ;
+;          |numarator_10:inst2| ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2 ;              ;
+;          |numarator_10:inst|  ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst  ;              ;
+;       |divizor_1000:inst2|    ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2                    ;              ;
+;          |numarator_10:inst1| ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1 ;              ;
+;          |numarator_10:inst2| ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2 ;              ;
+;          |numarator_10:inst|  ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst  ;              ;
+;       |divizor_10:inst|       ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ;              ;
+;       |divizor_5:inst3|       ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_5:inst3                       ;              ;
+;    |generator_PWM_v2:inst|    ; 37 (37)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM_v2:inst                                         ;              ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -240,16 +230,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+-------------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                       ; Free of Timing Hazards ;
 +-----------------------------------------------------+-------------------------------------------+------------------------+
-; Logica_miscare:inst6|stanga                         ; Logica_miscare:inst6|stanga               ; yes                    ;
-; Logica_miscare:inst6|dreapta                        ; Logica_miscare:inst6|stanga               ; yes                    ;
-; Logica_miscare:inst6|count_ture[0]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[1]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[2]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[3]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[4]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[5]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[6]                  ; Logica_miscare:inst6|always0              ; yes                    ;
-; Logica_miscare:inst6|count_ture[7]                  ; Logica_miscare:inst6|always0              ; yes                    ;
 ; Logica_miscare:inst6|factor_dc_driverA[11]          ; Logica_miscare:inst6|Equal0               ; yes                    ;
 ; Logica_miscare:inst6|factor_dc_driverA[10]          ; Logica_miscare:inst6|Equal0               ; yes                    ;
 ; Logica_miscare:inst6|factor_dc_driverA[9]           ; Logica_miscare:inst6|Equal0               ; yes                    ;
@@ -268,6 +248,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Logica_miscare:inst6|factor_dc_driverB[4]           ; Logica_miscare:inst6|factor_dc_driverA[8] ; yes                    ;
 ; Logica_miscare:inst6|factor_dc_driverB[3]           ; Logica_miscare:inst6|factor_dc_driverA[8] ; yes                    ;
 ; Logica_miscare:inst6|factor_dc_driverB[0]           ; Logica_miscare:inst6|factor_dc_driverA[8] ; yes                    ;
+; Logica_miscare:inst6|stanga                         ; Logica_miscare:inst6|stanga               ; yes                    ;
+; Logica_miscare:inst6|dreapta                        ; Logica_miscare:inst6|stanga               ; yes                    ;
+; Logica_miscare:inst6|count_ture[0]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[1]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[2]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[3]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[4]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[5]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[6]                  ; Logica_miscare:inst6|always0              ; yes                    ;
+; Logica_miscare:inst6|count_ture[7]                  ; Logica_miscare:inst6|always0              ; yes                    ;
 ; Number of user-specified and inferred latches = 28  ;                                           ;                        ;
 +-----------------------------------------------------+-------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -278,12 +268,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 55    ;
+; Total registers                              ; 65    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 9     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -293,7 +283,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[0] ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
@@ -304,7 +294,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 30 23:31:32 2024
+    Info: Processing started: Fri May 03 00:22:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -333,24 +323,26 @@ Info: Found 1 design units, including 1 entities, in source file divizor_5.bdf
     Info: Found entity 1: divizor_5
 Info: Found 1 design units, including 1 entities, in source file start_stop.bdf
     Info: Found entity 1: START_STOP
+Info: Found 1 design units, including 1 entities, in source file generator_pwm.bdf
+    Info: Found entity 1: generator_PWM
 Info: Found 1 design units, including 1 entities, in source file logica_miscare.v
     Info: Found entity 1: Logica_miscare
 Info: Found 1 design units, including 1 entities, in source file selectie_proba.v
     Info: Found entity 1: Selectie_proba
-Info: Found 1 design units, including 1 entities, in source file generator_pwm.bdf
-    Info: Found entity 1: generator_PWM
+Info: Found 1 design units, including 1 entities, in source file generator_pwm_v2.v
+    Info: Found entity 1: generator_PWM_v2
 Info: Elaborating entity "main" for the top level hierarchy
-Info: Elaborating entity "generator_PWM" for hierarchy "generator_PWM:inst"
-Info: Elaborating entity "generator_semnalPWM" for hierarchy "generator_PWM:inst|generator_semnalPWM:inst7"
-Info: Elaborating entity "comparator_12BIT" for hierarchy "generator_PWM:inst|comparator_12BIT:inst4"
-Info: Elaborating entity "comparator_4BIT" for hierarchy "generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst"
-Info: Elaborating entity "comparator_1BIT" for hierarchy "generator_PWM:inst|comparator_12BIT:inst4|comparator_4BIT:inst|comparator_1BIT:inst"
-Info: Elaborating entity "numarator_1000" for hierarchy "generator_PWM:inst|numarator_1000:inst"
-Info: Elaborating entity "numarator_10" for hierarchy "generator_PWM:inst|numarator_1000:inst|numarator_10:inst2"
+Info: Elaborating entity "generator_PWM_v2" for hierarchy "generator_PWM_v2:inst"
+Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(30): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(33): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(36): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(50): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(62): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Info: Elaborating entity "divizor_frecventa" for hierarchy "divizor_frecventa:inst2"
 Info: Elaborating entity "divizor_10" for hierarchy "divizor_frecventa:inst2|divizor_10:inst"
 Info: Elaborating entity "divizor_5" for hierarchy "divizor_frecventa:inst2|divizor_5:inst3"
 Info: Elaborating entity "divizor_1000" for hierarchy "divizor_frecventa:inst2|divizor_1000:inst2"
+Info: Elaborating entity "numarator_10" for hierarchy "divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2"
 Info: Elaborating entity "START_STOP" for hierarchy "START_STOP:inst15"
 Info: Elaborating entity "debouncing" for hierarchy "debouncing:inst16"
 Info: Elaborating entity "Logica_miscare" for hierarchy "Logica_miscare:inst6"
@@ -408,10 +400,6 @@ Info: Duplicate LATCH primitives merged into single LATCH primitive
     Info: Duplicate LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[7]" merged with LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[8]"
     Info: Duplicate LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[3]" merged with LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[8]"
     Info: Duplicate LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[0]" merged with LATCH primitive "Logica_miscare:inst6|factor_dc_driverB[8]"
-Warning: Latch Logica_miscare:inst6|stanga has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
-Warning: Latch Logica_miscare:inst6|dreapta has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
 Warning: Latch Logica_miscare:inst6|factor_dc_driverA[11] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
 Warning: Latch Logica_miscare:inst6|factor_dc_driverA[10] has unsafe behavior
@@ -428,6 +416,10 @@ Warning: Latch Logica_miscare:inst6|factor_dc_driverB[8] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
 Warning: Latch Logica_miscare:inst6|factor_dc_driverB[4] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
+Warning: Latch Logica_miscare:inst6|stanga has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
+Warning: Latch Logica_miscare:inst6|dreapta has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "test_factorDCA[5]" is stuck at GND
     Warning (13410): Pin "test_factorDCA[2]" is stuck at GND
@@ -438,14 +430,21 @@ Warning: Output pins are stuck at VCC or GND
 Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
-Info: Implemented 195 device resources after synthesis - the final resource count might be different
+Info: Generated suppressed messages file C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/sisau.map.smsg
+Info: Implemented 214 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 56 output pins
-    Info: Implemented 131 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 220 megabytes
-    Info: Processing ended: Tue Apr 30 23:31:36 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Implemented 150 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 222 megabytes
+    Info: Processing ended: Fri May 03 00:22:28 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/sisau.map.smsg.
 
 
