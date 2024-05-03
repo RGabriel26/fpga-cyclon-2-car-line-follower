@@ -9158,14 +9158,14 @@ VECTOR("C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST-PWM/Proiect-Go
 	}
 }
 
-VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/db/sisau.sim.cvwf")
+VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/main.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
 		ZEND = 5000000000;
-		NUMERATOR = 859;
+		NUMERATOR = 1041;
 		DENOMINATOR = 5000000000;
-		TOP_INDEX = 13;
+		TOP_INDEX = 5;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -9264,7 +9264,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_A";
+		SIGNAL = "senzon_1";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -9272,7 +9272,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_B";
+		SIGNAL = "senzor_2";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -9280,7 +9280,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_C";
+		SIGNAL = "senzor_3";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -9288,7 +9288,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PWM_D";
+		SIGNAL = "senzor_4";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -9296,7 +9296,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzon_1";
+		SIGNAL = "senzor_5";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -9304,40 +9304,8 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "senzor_2";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "senzor_3";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "senzor_4";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "senzor_5";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "circuit";
-		INDEX = 20;
+		INDEX = 16;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9345,7 +9313,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "circuit[1]";
-		INDEX = 21;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9353,7 +9321,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "circuit[0]";
-		INDEX = 22;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9361,7 +9329,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit1";
-		INDEX = 23;
+		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9369,7 +9337,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit2";
-		INDEX = 24;
+		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9377,7 +9345,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit3";
-		INDEX = 25;
+		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9385,7 +9353,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit1_board";
-		INDEX = 26;
+		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9393,7 +9361,7 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit2_board";
-		INDEX = 27;
+		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -9401,6 +9369,38 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 	LINE{
 		SIGNAL = "info_circuit3_board";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PWM_A";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PWM_B";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PWM_C";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PWM_D";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -9721,14 +9721,14 @@ VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-g
 	}
 }
 
-VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/main.vwf")
+VECTOR("C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/db/sisau.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
 		ZEND = 5000000000;
-		NUMERATOR = 1064;
+		NUMERATOR = 859;
 		DENOMINATOR = 5000000000;
-		TOP_INDEX = 12;
+		TOP_INDEX = 19;
 	}
 	CLOCK{
 		PERIOD = 10000;

@@ -23,6 +23,7 @@ initial begin
 	sute = 0;
 end
 
+//numaratorul simulator de semnal dinte de fierastrau
 always @(posedge clock) begin
 	if (activ) begin
 		//simulare semnal dinte de fierastrau
@@ -48,30 +49,31 @@ end
 always @(factor_PWM_A or activ) begin 
 	if (activ) begin
 		if (factor_PWM_A >= stare_numarator)
-			PWM_temp_A = 1; 
+			PWM_temp_A <= 1; 
 		else
-			PWM_temp_A = 0;
+			PWM_temp_A <= 0;
 	//cazul cand generatorul se doreste a fi inactiv
 	end else
-		PWM_temp_A = 0;
+		PWM_temp_A <= 0;
 end
 
 //generarea semnalului PWM pentru driverul B
 always @(factor_PWM_B or activ) begin 
 	if (activ) begin
 		if (factor_PWM_B >= stare_numarator)
-			PWM_temp_B = 1; 
+			PWM_temp_B <= 1; 
 		else
-			PWM_temp_B = 0;
+			PWM_temp_B <= 0;
 	//cazul cand generatorul se doreste a fi inactiv
 	end else
-		PWM_temp_B = 0;
+		PWM_temp_B <= 0;
 end
 
 assign PWM_A = PWM_temp_A;
 assign PWM_B = PWM_temp_A;
 assign PWM_C = PWM_temp_B;
 assign PWM_D = PWM_temp_B;
+//doar pentru teste
 assign stare_num_out = stare_numarator;
 
 endmodule 

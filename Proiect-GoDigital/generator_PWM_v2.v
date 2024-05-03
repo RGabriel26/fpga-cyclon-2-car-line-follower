@@ -28,15 +28,15 @@ always @(posedge clock) begin
 	if (activ) begin
 		//simulare semnal dinte de fierastrau
 		//numaratorul BCD de 1000 unidirectional 
-		unitati <= unitati + 1;
+		unitati = unitati + 1;
 		if (unitati == 4'b1001) begin //daca unitati este egal cu 9
-			unitati <= 0;
-			zeci <= zeci + 1;
+			unitati = 0;
+			zeci = zeci + 1;
 			if (zeci == 4'b1001) begin //daca zeci este egal cu 9
-				zeci <= 0;
-				sute <= sute + 1;
+				zeci = 0;
+				sute = sute + 1;
 				if (sute == 4'b1001) begin //daca sute este egal cu 9
-					sute <= 0;
+					sute = 0;
 				end
 			end
 		end
@@ -49,24 +49,24 @@ end
 always @(factor_PWM_A or activ) begin 
 	if (activ) begin
 		if (factor_PWM_A >= stare_numarator)
-			PWM_temp_A = 1; 
+			PWM_temp_A <= 1; 
 		else
-			PWM_temp_A = 0;
+			PWM_temp_A <= 0;
 	//cazul cand generatorul se doreste a fi inactiv
 	end else
-		PWM_temp_A = 0;
+		PWM_temp_A <= 0;
 end
 
 //generarea semnalului PWM pentru driverul B
 always @(factor_PWM_B or activ) begin 
 	if (activ) begin
 		if (factor_PWM_B >= stare_numarator)
-			PWM_temp_B = 1; 
+			PWM_temp_B <= 1; 
 		else
-			PWM_temp_B = 0;
+			PWM_temp_B <= 0;
 	//cazul cand generatorul se doreste a fi inactiv
 	end else
-		PWM_temp_B = 0;
+		PWM_temp_B <= 0;
 end
 
 assign PWM_A = PWM_temp_A;

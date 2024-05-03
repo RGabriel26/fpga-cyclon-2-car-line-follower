@@ -1198,10 +1198,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 320 296)
-	(pt 664 296)
-)
-(connector
 	(pt 664 312)
 	(pt 480 312)
 )
@@ -1237,6 +1233,10 @@ applicable agreement for further details.
 	(pt 608 344)
 	(pt 664 344)
 	(bus)
+)
+(connector
+	(pt 320 296)
+	(pt 664 296)
 )
 (junction (pt 672 560))
 (junction (pt 664 544))

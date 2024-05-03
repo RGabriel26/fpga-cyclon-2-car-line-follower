@@ -191,42 +191,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-Selectie_proba
-# storage
-db|sisau.(15).cnf
-db|sisau.(15).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-selectie_proba.v
-4797e3a592acc4e5be07d349e2f2fe3
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Selectie_proba:inst1
-}
-# macro_sequence
-
-# end
-# entity
 divizor_frecventa
 # storage
 db|sisau.(8).cnf
@@ -375,27 +339,7 @@ Logica_miscare:inst6
 
 # end
 # entity
-main
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# case_insensitive
-# source_file
-main.bdf
-516ce92a349b807ccaa0ae513572d94
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-generator_PWM_v2
+Selectie_proba
 # storage
 db|sisau.(17).cnf
 db|sisau.(17).cnf
@@ -405,8 +349,44 @@ ON
 }
 # case_sensitive
 # source_file
+selectie_proba.v
+5cc36d4196ed8ee0b53af81c4f5e2add
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Selectie_proba:inst1
+}
+# macro_sequence
+
+# end
+# entity
+generator_PWM_v2
+# storage
+db|sisau.(15).cnf
+db|sisau.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
 generator_pwm_v2.v
-1b6499f8bfb12ddec754e3a1855cccc8
+6207bed4b10d0fcd814806f50b336d7
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -426,6 +406,26 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 generator_PWM_v2:inst
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# case_insensitive
+# source_file
+main.bdf
+65fdb3089dbb2f3a29e5cd3f17f4fe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

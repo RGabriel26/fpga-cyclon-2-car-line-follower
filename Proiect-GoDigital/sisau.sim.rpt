@@ -1,5 +1,5 @@
 Simulator report for sisau
-Fri May 03 00:22:51 2024
+Fri May 03 23:58:53 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 5.0 ms       ;
-; Simulation Netlist Size     ; 271 nodes    ;
-; Simulation Coverage         ;      64.98 % ;
-; Total Number of Transitions ; 3156666      ;
+; Simulation Netlist Size     ; 262 nodes    ;
+; Simulation Coverage         ;      63.94 % ;
+; Total Number of Transitions ; 2678713      ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 ; Device                      ; EP2C5T144C8  ;
@@ -95,10 +95,10 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      64.98 % ;
-; Total nodes checked                                 ; 271          ;
-; Total output ports checked                          ; 277          ;
-; Total output ports with complete 1/0-value coverage ; 180          ;
+; Total coverage as a percentage                      ;      63.94 % ;
+; Total nodes checked                                 ; 262          ;
+; Total output ports checked                          ; 269          ;
+; Total output ports with complete 1/0-value coverage ; 172          ;
 ; Total output ports with no 1/0-value coverage       ; 96           ;
 ; Total output ports with no 1-value coverage         ; 96           ;
 ; Total output ports with no 0-value coverage         ; 97           ;
@@ -128,7 +128,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|generator_PWM_v2:inst|stare_numarator[11]                                    ; |main|generator_PWM_v2:inst|stare_numarator[11]                                    ; regout           ;
 ; |main|generator_PWM_v2:inst|stare_numarator[10]                                    ; |main|generator_PWM_v2:inst|stare_numarator[10]                                    ; regout           ;
 ; |main|generator_PWM_v2:inst|stare_numarator[9]                                     ; |main|generator_PWM_v2:inst|stare_numarator[9]                                     ; regout           ;
-; |main|generator_PWM_v2:inst|stare_numarator[8]                                     ; |main|generator_PWM_v2:inst|stare_numarator[8]                                     ; regout           ;
+; |main|generator_PWM_v2:inst|sute[0]                                                ; |main|generator_PWM_v2:inst|sute[0]                                                ; regout           ;
 ; |main|generator_PWM_v2:inst|stare_numarator[7]                                     ; |main|generator_PWM_v2:inst|stare_numarator[7]                                     ; regout           ;
 ; |main|generator_PWM_v2:inst|stare_numarator[6]                                     ; |main|generator_PWM_v2:inst|stare_numarator[6]                                     ; regout           ;
 ; |main|generator_PWM_v2:inst|stare_numarator[4]                                     ; |main|generator_PWM_v2:inst|stare_numarator[4]                                     ; regout           ;
@@ -145,48 +145,47 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|generator_PWM_v2:inst|LessThan1~1                                            ; |main|generator_PWM_v2:inst|LessThan1~1                                            ; combout          ;
 ; |main|generator_PWM_v2:inst|PWM_C~0                                                ; |main|generator_PWM_v2:inst|PWM_C~0                                                ; combout          ;
 ; |main|Logica_miscare:inst6|directie_driverB[0]~2                                   ; |main|Logica_miscare:inst6|directie_driverB[0]~2                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~7                                   ; |main|Logica_miscare:inst6|directie_driverB[0]~7                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[0]~3                                   ; |main|Logica_miscare:inst6|directie_driverB[0]~3                                   ; combout          ;
 ; |main|Logica_miscare:inst6|always0~0                                               ; |main|Logica_miscare:inst6|always0~0                                               ; combout          ;
 ; |main|Logica_miscare:inst6|Equal0~0                                                ; |main|Logica_miscare:inst6|Equal0~0                                                ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[1]~8                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~8                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~2                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~3                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~4                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~4                                   ; combout          ;
-; |main|generator_PWM_v2:inst|sute[3]                                                ; |main|generator_PWM_v2:inst|sute[3]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|sute[2]                                                ; |main|generator_PWM_v2:inst|sute[2]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|sute[1]                                                ; |main|generator_PWM_v2:inst|sute[1]                                                ; regout           ;
-; |main|Logica_miscare:inst6|factor_dc_driverA[8]~2                                  ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~2                                  ; combout          ;
-; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3                                  ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3                                  ; combout          ;
-; |main|generator_PWM_v2:inst|sute[0]                                                ; |main|generator_PWM_v2:inst|sute[0]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|zeci[3]                                                ; |main|generator_PWM_v2:inst|zeci[3]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|zeci[2]                                                ; |main|generator_PWM_v2:inst|zeci[2]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|zeci[0]                                                ; |main|generator_PWM_v2:inst|zeci[0]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|zeci[1]                                                ; |main|generator_PWM_v2:inst|zeci[1]                                                ; regout           ;
-; |main|generator_PWM_v2:inst|unitati[3]                                             ; |main|generator_PWM_v2:inst|unitati[3]                                             ; regout           ;
-; |main|generator_PWM_v2:inst|unitati[0]                                             ; |main|generator_PWM_v2:inst|unitati[0]                                             ; regout           ;
-; |main|generator_PWM_v2:inst|unitati[2]                                             ; |main|generator_PWM_v2:inst|unitati[2]                                             ; regout           ;
-; |main|generator_PWM_v2:inst|unitati[1]                                             ; |main|generator_PWM_v2:inst|unitati[1]                                             ; regout           ;
-; |main|Logica_miscare:inst6|factor_dc_driverB[8]~2                                  ; |main|Logica_miscare:inst6|factor_dc_driverB[8]~2                                  ; combout          ;
-; |main|Logica_miscare:inst6|stanga~0                                                ; |main|Logica_miscare:inst6|stanga~0                                                ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[1]~4                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~4                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~6                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; |main|Logica_miscare:inst6|directie_driverA[0]~7                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[1]~8                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~8                                   ; combout          ;
 ; |main|generator_PWM_v2:inst|sute~0                                                 ; |main|generator_PWM_v2:inst|sute~0                                                 ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12                              ; regout           ;
 ; |main|generator_PWM_v2:inst|Equal0~0                                               ; |main|generator_PWM_v2:inst|Equal0~0                                               ; combout          ;
 ; |main|generator_PWM_v2:inst|Equal1~0                                               ; |main|generator_PWM_v2:inst|Equal1~0                                               ; combout          ;
-; |main|generator_PWM_v2:inst|sute[0]~1                                              ; |main|generator_PWM_v2:inst|sute[0]~1                                              ; combout          ;
+; |main|generator_PWM_v2:inst|stare_numarator[11]~0                                  ; |main|generator_PWM_v2:inst|stare_numarator[11]~0                                  ; combout          ;
+; |main|generator_PWM_v2:inst|Add2~0                                                 ; |main|generator_PWM_v2:inst|Add2~0                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|Add2~1                                                 ; |main|generator_PWM_v2:inst|Add2~1                                                 ; combout          ;
+; |main|Logica_miscare:inst6|factor_dc_driverA[8]~2                                  ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~2                                  ; combout          ;
+; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3                                  ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3                                  ; combout          ;
+; |main|generator_PWM_v2:inst|sute~1                                                 ; |main|generator_PWM_v2:inst|sute~1                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|zeci~0                                                 ; |main|generator_PWM_v2:inst|zeci~0                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|stare_numarator[11]~1                                  ; |main|generator_PWM_v2:inst|stare_numarator[11]~1                                  ; combout          ;
+; |main|generator_PWM_v2:inst|Add1~0                                                 ; |main|generator_PWM_v2:inst|Add1~0                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|zeci~1                                                 ; |main|generator_PWM_v2:inst|zeci~1                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|Add1~1                                                 ; |main|generator_PWM_v2:inst|Add1~1                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|unitati~0                                              ; |main|generator_PWM_v2:inst|unitati~0                                              ; combout          ;
+; |main|generator_PWM_v2:inst|unitati~1                                              ; |main|generator_PWM_v2:inst|unitati~1                                              ; combout          ;
+; |main|generator_PWM_v2:inst|Add0~0                                                 ; |main|generator_PWM_v2:inst|Add0~0                                                 ; combout          ;
+; |main|generator_PWM_v2:inst|Add0~1                                                 ; |main|generator_PWM_v2:inst|Add0~1                                                 ; combout          ;
+; |main|Logica_miscare:inst6|factor_dc_driverB[8]~2                                  ; |main|Logica_miscare:inst6|factor_dc_driverB[8]~2                                  ; combout          ;
+; |main|Logica_miscare:inst6|stanga~0                                                ; |main|Logica_miscare:inst6|stanga~0                                                ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10                              ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11                              ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11                              ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9                               ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12                               ; regout           ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst10~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11~0                            ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst11~0                            ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11                               ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9                                ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10                               ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst17                               ; |main|divizor_frecventa:inst2|divizor_10:inst|inst17                               ; combout          ;
-; |main|generator_PWM_v2:inst|sute[2]~2                                              ; |main|generator_PWM_v2:inst|sute[2]~2                                              ; combout          ;
-; |main|generator_PWM_v2:inst|sute~3                                                 ; |main|generator_PWM_v2:inst|sute~3                                                 ; combout          ;
-; |main|generator_PWM_v2:inst|zeci~0                                                 ; |main|generator_PWM_v2:inst|zeci~0                                                 ; combout          ;
-; |main|generator_PWM_v2:inst|zeci[2]~1                                              ; |main|generator_PWM_v2:inst|zeci[2]~1                                              ; combout          ;
-; |main|generator_PWM_v2:inst|zeci[2]~2                                              ; |main|generator_PWM_v2:inst|zeci[2]~2                                              ; combout          ;
-; |main|generator_PWM_v2:inst|zeci~3                                                 ; |main|generator_PWM_v2:inst|zeci~3                                                 ; combout          ;
-; |main|generator_PWM_v2:inst|unitati~0                                              ; |main|generator_PWM_v2:inst|unitati~0                                              ; combout          ;
-; |main|generator_PWM_v2:inst|unitati[2]~1                                           ; |main|generator_PWM_v2:inst|unitati[2]~1                                           ; combout          ;
-; |main|generator_PWM_v2:inst|unitati~2                                              ; |main|generator_PWM_v2:inst|unitati~2                                              ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst10~0                             ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst|inst11~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9          ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9          ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12          ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12          ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst10~0       ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst10~0       ; combout          ;
@@ -214,21 +213,17 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst11~0       ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst11~0       ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10          ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10          ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11          ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11          ; regout           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9           ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9           ; regout           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst10~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst11~0        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[1]~9                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~9                                   ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverA[1]~5                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~5                                   ; combout          ;
-; |main|generator_PWM_v2:inst|sute[0]~4                                              ; |main|generator_PWM_v2:inst|sute[0]~4                                              ; combout          ;
-; |main|generator_PWM_v2:inst|zeci[0]~4                                              ; |main|generator_PWM_v2:inst|zeci[0]~4                                              ; combout          ;
-; |main|generator_PWM_v2:inst|unitati[0]~3                                           ; |main|generator_PWM_v2:inst|unitati[0]~3                                           ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverB[1]~5                                   ; |main|Logica_miscare:inst6|directie_driverB[1]~5                                   ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[1]~9                                   ; |main|Logica_miscare:inst6|directie_driverA[1]~9                                   ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9~0                             ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst9~0                             ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~0                              ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~0                              ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst9~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9~0         ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst9~0         ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst9~0        ; combout          ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst9~0        ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst9~0        ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9~0         ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9~0         ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[11]                                   ; |main|Logica_miscare:inst6|factor_dc_driverA[11]                                   ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[10]                                   ; |main|Logica_miscare:inst6|factor_dc_driverA[10]                                   ; combout          ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[8]                                    ; |main|Logica_miscare:inst6|factor_dc_driverA[8]                                    ; combout          ;
@@ -237,7 +232,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|Logica_miscare:inst6|factor_dc_driverB[8]                                    ; |main|Logica_miscare:inst6|factor_dc_driverB[8]                                    ; combout          ;
 ; |main|Logica_miscare:inst6|dreapta                                                 ; |main|Logica_miscare:inst6|dreapta                                                 ; combout          ;
 ; |main|Logica_miscare:inst6|stanga                                                  ; |main|Logica_miscare:inst6|stanga                                                  ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~_wirecell                      ; |main|divizor_frecventa:inst2|divizor_10:inst|inst9~_wirecell                      ; combout          ;
 ; |main|PWM_B                                                                        ; |main|PWM_B                                                                        ; padio            ;
 ; |main|PWM_A                                                                        ; |main|PWM_A                                                                        ; padio            ;
 ; |main|PWM_C                                                                        ; |main|PWM_C                                                                        ; padio            ;
@@ -281,16 +275,14 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |main|senzor_4                                                                     ; |main|senzor_4~corein                                                              ; combout          ;
 ; |main|senzor_3                                                                     ; |main|senzor_3~corein                                                              ; combout          ;
 ; |main|senzor_2                                                                     ; |main|senzor_2~corein                                                              ; combout          ;
-; |main|clk                                                                          ; |main|clk~corein                                                                   ; combout          ;
 ; |main|buton_START_STOP                                                             ; |main|buton_START_STOP~corein                                                      ; combout          ;
-; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; outclk           ;
+; |main|clk                                                                          ; |main|clk~corein                                                                   ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~clkctrl                      ; |main|divizor_frecventa:inst2|divizor_10:inst4|inst12~clkctrl                      ; outclk           ;
 ; |main|clk~clkctrl                                                                  ; |main|clk~clkctrl                                                                  ; outclk           ;
-; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12~clkctrl ; outclk           ;
 ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12~clkctrl ; outclk           ;
 ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3clkctrl                           ; |main|Logica_miscare:inst6|factor_dc_driverA[8]~3clkctrl                           ; outclk           ;
 ; |main|Logica_miscare:inst6|Equal0~0clkctrl                                         ; |main|Logica_miscare:inst6|Equal0~0clkctrl                                         ; outclk           ;
-; |main|generator_PWM_v2:inst|stare_numarator[2]~feeder                              ; |main|generator_PWM_v2:inst|stare_numarator[2]~feeder                              ; combout          ;
-; |main|debouncing:inst16|inst~feeder                                                ; |main|debouncing:inst16|inst~feeder                                                ; combout          ;
+; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; |main|divizor_frecventa:inst2|divizor_10:inst|inst12~clkctrl                       ; outclk           ;
 +------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
 
 
@@ -319,11 +311,11 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |main|Selectie_proba:inst1|circuit[1]                                        ; |main|Selectie_proba:inst1|circuit[1]                                        ; regout           ;
 ; |main|Selectie_proba:inst1|circuit[0]                                        ; |main|Selectie_proba:inst1|circuit[0]                                        ; regout           ;
 ; |main|Selectie_proba:inst1|Decoder0~0                                        ; |main|Selectie_proba:inst1|Decoder0~0                                        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~3                             ; |main|Logica_miscare:inst6|directie_driverB[0]~3                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~2                             ; |main|Logica_miscare:inst6|directie_driverA[0]~2                             ; combout          ;
 ; |main|Selectie_proba:inst1|Decoder0~1                                        ; |main|Selectie_proba:inst1|Decoder0~1                                        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~4                             ; |main|Logica_miscare:inst6|directie_driverB[0]~4                             ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~5                             ; |main|Logica_miscare:inst6|directie_driverB[0]~5                             ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~6                             ; |main|Logica_miscare:inst6|directie_driverB[0]~6                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~3                             ; |main|Logica_miscare:inst6|directie_driverA[0]~3                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~4                             ; |main|Logica_miscare:inst6|directie_driverA[0]~4                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~5                             ; |main|Logica_miscare:inst6|directie_driverA[0]~5                             ; combout          ;
 ; |main|Selectie_proba:inst1|led1                                              ; |main|Selectie_proba:inst1|led1                                              ; regout           ;
 ; |main|Selectie_proba:inst1|led2                                              ; |main|Selectie_proba:inst1|led2                                              ; regout           ;
 ; |main|Selectie_proba:inst1|led3                                              ; |main|Selectie_proba:inst1|led3                                              ; regout           ;
@@ -424,11 +416,11 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |main|Selectie_proba:inst1|circuit[1]                                        ; |main|Selectie_proba:inst1|circuit[1]                                        ; regout           ;
 ; |main|Selectie_proba:inst1|circuit[0]                                        ; |main|Selectie_proba:inst1|circuit[0]                                        ; regout           ;
 ; |main|Selectie_proba:inst1|Decoder0~0                                        ; |main|Selectie_proba:inst1|Decoder0~0                                        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~3                             ; |main|Logica_miscare:inst6|directie_driverB[0]~3                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~2                             ; |main|Logica_miscare:inst6|directie_driverA[0]~2                             ; combout          ;
 ; |main|Selectie_proba:inst1|Decoder0~1                                        ; |main|Selectie_proba:inst1|Decoder0~1                                        ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~4                             ; |main|Logica_miscare:inst6|directie_driverB[0]~4                             ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~5                             ; |main|Logica_miscare:inst6|directie_driverB[0]~5                             ; combout          ;
-; |main|Logica_miscare:inst6|directie_driverB[0]~6                             ; |main|Logica_miscare:inst6|directie_driverB[0]~6                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~3                             ; |main|Logica_miscare:inst6|directie_driverA[0]~3                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~4                             ; |main|Logica_miscare:inst6|directie_driverA[0]~4                             ; combout          ;
+; |main|Logica_miscare:inst6|directie_driverA[0]~5                             ; |main|Logica_miscare:inst6|directie_driverA[0]~5                             ; combout          ;
 ; |main|Selectie_proba:inst1|led1                                              ; |main|Selectie_proba:inst1|led1                                              ; regout           ;
 ; |main|Selectie_proba:inst1|led2                                              ; |main|Selectie_proba:inst1|led2                                              ; regout           ;
 ; |main|Selectie_proba:inst1|led3                                              ; |main|Selectie_proba:inst1|led3                                              ; regout           ;
@@ -518,18 +510,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri May 03 00:22:39 2024
+    Info: Processing started: Fri May 03 23:58:41 2024
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Using vector source file "C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST-PWM-generator_v2/Proiect-GoDigital/main.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      64.98 %
-Info: Number of transitions in simulation is 3156666
+Info: Simulation coverage is      63.94 %
+Info: Number of transitions in simulation is 2678713
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 152 megabytes
-    Info: Processing ended: Fri May 03 00:22:51 2024
+    Info: Processing ended: Fri May 03 23:58:53 2024
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:05
 
 

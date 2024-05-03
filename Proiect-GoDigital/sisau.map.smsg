@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at generator_PWM_v2.v(26): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at generator_PWM_v2.v(27): always construct contains both blocking and non-blocking assignments
