@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Sat May 04 00:00:00 2024
+Mon May 13 22:19:43 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 04 00:00:00 2024        ;
+; Analysis & Synthesis Status        ; Successful - Mon May 13 22:19:43 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 136                                          ;
-;     Total combinational functions  ; 132                                          ;
+; Total logic elements               ; 135                                          ;
+;     Total combinational functions  ; 131                                          ;
 ;     Dedicated logic registers      ; 53                                           ;
 ; Total registers                    ; 53                                           ;
 ; Total pins                         ; 64                                           ;
@@ -174,16 +174,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 136                                            ;
+; Estimated Total logic elements              ; 135                                            ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 132                                            ;
+; Total combinational functions               ; 131                                            ;
 ; Logic element usage by number of LUT inputs ;                                                ;
 ;     -- 4 input functions                    ; 38                                             ;
-;     -- 3 input functions                    ; 54                                             ;
+;     -- 3 input functions                    ; 53                                             ;
 ;     -- <=2 input functions                  ; 40                                             ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 113                                            ;
+;     -- normal mode                          ; 112                                            ;
 ;     -- arithmetic mode                      ; 19                                             ;
 ;                                             ;                                                ;
 ; Total registers                             ; 53                                             ;
@@ -193,8 +193,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 64                                             ;
 ; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_10:inst|inst12 ;
 ; Maximum fan-out                             ; 18                                             ;
-; Total fan-out                               ; 553                                            ;
-; Average fan-out                             ; 2.22                                           ;
+; Total fan-out                               ; 546                                            ;
+; Average fan-out                             ; 2.20                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -203,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |main                         ; 132 (0)           ; 53 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |main                                                               ; work         ;
+; |main                         ; 131 (0)           ; 53 (0)       ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |main                                                               ; work         ;
 ;    |Logica_miscare:inst6|     ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
 ;    |START_STOP:inst15|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ;              ;
 ;    |Selectie_proba:inst1|     ; 4 (4)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ;              ;
@@ -220,7 +220,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |numarator_10:inst|  ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst  ;              ;
 ;       |divizor_10:inst|       ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ;              ;
 ;       |divizor_5:inst3|       ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_5:inst3                       ;              ;
-;    |generator_PWM_v2:inst|    ; 37 (37)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM_v2:inst                                         ;              ;
+;    |generator_PWM_v2:inst|    ; 36 (36)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|generator_PWM_v2:inst                                         ;              ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -294,7 +294,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -304,9 +304,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|generator_PWM_v2:inst|stare_numarator[3]  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|generator_PWM_v2:inst|stare_numarator[7]  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |main|generator_PWM_v2:inst|stare_numarator[11] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|generator_PWM_v2:inst|stare_numarator[7]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|generator_PWM_v2:inst|stare_numarator[11] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[0]  ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[1]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
@@ -318,7 +317,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri May 03 23:59:59 2024
+    Info: Processing started: Mon May 13 22:19:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -360,8 +359,8 @@ Info: Elaborating entity "generator_PWM_v2" for hierarchy "generator_PWM_v2:inst
 Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(31): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(34): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at generator_PWM_v2.v(37): truncated value with size 32 to match size of target (4)
-Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(51): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(63): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(49): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at generator_PWM_v2.v(57): variable "stare_numarator" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Info: Elaborating entity "divizor_frecventa" for hierarchy "divizor_frecventa:inst2"
 Info: Elaborating entity "divizor_10" for hierarchy "divizor_frecventa:inst2|divizor_10:inst"
 Info: Elaborating entity "divizor_5" for hierarchy "divizor_frecventa:inst2|divizor_5:inst3"
@@ -454,13 +453,13 @@ Warning: Output pins are stuck at VCC or GND
 Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
-Info: Implemented 202 device resources after synthesis - the final resource count might be different
+Info: Implemented 201 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 56 output pins
-    Info: Implemented 138 logic cells
+    Info: Implemented 137 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 44 warnings
     Info: Peak virtual memory: 222 megabytes
-    Info: Processing ended: Sat May 04 00:00:00 2024
+    Info: Processing ended: Mon May 13 22:19:43 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

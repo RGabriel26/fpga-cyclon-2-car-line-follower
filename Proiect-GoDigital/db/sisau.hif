@@ -375,6 +375,26 @@ Selectie_proba:inst1
 
 # end
 # entity
+main
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# case_insensitive
+# source_file
+main.bdf
+65fdb3089dbb2f3a29e5cd3f17f4fe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 generator_PWM_v2
 # storage
 db|sisau.(15).cnf
@@ -386,7 +406,7 @@ ON
 # case_sensitive
 # source_file
 generator_pwm_v2.v
-6207bed4b10d0fcd814806f50b336d7
+7892245924a9f6bdac60b7f40eb16
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -406,26 +426,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 generator_PWM_v2:inst
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# case_insensitive
-# source_file
-main.bdf
-65fdb3089dbb2f3a29e5cd3f17f4fe
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

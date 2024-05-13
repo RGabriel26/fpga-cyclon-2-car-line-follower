@@ -12,6 +12,7 @@ reg [3:0] zeci;
 reg [3:0] sute;
 reg PWM_temp_A;
 reg PWM_temp_B;
+wire PA, PB, PC, PD;
 
 //initializarea variabilelor
 initial begin 
@@ -25,19 +26,17 @@ end
 
 //numaratorul simulator de semnal dinte de fierastrau
 always @(posedge clock) begin
-	if (activ) begin
-		//simulare semnal dinte de fierastrau
-		//numaratorul BCD de 1000 unidirectional 
-		unitati <= unitati + 1;
-		if (unitati == 4'b1001) begin //daca unitati este egal cu 9
-			unitati <= 0;
-			zeci <= zeci + 1;
-			if (zeci == 4'b1001) begin //daca zeci este egal cu 9
-				zeci <= 0;
-				sute <= sute + 1;
-				if (sute == 4'b1001) begin //daca sute este egal cu 9
-					sute <= 0;
-				end
+	//simulare semnal dinte de fierastrau
+	//numaratorul BCD de 1000 unidirectional 
+	unitati = unitati + 1;
+	if (unitati == 4'b1001) begin //daca unitati este egal cu 9
+		unitati = 0;
+		zeci = zeci + 1;
+		if (zeci == 4'b1001) begin //daca zeci este egal cu 9
+			zeci = 0;
+			sute = sute + 1;
+			if (sute == 4'b1001) begin //daca sute este egal cu 9
+				sute = 0;
 			end
 		end
 	end
@@ -46,33 +45,35 @@ always @(posedge clock) begin
 end
 
 //generarea semnalului PWM pentru driverul A
-always @(factor_PWM_A or activ) begin 
-	if (activ) begin
+always @(factor_PWM_A) begin 
 		if (factor_PWM_A >= stare_numarator)
 			PWM_temp_A <= 1; 
 		else
 			PWM_temp_A <= 0;
-	//cazul cand generatorul se doreste a fi inactiv
-	end else
-		PWM_temp_A <= 0;
 end
 
 //generarea semnalului PWM pentru driverul B
-always @(factor_PWM_B or activ) begin 
-	if (activ) begin
+always @(factor_PWM_B) begin 
 		if (factor_PWM_B >= stare_numarator)
 			PWM_temp_B <= 1; 
 		else
 			PWM_temp_B <= 0;
-	//cazul cand generatorul se doreste a fi inactiv
-	end else
-		PWM_temp_B <= 0;
 end
 
-assign PWM_A = PWM_temp_A;
-assign PWM_B = PWM_temp_A;
-assign PWM_C = PWM_temp_B;
-assign PWM_D = PWM_temp_B;
+//implementarea comenzii de START/STOP
+always @(*) begin
+    if (activ) begin
+        assign PWM_A = PWM_temp_A;
+        assign PWM_B = PWM_temp_A;
+        assign PWM_C = PWM_temp_B;
+        assign PWM_D = PWM_temp_B;
+    end else begin
+        assign PWM_A = 0;
+        assign PWM_B = 0;
+        assign PWM_C = 0;
+        assign PWM_D = 0;
+    end
+end
 //doar pentru teste
 assign stare_num_out = stare_numarator;
 
