@@ -232,26 +232,6 @@ debouncing:inst5
 
 # end
 # entity
-START_STOP
-# storage
-db|sisau.(10).cnf
-db|sisau.(10).cnf
-# case_insensitive
-# source_file
-start_stop.bdf
-cda27696f9886cb47572378f6f51710
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-START_STOP:inst15
-}
-# macro_sequence
-
-# end
-# entity
 generator_PWM
 # storage
 db|sisau.(14).cnf
@@ -298,42 +278,6 @@ numarator_1000.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Logica_miscare
-# storage
-db|sisau.(13).cnf
-db|sisau.(13).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-logica_miscare.v
-bd657a9afed5ce1c383bde9ed67c2752
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Logica_miscare:inst6
 }
 # macro_sequence
 
@@ -426,6 +370,62 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 generator_PWM_v2:inst
+}
+# macro_sequence
+
+# end
+# entity
+START_STOP
+# storage
+db|sisau.(10).cnf
+db|sisau.(10).cnf
+# case_insensitive
+# source_file
+start_stop.bdf
+48a187e6f65b506848f0c9a01d466587
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+START_STOP:inst15
+}
+# macro_sequence
+
+# end
+# entity
+Logica_miscare
+# storage
+db|sisau.(13).cnf
+db|sisau.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+logica_miscare.v
+60a4b03772a376cfeee473998b17cc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Logica_miscare:inst6
 }
 # macro_sequence
 

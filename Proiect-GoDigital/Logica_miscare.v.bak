@@ -97,9 +97,6 @@ end
 	
 //logica directiei
 always @* begin
-	//resetarea semnalelor pwm in 0
-	factor_dc_driverA = 12'h000;
-	factor_dc_driverB = 12'h000;
 	//conditie ca senzorul se afla pe traseul corect
 	if(senzor_3 == 1) begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
