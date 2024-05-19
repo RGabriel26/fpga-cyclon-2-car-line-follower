@@ -4,13 +4,20 @@ buton_START_STOP => debouncing:inst16.press_in
 clk => divizor_frecventa:inst2.clk
 PWM_A <= START_STOP:inst15.START/STOP
 PWM_C <= START_STOP:inst15.START/STOP
+PWM_D <= START_STOP:inst15.START/STOP
+info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+buton_selectie => debouncing:inst5.press_in
+info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 C_IN1_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
 senzon_1 => Logica_miscare:inst6.senzor_1
 senzor_2 => Logica_miscare:inst6.senzor_2
 senzor_3 => Logica_miscare:inst6.senzor_3
 senzor_4 => Logica_miscare:inst6.senzor_4
 senzor_5 => Logica_miscare:inst6.senzor_5
-buton_selectie => debouncing:inst5.press_in
 C_IN2_D2 <= directie_D2[1].DB_MAX_OUTPUT_PORT_TYPE
 D_IN3_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
 D_IN4_D2 <= directie_D2[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -18,13 +25,41 @@ A_IN1_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 A_IN2_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
-PWM_D <= START_STOP:inst15.START/STOP
-info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= afisare_multiplexata:inst17.D1
+D2 <= afisare_multiplexata:inst17.D2
+D3 <= afisare_multiplexata:inst17.D3
+D4 <= afisare_multiplexata:inst17.D4
+a <= afisare_multiplexata:inst17.a
+b <= afisare_multiplexata:inst17.b
+c <= afisare_multiplexata:inst17.c
+d <= afisare_multiplexata:inst17.d
+e <= afisare_multiplexata:inst17.e
+f <= afisare_multiplexata:inst17.f
+g <= afisare_multiplexata:inst17.g
+test_factorDCA[0] <= factor_driverA[0].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[1] <= factor_driverA[1].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[2] <= factor_driverA[2].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[3] <= factor_driverA[3].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[4] <= factor_driverA[4].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[5] <= factor_driverA[5].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[6] <= factor_driverA[6].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[7] <= factor_driverA[7].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[8] <= factor_driverA[8].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[9] <= factor_driverA[9].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[10] <= factor_driverA[10].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCA[11] <= factor_driverA[11].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[0] <= factor_driverB[0].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[1] <= factor_driverB[1].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[2] <= factor_driverB[2].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[3] <= factor_driverB[3].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[4] <= factor_driverB[4].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[5] <= factor_driverB[5].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[6] <= factor_driverB[6].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[7] <= factor_driverB[7].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[8] <= factor_driverB[8].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[9] <= factor_driverB[9].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[10] <= factor_driverB[10].DB_MAX_OUTPUT_PORT_TYPE
+test_factorDCB[11] <= factor_driverB[11].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|START_STOP:inst15
@@ -143,6 +178,26 @@ next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 in_clk => inst1.IN0
 
 
+|main|Selectie_proba:inst1
+buton => led3~reg0.CLK
+buton => led2~reg0.CLK
+buton => led1~reg0.CLK
+buton => circuit[0]~reg0.CLK
+buton => circuit[1]~reg0.CLK
+circuit[0] <= circuit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+circuit[1] <= circuit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|debouncing:inst5
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
+
+
 |main|Logica_miscare:inst6
 senzor_1 => always0.IN0
 senzor_1 => semnal_dreapta.DATAIN
@@ -175,14 +230,8 @@ directie_driverB[1] <= directie_driverB.DB_MAX_OUTPUT_PORT_TYPE
 semnal_dreapta <= senzor_1.DB_MAX_OUTPUT_PORT_TYPE
 semnal_stanga <= senzor_5.DB_MAX_OUTPUT_PORT_TYPE
 stop <= senzor_3.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[0] <= count_ture[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[1] <= count_ture[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[2] <= count_ture[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[3] <= count_ture[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[4] <= count_ture[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[5] <= count_ture[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[6] <= count_ture[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[7] <= count_ture[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tact_count <= always0.DB_MAX_OUTPUT_PORT_TYPE
+reset_count <= reset_count$latch.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[0] <= <VCC>
 factor_dc_driverA[1] <= <GND>
 factor_dc_driverA[2] <= <GND>
@@ -209,23 +258,64 @@ factor_dc_driverB[10] <= <GND>
 factor_dc_driverB[11] <= <VCC>
 
 
-|main|Selectie_proba:inst1
-buton => led3~reg0.CLK
-buton => led2~reg0.CLK
-buton => led1~reg0.CLK
-buton => circuit[0]~reg0.CLK
-buton => circuit[1]~reg0.CLK
-circuit[0] <= circuit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-circuit[1] <= circuit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|debouncing:inst5
-press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-clock => inst.CLK
-clock => inst1.CLK
-press_in => inst.DATAIN
+|main|afisare_multiplexata:inst17
+semnal_stanga => ~NO_FANOUT~
+semnal_dreapta => ~NO_FANOUT~
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_1[3].DATAIN
+stop => digit_4[3].DATAIN
+tact_count => cifra_zeci[2].IN1
+tact_count => cifra_unitati[3].LATCH_ENABLE
+tact_count => cifra_unitati[2].LATCH_ENABLE
+tact_count => cifra_unitati[1].LATCH_ENABLE
+tact_count => cifra_unitati[0].LATCH_ENABLE
+reset_count => cifra_zeci[3].ACLR
+reset_count => cifra_zeci[2].ACLR
+reset_count => cifra_zeci[1].ACLR
+reset_count => cifra_unitati[3].ACLR
+reset_count => cifra_unitati[2].ACLR
+reset_count => cifra_unitati[1].ACLR
+reset_count => cifra_zeci[0].ACLR
+reset_count => cifra_unitati[0].ACLR
+clock => D4~reg0.CLK
+clock => D3~reg0.CLK
+clock => D2~reg0.CLK
+clock => D1~reg0.CLK
+clock => generator_adresa[0].CLK
+clock => generator_adresa[1].CLK
+clock => digit_4[0].CLK
+clock => digit_4[1].CLK
+clock => digit_4[2].CLK
+clock => digit_4[3].CLK
+clock => digit_3[0].CLK
+clock => digit_3[1].CLK
+clock => digit_3[2].CLK
+clock => digit_3[3].CLK
+clock => digit_2[0].CLK
+clock => digit_2[1].CLK
+clock => digit_2[2].CLK
+clock => digit_2[3].CLK
+clock => digit_1[0].CLK
+clock => digit_1[1].CLK
+clock => digit_1[2].CLK
+clock => digit_1[3].CLK
+D1 <= D1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= D2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= D3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D4 <= D4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a <= a$latch.DB_MAX_OUTPUT_PORT_TYPE
+b <= b$latch.DB_MAX_OUTPUT_PORT_TYPE
+c <= c$latch.DB_MAX_OUTPUT_PORT_TYPE
+d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
+e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
+f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
+g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

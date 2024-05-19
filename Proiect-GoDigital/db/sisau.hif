@@ -302,42 +302,6 @@ debouncing:inst5
 
 # end
 # entity
-Logica_miscare
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-logica_miscare.v
-d244b42235e2df3d2a97b97631976a8
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
 START_STOP
 # storage
 db|sisau.(10).cnf
@@ -375,14 +339,86 @@ AUTO
 
 # end
 # entity
-main
+Logica_miscare
 # storage
 db|sisau.(14).cnf
 db|sisau.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+logica_miscare.v
+e5667f84c850c814bcc0fe5be6ac674e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Logica_miscare:inst6
+}
+# macro_sequence
+
+# end
+# entity
+afisare_multiplexata
+# storage
+db|sisau.(17).cnf
+db|sisau.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+afisare_multiplexata.v
+b6eab14d6e881ec6c3172ab1dc0f69e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+afisare_multiplexata:inst17
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
 # case_insensitive
 # source_file
 main.bdf
-a78b6ffbdf68e96d1285c08f8080a711
+f93244a08bc41b3e9860ebfc4d754a57
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

@@ -47,7 +47,8 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg [7:0] count_ture,
+    output reg tact_count, 
+    output reg reset_count,
     
     output reg [11:0] factor_dc_driverA,
     output reg [11:0] factor_dc_driverB 
@@ -56,6 +57,7 @@ module Logica_miscare(
 //pentru memorarea temporara a curbei in cazul in care senzor_3 iese de pe circuit
 reg dreapta;
 reg stanga;
+reg [7:0] count_ture;
 
 initial begin 
 	dreapta = 0;
@@ -155,6 +157,8 @@ always @* begin
 	semnal_stanga = senzor_5;
 	
 	//semnalul de stop
+	//cand masina nu mai este centrata pe linia neagra => adica cand senzor_3 nu mai este pe traseu
+	// AR TREBUI SA SE TRIMITA SEMNAL DE STOP MEREU CAND MASINA SE REPOZITIONEAZA ??? 
 	stop = ~senzor_3;
 end
 

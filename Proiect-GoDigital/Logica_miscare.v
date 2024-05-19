@@ -47,7 +47,8 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg [7:0] count_ture,
+    output reg tact_count, 
+    output reg reset_count,
     
     output reg [11:0] factor_dc_driverA,
     output reg [11:0] factor_dc_driverB 
@@ -56,6 +57,7 @@ module Logica_miscare(
 //pentru memorarea temporara a curbei in cazul in care senzor_3 iese de pe circuit
 reg dreapta;
 reg stanga;
+reg [7:0] count_ture;
 
 initial begin 
 	dreapta = 0;
@@ -120,9 +122,11 @@ always @* begin
 			end
 		end
 	end
+	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	if (senzor_1 == 1 & senzor_5 == 1) begin 
 		count_ture = count_ture + 1;
+		tact_count = 1;
 		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
 		if (circuit == 2'b01 & count_ture == 1) begin 
 			directie_driverA = 2'b00;
@@ -141,8 +145,13 @@ always @* begin
 		//conditie de resetare a numarului de cicluri
 		if (circuit == 2'b00) begin
 			count_ture = 0;
+			reset_count = 1;
 		end
+	end else begin
+		tact_count = 0;
+		reset_count = 0;
 	end
+	
 	
 	//OUTPUT SEMNALA DE INFORMARE
 	//scoaterea numarului de ture realizate de masina
