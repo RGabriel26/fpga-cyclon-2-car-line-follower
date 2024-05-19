@@ -1,45 +1,19 @@
 module afisare_multiplexata(
 	input semnal_stanga, semnal_dreapta, stop,
-	input tact_count,
-	input reset_count,
 	input clock,
+	input [3:0] cifra_zeci, cifra_unitati,
 	
 	output reg D1, D2, D3, D4,
 	output reg a,b,c,d,e,f,g
 );
 //variabile
 reg [3:0] digit_1, digit_2, digit_3, digit_4;
-reg [3:0] cifra_zeci, cifra_unitati;
 reg [1:0] generator_adresa;
 reg [3:0] mux_out;
 
 initial begin 
-	cifra_zeci = 0;
-	cifra_unitati = 0;
 	mux_out = 0;
 end
-
-always @(tact_count or reset_count) begin
-
-	if(reset_count == 1) begin 
-		cifra_zeci <= 0;
-		cifra_unitati <= 0;
-	end else begin
-			if(tact_count == 1) begin
-				cifra_unitati <= cifra_unitati + 1; 
-				if (cifra_unitati == 10) begin 
-					cifra_unitati <= 0;
-					if (cifra_zeci <= 9) begin  
-						cifra_zeci <= cifra_zeci + 1; 
-					end else
-						cifra_zeci <= 0;
-				end
-		end
-	end
-end
-
-
-
 
 always @(posedge clock) begin 
 	// facem numerele de input pentru decodificator
@@ -49,7 +23,7 @@ always @(posedge clock) begin
 		digit_3 = 4'b1000;
 		digit_4 = 4'b1000;
 	end else begin 
-		if ({semnal_stanga, semnal_dreapta} == 2'b11) begin 
+		if ({semnal_stanga, semnal_dreapta} == 2'b00) begin 
 				digit_1 = 4'b1101;
 				digit_2 = cifra_zeci;
 				digit_3 = cifra_unitati;
@@ -99,7 +73,7 @@ always @(mux_out) begin
 		4'b0000: begin a=0; b=0; c=0; d=0; e=0; f=0; g=1; end
 		4'b0001: begin a=1; b=0; c=0; d=1; e=1; f=1; g=1; end
 		4'b0010: begin a=0; b=0; c=1; d=0; e=0; f=1; g=0; end
-		4'b0011: begin a=0; b=1; c=1; d=0; e=0; f=0; g=0; end
+		4'b0011: begin a=0; b=0; c=0; d=0; e=1; f=1; g=0; end
 		4'b0100: begin a=1; b=0; c=0; d=1; e=1; f=0; g=0; end
 		4'b0101: begin a=0; b=1; c=0; d=0; e=1; f=0; g=0; end
 		4'b0110: begin a=0; b=1; c=0; d=0; e=0; f=0; g=0; end

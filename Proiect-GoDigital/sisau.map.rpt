@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Sun May 19 13:53:52 2024
+Sun May 19 16:42:25 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -43,15 +43,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 19 13:53:52 2024        ;
+; Analysis & Synthesis Status        ; Successful - Sun May 19 16:42:25 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 156                                          ;
-;     Total combinational functions  ; 150                                          ;
-;     Dedicated logic registers      ; 67                                           ;
-; Total registers                    ; 67                                           ;
+; Total logic elements               ; 173                                          ;
+;     Total combinational functions  ; 167                                          ;
+;     Dedicated logic registers      ; 98                                           ;
+; Total registers                    ; 98                                           ;
 ; Total pins                         ; 61                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
@@ -166,6 +166,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/Logica_miscare.v       ;
 ; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/Selectie_proba.v       ;
 ; afisare_multiplexata.v           ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/afisare_multiplexata.v ;
+; count_ture.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/count_ture.v           ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+
 
 
@@ -174,27 +175,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------------------------------------+
 ; Resource                                    ; Usage                                           ;
 +---------------------------------------------+-------------------------------------------------+
-; Estimated Total logic elements              ; 156                                             ;
+; Estimated Total logic elements              ; 173                                             ;
 ;                                             ;                                                 ;
-; Total combinational functions               ; 150                                             ;
+; Total combinational functions               ; 167                                             ;
 ; Logic element usage by number of LUT inputs ;                                                 ;
-;     -- 4 input functions                    ; 57                                              ;
-;     -- 3 input functions                    ; 54                                              ;
-;     -- <=2 input functions                  ; 39                                              ;
+;     -- 4 input functions                    ; 58                                              ;
+;     -- 3 input functions                    ; 66                                              ;
+;     -- <=2 input functions                  ; 43                                              ;
 ;                                             ;                                                 ;
 ; Logic elements by mode                      ;                                                 ;
-;     -- normal mode                          ; 143                                             ;
+;     -- normal mode                          ; 160                                             ;
 ;     -- arithmetic mode                      ; 7                                               ;
 ;                                             ;                                                 ;
-; Total registers                             ; 67                                              ;
-;     -- Dedicated logic registers            ; 67                                              ;
+; Total registers                             ; 98                                              ;
+;     -- Dedicated logic registers            ; 98                                              ;
 ;     -- I/O registers                        ; 0                                               ;
 ;                                             ;                                                 ;
 ; I/O pins                                    ; 61                                              ;
 ; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_10:inst4|inst12 ;
 ; Maximum fan-out                             ; 21                                              ;
-; Total fan-out                               ; 633                                             ;
-; Average fan-out                             ; 2.28                                            ;
+; Total fan-out                               ; 729                                             ;
+; Average fan-out                             ; 2.24                                            ;
 +---------------------------------------------+-------------------------------------------------+
 
 
@@ -203,16 +204,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |main                            ; 150 (0)           ; 67 (0)       ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |main                                                               ; work         ;
-;    |Logica_miscare:inst6|        ; 44 (44)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
+; |main                            ; 167 (0)           ; 98 (0)       ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |main                                                               ; work         ;
+;    |Logica_miscare:inst6|        ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
 ;    |START_STOP:inst15|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ;              ;
 ;    |Selectie_proba:inst1|        ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ;              ;
-;    |afisare_multiplexata:inst17| ; 60 (60)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|afisare_multiplexata:inst17                                   ;              ;
+;    |afisare_multiplexata:inst11| ; 41 (41)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|afisare_multiplexata:inst11                                   ;              ;
+;    |count_ture:inst12|           ; 14 (14)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|count_ture:inst12                                             ;              ;
 ;    |debouncing:inst16|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst16                                             ;              ;
+;    |debouncing:inst17|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst17                                             ;              ;
 ;    |debouncing:inst3|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst3                                              ;              ;
 ;    |debouncing:inst5|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst5                                              ;              ;
-;    |debouncing:inst|             ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst                                               ;              ;
-;    |divizor_frecventa:inst2|     ; 35 (0)            ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
+;    |divizor_1000:inst18|         ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst18                                           ;              ;
+;       |numarator_10:inst1|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst18|numarator_10:inst1                        ;              ;
+;       |numarator_10:inst2|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst18|numarator_10:inst2                        ;              ;
+;       |numarator_10:inst|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst18|numarator_10:inst                         ;              ;
+;    |divizor_1000:inst|           ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst                                             ;              ;
+;       |numarator_10:inst1|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst|numarator_10:inst1                          ;              ;
+;       |numarator_10:inst2|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst|numarator_10:inst2                          ;              ;
+;       |numarator_10:inst|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_1000:inst|numarator_10:inst                           ;              ;
+;    |divizor_frecventa:inst2|     ; 34 (0)            ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
 ;       |divizor_1000:inst1|       ; 11 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1                    ;              ;
 ;          |numarator_10:inst1|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1 ;              ;
 ;          |numarator_10:inst2|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2 ;              ;
@@ -222,45 +232,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |numarator_10:inst2|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2 ;              ;
 ;          |numarator_10:inst|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst  ;              ;
 ;       |divizor_10:inst4|         ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst4                      ;              ;
-;       |divizor_10:inst|          ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ;              ;
+;       |divizor_10:inst|          ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ;              ;
 ;       |divizor_5:inst3|          ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_5:inst3                       ;              ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                      ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                       ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
-; Logica_miscare:inst6|stanga                         ; Logica_miscare:inst6|stanga               ; yes                    ;
-; Logica_miscare:inst6|dreapta                        ; Logica_miscare:inst6|stanga               ; yes                    ;
-; Logica_miscare:inst6|count_ture[0]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[1]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[2]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[3]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[4]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[5]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[6]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; Logica_miscare:inst6|count_ture[7]                  ; Logica_miscare:inst6|tact_count           ; yes                    ;
-; afisare_multiplexata:inst17|a                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|b                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|c                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|d                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|e                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|f                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|g                       ; afisare_multiplexata:inst17|a             ; yes                    ;
-; afisare_multiplexata:inst17|cifra_zeci[0]           ; afisare_multiplexata:inst17|cifra_zeci[0] ; yes                    ;
-; afisare_multiplexata:inst17|cifra_unitati[0]        ; debouncing:inst|inst3                     ; yes                    ;
-; afisare_multiplexata:inst17|cifra_unitati[1]        ; debouncing:inst|inst3                     ; yes                    ;
-; afisare_multiplexata:inst17|cifra_zeci[1]           ; afisare_multiplexata:inst17|cifra_zeci[0] ; yes                    ;
-; afisare_multiplexata:inst17|cifra_zeci[2]           ; afisare_multiplexata:inst17|cifra_zeci[0] ; yes                    ;
-; afisare_multiplexata:inst17|cifra_unitati[2]        ; debouncing:inst|inst3                     ; yes                    ;
-; afisare_multiplexata:inst17|cifra_zeci[3]           ; afisare_multiplexata:inst17|cifra_zeci[0] ; yes                    ;
-; afisare_multiplexata:inst17|cifra_unitati[3]        ; debouncing:inst|inst3                     ; yes                    ;
-; Logica_miscare:inst6|reset_count                    ; GND                                       ; yes                    ;
-; Number of user-specified and inferred latches = 26  ;                                           ;                        ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                          ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; Logica_miscare:inst6|stanga                         ; Logica_miscare:inst6|stanga   ; yes                    ;
+; Logica_miscare:inst6|dreapta                        ; Logica_miscare:inst6|stanga   ; yes                    ;
+; Logica_miscare:inst6|count_ture[0]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[1]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[2]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[3]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[4]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[5]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[6]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; Logica_miscare:inst6|count_ture[7]                  ; Logica_miscare:inst6|Equal1   ; yes                    ;
+; afisare_multiplexata:inst11|a                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|b                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|c                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|d                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|e                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|f                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; afisare_multiplexata:inst11|g                       ; afisare_multiplexata:inst11|a ; yes                    ;
+; Logica_miscare:inst6|reset_count                    ; GND                           ; yes                    ;
+; Number of user-specified and inferred latches = 18  ;                               ;                        ;
++-----------------------------------------------------+-------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -269,11 +271,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------------------+------------------------------------------------------------+
 ; Register name                                                      ; Reason for Removal                                         ;
 +--------------------------------------------------------------------+------------------------------------------------------------+
-; afisare_multiplexata:inst17|digit_1[0]                             ; Merged with afisare_multiplexata:inst17|digit_4[2]         ;
-; afisare_multiplexata:inst17|digit_1[3]                             ; Merged with afisare_multiplexata:inst17|digit_4[3]         ;
+; divizor_frecventa:inst2|divizor_10:inst|inst9                      ; Merged with divizor_1000:inst18|numarator_10:inst|inst9    ;
+; afisare_multiplexata:inst11|digit_1[0]                             ; Merged with afisare_multiplexata:inst11|digit_4[2]         ;
+; afisare_multiplexata:inst11|digit_1[3]                             ; Merged with afisare_multiplexata:inst11|digit_4[3]         ;
 ; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst9 ; Merged with divizor_frecventa:inst2|divizor_10:inst4|inst9 ;
-; afisare_multiplexata:inst17|digit_4[3]                             ; Stuck at VCC due to stuck port data_in                     ;
-; Total Number of Removed Registers = 4                              ;                                                            ;
+; afisare_multiplexata:inst11|digit_4[3]                             ; Stuck at VCC due to stuck port data_in                     ;
+; Total Number of Removed Registers = 5                              ;                                                            ;
 +--------------------------------------------------------------------+------------------------------------------------------------+
 
 
@@ -282,12 +285,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 67    ;
+; Total registers                              ; 98    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 13    ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -297,11 +300,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |main|afisare_multiplexata:inst17|digit_4[1]   ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |main|afisare_multiplexata:inst17|digit_3[2]   ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|afisare_multiplexata:inst17|Mux3         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[0] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[1] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|count_ture:inst12|cifra_unitati[1]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|count_ture:inst12|cifra_zeci[1]          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_4[0]   ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_2[2]   ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|afisare_multiplexata:inst11|Mux3         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[0] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
@@ -311,7 +316,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun May 19 13:53:49 2024
+    Info: Processing started: Sun May 19 16:42:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -348,6 +353,8 @@ Info: Found 1 design units, including 1 entities, in source file selectie_proba.
     Info: Found entity 1: Selectie_proba
 Info: Found 1 design units, including 1 entities, in source file afisare_multiplexata.v
     Info: Found entity 1: afisare_multiplexata
+Info: Found 1 design units, including 1 entities, in source file count_ture.v
+    Info: Found entity 1: count_ture
 Info: Elaborating entity "main" for the top level hierarchy
 Info: Elaborating entity "START_STOP" for hierarchy "START_STOP:inst15"
 Info: Elaborating entity "debouncing" for hierarchy "debouncing:inst16"
@@ -378,60 +385,47 @@ Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(151)
 Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(151)
 Info (10041): Inferred latch for "stanga" at Logica_miscare.v(105)
 Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(105)
-Info: Elaborating entity "afisare_multiplexata" for hierarchy "afisare_multiplexata:inst17"
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(29): variable "cifra_unitati" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at afisare_multiplexata.v(29): truncated value with size 32 to match size of target (4)
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(30): variable "cifra_unitati" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(32): variable "cifra_zeci" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(33): variable "cifra_zeci" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at afisare_multiplexata.v(33): truncated value with size 32 to match size of target (4)
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(22): inferring latch(es) for variable "cifra_zeci", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(22): inferring latch(es) for variable "cifra_unitati", which holds its previous value in one or more paths through the always construct
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(88): variable "digit_1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(89): variable "digit_2" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(90): variable "digit_3" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(91): variable "digit_4" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10270): Verilog HDL Case Statement warning at afisare_multiplexata.v(98): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "b", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "c", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "d", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "e", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "f", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(96): inferring latch(es) for variable "g", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "g" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "f" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "e" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "d" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "c" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "b" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "a" at afisare_multiplexata.v(96)
-Info (10041): Inferred latch for "cifra_unitati[0]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_unitati[1]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_unitati[2]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_unitati[3]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_zeci[0]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_zeci[1]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_zeci[2]" at afisare_multiplexata.v(22)
-Info (10041): Inferred latch for "cifra_zeci[3]" at afisare_multiplexata.v(22)
+Info: Elaborating entity "afisare_multiplexata" for hierarchy "afisare_multiplexata:inst11"
+Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(62): variable "digit_1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(63): variable "digit_2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(64): variable "digit_3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(65): variable "digit_4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at afisare_multiplexata.v(72): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "b", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "c", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "d", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "e", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "f", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at afisare_multiplexata.v(70): inferring latch(es) for variable "g", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "g" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "f" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "e" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "d" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "c" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "b" at afisare_multiplexata.v(70)
+Info (10041): Inferred latch for "a" at afisare_multiplexata.v(70)
+Info: Elaborating entity "count_ture" for hierarchy "count_ture:inst12"
+Warning (10230): Verilog HDL assignment warning at count_ture.v(15): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at count_ture.v(21): truncated value with size 32 to match size of target (4)
 Warning: Latch Logica_miscare:inst6|stanga has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal senzor_4
 Warning: Latch Logica_miscare:inst6|dreapta has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal senzor_2
-Warning: Latch afisare_multiplexata:inst17|a has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|b has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|c has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|d has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|e has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|f has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
-Warning: Latch afisare_multiplexata:inst17|g has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst17|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|a has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|b has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|c has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|d has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|e has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|f has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
+Warning: Latch afisare_multiplexata:inst11|g has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal afisare_multiplexata:inst11|generator_adresa[0]
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "test_factorDCA[11]" is stuck at VCC
     Warning (13410): Pin "test_factorDCA[10]" is stuck at GND
@@ -460,14 +454,14 @@ Warning: Output pins are stuck at VCC or GND
 Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
-Info: Implemented 221 device resources after synthesis - the final resource count might be different
+Info: Implemented 236 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 53 output pins
-    Info: Implemented 160 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 76 warnings
-    Info: Peak virtual memory: 220 megabytes
-    Info: Processing ended: Sun May 19 13:53:52 2024
+    Info: Implemented 175 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 215 megabytes
+    Info: Processing ended: Sun May 19 16:42:25 2024
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

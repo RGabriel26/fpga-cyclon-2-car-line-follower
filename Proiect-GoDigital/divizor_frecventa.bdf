@@ -195,10 +195,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 776 296)
-	(pt 768 296)
-)
-(connector
 	(pt 776 400)
 	(pt 768 400)
 )
@@ -245,6 +241,10 @@ applicable agreement for further details.
 (connector
 	(pt 632 400)
 	(pt 648 400)
+)
+(connector
+	(pt 768 296)
+	(pt 776 296)
 )
 (junction (pt 520 296))
 (junction (pt 520 256))

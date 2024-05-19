@@ -89,8 +89,8 @@ always @* begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+			directie_driverA = (senzor_2 == 1) ? 2'b00 : 2'b10;
+			directie_driverB = (senzor_4 == 1) ? 2'b00 : 2'b10;
 			
 			dreapta = (senzor_2 == 1) ? 1 : 0;
 			stanga = (senzor_4 == 1) ? 1: 0;
@@ -124,16 +124,16 @@ always @* begin
 	end
 	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
-	if (senzor_1 == 1 & senzor_5 == 1) begin 
+	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
 		count_ture = count_ture + 1;
 		tact_count = 1;
 		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
-		if (circuit == 2'b01 & count_ture == 1) begin 
+		if (circuit == 2'b01 && count_ture == 8'b00000001) begin 
 			directie_driverA = 2'b00;
 			directie_driverB = 2'b00;
 		end
 		//conditie de circuit pentru circuitul 2 (proba curbe)
-		if (circuit == 2'b10 & count_ture == 10) begin 
+		if (circuit == 2'b10 && count_ture == 8'b00001010) begin 
 			//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
 			directie_driverA = 2'b00;
 			directie_driverB = 2'b00;
@@ -144,7 +144,7 @@ always @* begin
 		
 		//conditie de resetare a numarului de cicluri
 		if (circuit == 2'b00) begin
-			count_ture = 0;
+			count_ture = 8'b00000000;
 			reset_count = 1;
 		end
 	end else begin
