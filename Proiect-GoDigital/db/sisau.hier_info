@@ -259,8 +259,44 @@ factor_dc_driverB[11] <= <VCC>
 
 
 |main|afisare_multiplexata:inst17
-semnal_stanga => ~NO_FANOUT~
-semnal_dreapta => ~NO_FANOUT~
+semnal_stanga => digit_1.OUTPUTSELECT
+semnal_stanga => digit_1.OUTPUTSELECT
+semnal_stanga => digit_1.OUTPUTSELECT
+semnal_stanga => digit_1.OUTPUTSELECT
+semnal_stanga => digit_2.OUTPUTSELECT
+semnal_stanga => digit_2.OUTPUTSELECT
+semnal_stanga => digit_2.OUTPUTSELECT
+semnal_stanga => digit_2.OUTPUTSELECT
+semnal_stanga => digit_3.OUTPUTSELECT
+semnal_stanga => digit_3.OUTPUTSELECT
+semnal_stanga => digit_3.OUTPUTSELECT
+semnal_stanga => digit_3.OUTPUTSELECT
+semnal_stanga => digit_4.OUTPUTSELECT
+semnal_stanga => digit_4.OUTPUTSELECT
+semnal_stanga => digit_4.OUTPUTSELECT
+semnal_stanga => digit_4.OUTPUTSELECT
+semnal_stanga => Equal1.IN0
+semnal_dreapta => digit_1.OUTPUTSELECT
+semnal_dreapta => digit_1.OUTPUTSELECT
+semnal_dreapta => digit_1.OUTPUTSELECT
+semnal_dreapta => digit_1.OUTPUTSELECT
+semnal_dreapta => digit_2.OUTPUTSELECT
+semnal_dreapta => digit_2.OUTPUTSELECT
+semnal_dreapta => digit_2.OUTPUTSELECT
+semnal_dreapta => digit_2.OUTPUTSELECT
+semnal_dreapta => digit_3.OUTPUTSELECT
+semnal_dreapta => digit_3.OUTPUTSELECT
+semnal_dreapta => digit_3.OUTPUTSELECT
+semnal_dreapta => digit_3.OUTPUTSELECT
+semnal_dreapta => digit_4.OUTPUTSELECT
+semnal_dreapta => digit_4.OUTPUTSELECT
+semnal_dreapta => digit_4.OUTPUTSELECT
+semnal_dreapta => digit_4.OUTPUTSELECT
+semnal_dreapta => Equal1.IN1
+stop => digit_1.OUTPUTSELECT
+stop => digit_1.OUTPUTSELECT
+stop => digit_1.OUTPUTSELECT
+stop => digit_1.OUTPUTSELECT
 stop => digit_2.OUTPUTSELECT
 stop => digit_2.OUTPUTSELECT
 stop => digit_2.OUTPUTSELECT
@@ -269,21 +305,23 @@ stop => digit_3.OUTPUTSELECT
 stop => digit_3.OUTPUTSELECT
 stop => digit_3.OUTPUTSELECT
 stop => digit_3.OUTPUTSELECT
-stop => digit_1[3].DATAIN
-stop => digit_4[3].DATAIN
-tact_count => cifra_zeci[2].IN1
-tact_count => cifra_unitati[3].LATCH_ENABLE
-tact_count => cifra_unitati[2].LATCH_ENABLE
-tact_count => cifra_unitati[1].LATCH_ENABLE
+stop => digit_4.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+tact_count => cifra_zeci[0].IN1
 tact_count => cifra_unitati[0].LATCH_ENABLE
-reset_count => cifra_zeci[3].ACLR
-reset_count => cifra_zeci[2].ACLR
-reset_count => cifra_zeci[1].ACLR
-reset_count => cifra_unitati[3].ACLR
-reset_count => cifra_unitati[2].ACLR
-reset_count => cifra_unitati[1].ACLR
-reset_count => cifra_zeci[0].ACLR
+tact_count => cifra_unitati[1].LATCH_ENABLE
+tact_count => cifra_unitati[2].LATCH_ENABLE
+tact_count => cifra_unitati[3].LATCH_ENABLE
 reset_count => cifra_unitati[0].ACLR
+reset_count => cifra_unitati[1].ACLR
+reset_count => cifra_unitati[2].ACLR
+reset_count => cifra_unitati[3].ACLR
+reset_count => cifra_zeci[0].ACLR
+reset_count => cifra_zeci[1].ACLR
+reset_count => cifra_zeci[2].ACLR
+reset_count => cifra_zeci[3].ACLR
 clock => D4~reg0.CLK
 clock => D3~reg0.CLK
 clock => D2~reg0.CLK
@@ -317,5 +355,19 @@ d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
 e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
 f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
 g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|debouncing:inst
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
+
+
+|main|debouncing:inst3
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
 
 
