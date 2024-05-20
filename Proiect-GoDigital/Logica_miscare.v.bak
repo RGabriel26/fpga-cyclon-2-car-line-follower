@@ -124,7 +124,8 @@ always @* begin
 	end
 	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
-	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b0000) begin 
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
+	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
 		count_ture = count_ture + 1;
 		tact_count = 1;
 		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
