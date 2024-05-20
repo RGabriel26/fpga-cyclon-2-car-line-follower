@@ -47,8 +47,7 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg tact_count, 
-    output reg reset_count,
+    output reg tact_count,
     
     output reg [11:0] factor_dc_driverA,
     output reg [11:0] factor_dc_driverB 
@@ -88,6 +87,10 @@ always @* begin
 	if(senzor_3 == 1) begin
 		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
 		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
+		//!!!!!!!!!!!!!
+		// de implementat conditie ca atunci cand senzor 2 cu senzor 1 sunt aprinsi in acelasi timp sa nu 
+		// se execute comanda de curba deoarece acesta este comportament in cazul unei semnalizari
+		//!!!!!!!!!!!!!
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
 			directie_driverA = (senzor_2 == 1) ? 2'b00 : 2'b10;
 			directie_driverB = (senzor_4 == 1) ? 2'b00 : 2'b10;
@@ -147,11 +150,9 @@ always @* begin
 		//conditie de resetare a numarului de cicluri
 		if (circuit == 2'b00) begin
 			count_ture = 8'b00000000;
-			reset_count = 1;
 		end
 	end else begin
 		tact_count = 0;
-		reset_count = 0;
 	end
 	
 	

@@ -25,7 +25,7 @@ always @(posedge clock) begin
 	end else begin 
 		if ({semnal_stanga, semnal_dreapta} == 2'b00) begin 
 				digit_1 = 4'b1101;
-				digit_2 = cifra_zeci;
+				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
 				digit_3 = cifra_unitati;
 				digit_4 = 4'b1101;
 		end else begin

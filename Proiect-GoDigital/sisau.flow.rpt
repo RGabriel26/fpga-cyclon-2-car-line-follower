@@ -1,5 +1,5 @@
 Flow report for sisau
-Mon May 20 14:59:32 2024
+Tue May 21 00:42:01 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Mon May 20 14:59:32 2024        ;
+; Flow Status                        ; Successful - Tue May 21 00:42:01 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
@@ -46,11 +46,11 @@ applicable agreement for further details.
 ; Device                             ; EP2C5T144C8                                  ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 169 / 4,608 ( 4 % )                          ;
-;     Total combinational functions  ; 167 / 4,608 ( 4 % )                          ;
-;     Dedicated logic registers      ; 98 / 4,608 ( 2 % )                           ;
-; Total registers                    ; 98                                           ;
-; Total pins                         ; 61 / 89 ( 69 % )                             ;
+; Total logic elements               ; 134 / 4,608 ( 3 % )                          ;
+;     Total combinational functions  ; 131 / 4,608 ( 3 % )                          ;
+;     Dedicated logic registers      ; 69 / 4,608 ( 1 % )                           ;
+; Total registers                    ; 69                                           ;
+; Total pins                         ; 34 / 89 ( 38 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/20/2024 14:59:21 ;
+; Start date & time ; 05/21/2024 00:41:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sisau               ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                                                            ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 193569100776273.171620636011348                                                                                  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 193569100776273.171624131004076                                                                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                                                                               ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                                                                                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/FACULTATE/An_3/Proiect-GoDigital/sisau.dpf                                                                    ; --            ; --          ; --             ;
@@ -102,9 +102,9 @@ applicable agreement for further details.
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 215 MB              ; 00:00:03                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 221 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 213 MB              ; 00:00:04                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 190 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 152 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 157 MB              ; 00:00:01                           ;
 ; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

@@ -70,9 +70,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 288 952 304)
+	(rect 776 504 952 520)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "divizor_100" (rect 90 0 145 12)(font "Arial" ))
+	(text "divizor_1M" (rect 90 0 141 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -86,9 +86,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 504 952 520)
+	(rect 776 576 952 592)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "divizor_1M" (rect 90 0 141 12)(font "Arial" ))
+	(text "divizor_1000" (rect 90 0 151 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -189,28 +189,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 632 264 768 360)
-	(text "divizor_10" (rect 5 0 64 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "in_clk" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "in_clk" (rect 21 27 52 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "next_tact" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "next_tact" (rect 62 27 115 41)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 120 80)(line_width 1))
-	)
-)
-(symbol
 	(rect 376 480 496 576)
 	(text "divizor_1000" (rect 5 0 78 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
@@ -263,10 +241,6 @@ applicable agreement for further details.
 	(pt 496 400)
 )
 (connector
-	(pt 632 296)
-	(pt 520 296)
-)
-(connector
 	(pt 512 256)
 	(pt 520 256)
 )
@@ -275,24 +249,8 @@ applicable agreement for further details.
 	(pt 776 256)
 )
 (connector
-	(pt 520 256)
-	(pt 520 296)
-)
-(connector
-	(pt 520 296)
-	(pt 520 328)
-)
-(connector
 	(pt 632 400)
 	(pt 648 400)
-)
-(connector
-	(pt 768 296)
-	(pt 776 296)
-)
-(connector
-	(pt 496 512)
-	(pt 512 512)
 )
 (connector
 	(pt 376 400)
@@ -326,9 +284,28 @@ applicable agreement for further details.
 	(pt 632 512)
 	(pt 776 512)
 )
-(junction (pt 520 296))
+(connector
+	(pt 520 256)
+	(pt 520 328)
+)
+(connector
+	(pt 504 512)
+	(pt 504 584)
+)
+(connector
+	(pt 504 584)
+	(pt 776 584)
+)
+(connector
+	(pt 496 512)
+	(pt 504 512)
+)
+(connector
+	(pt 504 512)
+	(pt 512 512)
+)
 (junction (pt 520 256))
 (junction (pt 344 256))
+(junction (pt 504 512))
 (text "Pentru divizor_10 se obtine o frecventa PWM de 5k HZ" (rect 960 248 1270 262)(font "Arial" (font_size 8)))
-(text "Pentru divizor_100 se obtine o frecventa PWM de 500 HZ" (rect 960 288 1285 302)(font "Arial" (font_size 8)))
 (text "Semnal pentru filtrarea semnalelor de apasare a unui buton" (rect 776 376 1111 390)(font "Arial" (font_size 8)))

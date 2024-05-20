@@ -6,11 +6,11 @@ module count_ture(
 );
 
 
-always @(posedge tact) begin
+always @(posedge tact or posedge reset) begin
 
-	if(reset == 1) begin 
-		cifra_zeci = 0;
-		cifra_unitati = 0;
+	if(reset) begin 
+		cifra_zeci = 4'b0000;
+		cifra_unitati = 4'b0000;
 	end else begin
 		cifra_unitati = cifra_unitati + 1; 
 		if (cifra_unitati == 10) begin 

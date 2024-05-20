@@ -47,8 +47,7 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg tact_count, 
-    output reg reset_count,
+    output reg tact_count,
     
     output reg [11:0] factor_dc_driverA,
     output reg [11:0] factor_dc_driverB 
@@ -124,6 +123,7 @@ always @* begin
 	end
 	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
+	
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
 	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
 		count_ture = count_ture + 1;
@@ -146,11 +146,9 @@ always @* begin
 		//conditie de resetare a numarului de cicluri
 		if (circuit == 2'b00) begin
 			count_ture = 8'b00000000;
-			reset_count = 1;
 		end
 	end else begin
 		tact_count = 0;
-		reset_count = 0;
 	end
 	
 	
