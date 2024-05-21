@@ -427,7 +427,7 @@ db|sisau.(8).cnf
 # case_insensitive
 # source_file
 main.bdf
-39971a25a87f8c3542f1a688b9e5def
+28e7a674a383477ab4f8fe7b15bf2a1
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -451,7 +451,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-2710a2ccdbfd438182f3d368648a9ba3
+6083996d8bb4d013ac1597b4693559f
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -471,6 +471,43 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
+}
+# macro_sequence
+
+# end
+# entity
+intarziere_semnal
+# storage
+db|sisau.(19).cnf
+db|sisau.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+intarziere_semnal.v
+aa917ad93bcad556b85afbdcc42a7e82
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+intarziere_semnal:inst4
+intarziere_semnal:inst
 }
 # macro_sequence
 

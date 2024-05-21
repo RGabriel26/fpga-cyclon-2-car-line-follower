@@ -254,12 +254,12 @@ press_in => inst.DATAIN
 
 |main|Logica_miscare:inst6
 senzor_1 => semnal_dreapta.DATAIN
-senzor_1 => Equal1.IN0
+senzor_1 => Equal6.IN0
 senzor_2 => directie_driverA.DATAB
 senzor_2 => dreapta.DATAIN
 senzor_2 => directie_driverA.DATAB
 senzor_2 => Equal0.IN0
-senzor_2 => Equal1.IN1
+senzor_2 => Equal6.IN1
 senzor_3 => directie_driverA.OUTPUTSELECT
 senzor_3 => directie_driverA.OUTPUTSELECT
 senzor_3 => directie_driverB.OUTPUTSELECT
@@ -270,15 +270,15 @@ senzor_4 => directie_driverB.DATAB
 senzor_4 => stanga.DATAIN
 senzor_4 => Equal0.IN1
 senzor_4 => directie_driverB.DATAB
-senzor_4 => Equal1.IN2
+senzor_4 => Equal6.IN2
 senzor_5 => semnal_stanga.DATAIN
-senzor_5 => Equal1.IN3
-circuit[0] => Equal2.IN0
-circuit[0] => Equal4.IN1
-circuit[0] => Equal6.IN1
-circuit[1] => Equal2.IN1
-circuit[1] => Equal4.IN0
-circuit[1] => Equal6.IN0
+senzor_5 => Equal6.IN3
+circuit[0] => Equal1.IN0
+circuit[0] => Equal3.IN1
+circuit[0] => Equal5.IN1
+circuit[1] => Equal1.IN1
+circuit[1] => Equal3.IN0
+circuit[1] => Equal5.IN0
 directie_driverA[0] <= directie_driverA.DB_MAX_OUTPUT_PORT_TYPE
 directie_driverA[1] <= directie_driverA.DB_MAX_OUTPUT_PORT_TYPE
 directie_driverB[0] <= directie_driverB.DB_MAX_OUTPUT_PORT_TYPE
@@ -286,7 +286,7 @@ directie_driverB[1] <= directie_driverB.DB_MAX_OUTPUT_PORT_TYPE
 semnal_dreapta <= senzor_1.DB_MAX_OUTPUT_PORT_TYPE
 semnal_stanga <= senzor_5.DB_MAX_OUTPUT_PORT_TYPE
 stop <= senzor_3.DB_MAX_OUTPUT_PORT_TYPE
-tact_count <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+tact_count <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
 factor_dc_driverA[0] <= <VCC>
 factor_dc_driverA[1] <= <GND>
 factor_dc_driverA[2] <= <GND>
@@ -409,6 +409,20 @@ d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
 e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
 f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
 g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|intarziere_semnal:inst4
+semnal => counter[1].ACLR
+semnal => counter[0].ACLR
+clk => ~NO_FANOUT~
+semnal_out <= semnal_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|intarziere_semnal:inst
+semnal => counter[1].ACLR
+semnal => counter[0].ACLR
+clk => ~NO_FANOUT~
+semnal_out <= semnal_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|count_ture:inst12

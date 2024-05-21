@@ -125,4 +125,5 @@ set_location_assignment PIN_71 -to D3
 set_location_assignment PIN_72 -to D4
 set_global_assignment -name MISC_FILE "C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.dpf"
 set_global_assignment -name VERILOG_FILE count_ture.v
+set_global_assignment -name VERILOG_FILE intarziere_semnal.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

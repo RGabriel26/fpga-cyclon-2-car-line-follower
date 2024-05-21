@@ -128,11 +128,8 @@ always @* begin
 	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	
-	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
-	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
-		count_ture = count_ture + 1;
-		tact_count = 1;
-		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
+	// Conditii de oprire a masinutei in fucntie de numarul de ture executate
+			//conditie de circuit pentru circuitul 1 (proba linie dreapta)
 		if (circuit == 2'b01 && count_ture == 8'b00000001) begin 
 			directie_driverA = 2'b00;
 			directie_driverB = 2'b00;
@@ -151,10 +148,16 @@ always @* begin
 		if (circuit == 2'b00) begin
 			count_ture = 8'b00000000;
 		end
+		// ! Poate ar rebui un semnal care sa basculeze exterior semnalele de sens.
+	
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
+	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
+		count_ture = count_ture + 1;
+		tact_count = 1;
+		// am sters conditiile de oprire
 	end else begin
 		tact_count = 0;
 	end
-	
 	
 	//OUTPUT SEMNALA DE INFORMARE
 	//scoaterea numarului de ture realizate de masina
