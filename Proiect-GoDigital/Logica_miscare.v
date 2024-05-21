@@ -47,16 +47,13 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg tact_count,
-    
-    output reg [11:0] factor_dc_driverA,
-    output reg [11:0] factor_dc_driverB 
+    output reg tact_count
 );
 //variabile locale
 //pentru memorarea temporara a curbei in cazul in care senzor_3 iese de pe circuit
 reg dreapta;
 reg stanga;
-reg [7:0] count_ture;
+reg [3:0] count_ture;
 
 
 initial begin 
@@ -65,14 +62,10 @@ initial begin
 	semnal_dreapta = 0;
 	semnal_stanga = 0;
 	stop = 0;
-	count_ture = 0;
-	//initializare cu starea de mers inainte
-	directie_driverA = 2'b10;
-	directie_driverB = 2'b10;
-	//initializarea factorului de comparatie cu numarul obtinut din numarator
-	//initializare cu 999 asta inseamna starea maxima de comparat in comparator ceea ce ofera un semnal PWM aproape de 100% ca duty cycle
-	factor_dc_driverA = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului A
-	factor_dc_driverB = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului B
+	count_ture = 4'b0000;
+	//initializare cu starea initiala a senalelor de sens ale motoarelor
+	directie_driverA = 2'b00;
+	directie_driverB = 2'b00;
 	
 end 
 
@@ -131,30 +124,31 @@ always @* begin
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	
 	// Conditii de oprire a masinutei in fucntie de numarul de ture executate
-		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
-	if (circuit == 2'b01 && count_ture > 8'b00000001) begin 
-		directie_driverA = 2'b00;
-		directie_driverB = 2'b00;
-	end
-	//conditie de circuit pentru circuitul 2 (proba curbe)
-	if (circuit == 2'b10 && count_ture > 8'b00001010) begin 
-		//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
-		directie_driverA = 2'b00;
-		directie_driverB = 2'b00;
-	end
-	//conditie de circuit pentru circuitul 3 (proba anduranta)
-	//conditia consta in numararea turelor de circuit pana la terminarea bateriilor 
-	//instructiune ce se realizeaza deja mai sus 
-	
-	//conditie de resetare a numarului de cicluri
-	if (circuit == 2'b00) begin
-		count_ture = 8'b00000000;
-	end
-	// ! Poate ar rebui un semnal care sa basculeze exterior semnalele de sens.
-	
+    // Conditie pentru circuitul 1
+    if ((circuit == 2'b01) && (count_ture == 4'b0001)) begin 
+        directie_driverA = 2'b00;
+        directie_driverB = 2'b00;
+    end
+    
+    // Conditie pentru circuitul 2 (proba curbe)
+    if ((circuit == 2'b10) && (count_ture == 4'b1010)) begin 
+        // În acest caz, când ma?ina face 10 cicluri pe circuit, se va opri
+        directie_driverA = 2'b00;
+        directie_driverB = 2'b00;
+    end
+    
+    // Conditie pentru circuitul 3 (proba anduranta)
+    // Conditia consta în numararea turelor de circuit pâna la terminarea bateriilor 
+    // Instructiunea ce se realizeaza deja mai sus 
+
+    // Conditie de resetare a numarului de cicluri
+    if (circuit == 2'b00) begin
+        count_ture = 4'b0000;
+    end
+    
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
 	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
-		count_ture = count_ture + 1;
+		count_ture = count_ture + 4'b0001;
 		tact_count = 1;
 		// am sters conditiile de oprire si le am scos din aceasca conditie
 	end else begin

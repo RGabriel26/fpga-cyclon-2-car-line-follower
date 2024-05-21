@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 64 64 224 160)
+	(rect 16 16 176 112)
 	(text "count_ture" (rect 5 0 56 12)(font "Arial" ))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -38,18 +38,18 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 160 48)
-		(output)
-		(text "cifra_unitati[3..0]" (rect 0 0 83 12)(font "Arial" ))
-		(text "cifra_unitati[3..0]" (rect 56 43 139 55)(font "Arial" ))
-		(line (pt 160 48)(pt 144 48)(line_width 3))
-	)
-	(port
 		(pt 160 32)
 		(output)
-		(text "cifra_zeci[3..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "cifra_zeci[3..0]" (rect 66 27 139 39)(font "Arial" ))
+		(text "cifra_unitati[3..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "cifra_unitati[3..0]" (rect 56 27 139 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "cifra_zeci[3..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "cifra_zeci[3..0]" (rect 66 43 139 55)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 144 80)(line_width 1))

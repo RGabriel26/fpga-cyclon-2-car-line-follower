@@ -1,33 +1,28 @@
 module intarziere_semnal(
-	input semnal, clk, // clk de 1Hz
-	output reg semnal_out
-
+    input semnal,
+    input clk, // clk de 1Hz
+    output reg semnal_out
 );
 
-reg [1:0] counter;
+reg [2:0] counter; // pentru a numara pâna la 4 (4 secunde)
 
 initial begin 
-
-	semnal_out = 1'b0; 
-
+    semnal_out = 1'b0; 
+    counter = 3'b000;
 end
 
-always @* begin 
-
-	if(semnal) 
-		counter <= 2'b00;
-	else
-		if (counter != 2'b11) // ar trebui sa opreasca timerul la 3 secunde
-			counter <= counter + 2'b01;
-			
-	case(counter)
-		2'b00 : semnal_out = 0;
-		2'b01 : semnal_out = 1;
-		2'b10 : semnal_out = 1;
-		2'b11 : semnal_out = 0;
-	endcase
+always @(posedge clk or posedge semnal) begin
+    if (semnal) begin
+        counter <= 3'b000; // Reset counter daca semnal este activ
+        semnal_out <= 1'b1; // Daca semnal este activ, semnal_out este activ
+    end else begin
+        if (counter < 3'b100) begin // Daca contorul nu a ajuns la 4
+            counter <= counter + 3'b001;
+            semnal_out <= 1'b1; // Mentine semnal_out activ în timpul numararii
+        end else begin
+            semnal_out <= 1'b0; // Dupa 4 secunde, semnal_out devine 0
+        end
+    end
 end
-
-
 
 endmodule

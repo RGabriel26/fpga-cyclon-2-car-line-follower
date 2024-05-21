@@ -333,75 +333,6 @@ Selectie_proba:inst1
 
 # end
 # entity
-intarziere_semnal
-# storage
-db|sisau.(19).cnf
-db|sisau.(19).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-intarziere_semnal.v
-aa917ad93bcad556b85afbdcc42a7e82
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-count_ture
-# storage
-db|sisau.(18).cnf
-db|sisau.(18).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-count_ture.v
-81c6596485ae873a79e6f9230a0b7e8
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-count_ture:inst12
-}
-# macro_sequence
-
-# end
-# entity
 afisare_multiplexata
 # storage
 db|sisau.(17).cnf
@@ -438,6 +369,119 @@ afisare_multiplexata:inst11
 
 # end
 # entity
+divizor_frecventa
+# storage
+db|sisau.(12).cnf
+db|sisau.(12).cnf
+# case_insensitive
+# source_file
+divizor_frecventa.bdf
+1e84cd59c1938210d785dc05dabd817
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+divizor_frecventa:inst2
+}
+# macro_sequence
+
+# end
+# entity
+count_ture
+# storage
+db|sisau.(18).cnf
+db|sisau.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+count_ture.v
+814c58c4e9ce8ecdd51654c5be278eda
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+count_ture:inst12
+}
+# macro_sequence
+
+# end
+# entity
+intarziere_semnal
+# storage
+db|sisau.(19).cnf
+db|sisau.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+intarziere_semnal.v
+afc593db4cdcb7c31ff8572f538932fd
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+intarziere_semnal:inst4
+intarziere_semnal:inst
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# case_insensitive
+# source_file
+main.bdf
+3af4606dd19c6a25dde0ed1cd2ec03
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Logica_miscare
 # storage
 db|sisau.(14).cnf
@@ -449,7 +493,7 @@ ON
 # case_sensitive
 # source_file
 logica_miscare.v
-4d56372a3b5dcc1f7ee81dd80afe4
+b9dc27d39c2b8c2ca5197b382bfb4468
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -469,46 +513,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(8).cnf
-db|sisau.(8).cnf
-# case_insensitive
-# source_file
-main.bdf
-58e4a116a62d7a7d5381d4faae2e84
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-divizor_frecventa
-# storage
-db|sisau.(12).cnf
-db|sisau.(12).cnf
-# case_insensitive
-# source_file
-divizor_frecventa.bdf
-1e84cd59c1938210d785dc05dabd817
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-divizor_frecventa:inst2
 }
 # macro_sequence
 
