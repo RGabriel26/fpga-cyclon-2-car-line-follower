@@ -131,12 +131,12 @@ always @* begin
 	
 	// Conditii de oprire a masinutei in fucntie de numarul de ture executate
 		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
-	if (circuit == 2'b01 && count_ture >= 8'b00000001) begin 
+	if (circuit == 2'b01 && count_ture > 8'b00000001) begin 
 		directie_driverA = 2'b00;
 		directie_driverB = 2'b00;
 	end
 	//conditie de circuit pentru circuitul 2 (proba curbe)
-	if (circuit == 2'b10 && count_ture >= 8'b00001010) begin 
+	if (circuit == 2'b10 && count_ture > 8'b00001010) begin 
 		//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
 		directie_driverA = 2'b00;
 		directie_driverB = 2'b00;

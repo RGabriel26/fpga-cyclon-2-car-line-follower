@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Wed May 22 00:54:08 2024
+Wed May 22 01:10:19 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -44,15 +44,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 22 00:54:08 2024        ;
+; Analysis & Synthesis Status        ; Successful - Wed May 22 01:10:19 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 143                                          ;
-;     Total combinational functions  ; 135                                          ;
-;     Dedicated logic registers      ; 70                                           ;
-; Total registers                    ; 70                                           ;
+; Total logic elements               ; 159                                          ;
+;     Total combinational functions  ; 151                                          ;
+;     Dedicated logic registers      ; 86                                           ;
+; Total registers                    ; 86                                           ;
 ; Total pins                         ; 34                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
@@ -171,33 +171,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                  ;
-+---------------------------------------------+------------------------------------------------+
-; Resource                                    ; Usage                                          ;
-+---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 143                                            ;
-;                                             ;                                                ;
-; Total combinational functions               ; 135                                            ;
-; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 45                                             ;
-;     -- 3 input functions                    ; 51                                             ;
-;     -- <=2 input functions                  ; 39                                             ;
-;                                             ;                                                ;
-; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 128                                            ;
-;     -- arithmetic mode                      ; 7                                              ;
-;                                             ;                                                ;
-; Total registers                             ; 70                                             ;
-;     -- Dedicated logic registers            ; 70                                             ;
-;     -- I/O registers                        ; 0                                              ;
-;                                             ;                                                ;
-; I/O pins                                    ; 34                                             ;
-; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_10:inst|inst12 ;
-; Maximum fan-out                             ; 22                                             ;
-; Total fan-out                               ; 579                                            ;
-; Average fan-out                             ; 2.42                                           ;
-+---------------------------------------------+------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                        ;
++---------------------------------------------+----------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                ;
++---------------------------------------------+----------------------------------------------------------------------+
+; Estimated Total logic elements              ; 159                                                                  ;
+;                                             ;                                                                      ;
+; Total combinational functions               ; 151                                                                  ;
+; Logic element usage by number of LUT inputs ;                                                                      ;
+;     -- 4 input functions                    ; 49                                                                   ;
+;     -- 3 input functions                    ; 59                                                                   ;
+;     -- <=2 input functions                  ; 43                                                                   ;
+;                                             ;                                                                      ;
+; Logic elements by mode                      ;                                                                      ;
+;     -- normal mode                          ; 144                                                                  ;
+;     -- arithmetic mode                      ; 7                                                                    ;
+;                                             ;                                                                      ;
+; Total registers                             ; 86                                                                   ;
+;     -- Dedicated logic registers            ; 86                                                                   ;
+;     -- I/O registers                        ; 0                                                                    ;
+;                                             ;                                                                      ;
+; I/O pins                                    ; 34                                                                   ;
+; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ;
+; Maximum fan-out                             ; 22                                                                   ;
+; Total fan-out                               ; 655                                                                  ;
+; Average fan-out                             ; 2.42                                                                 ;
++---------------------------------------------+----------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -205,7 +205,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |main                            ; 135 (0)           ; 70 (0)       ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |main                                                               ; work         ;
+; |main                            ; 151 (0)           ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |main                                                               ; work         ;
 ;    |Logica_miscare:inst6|        ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
 ;    |START_STOP:inst15|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ;              ;
 ;    |Selectie_proba:inst1|        ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ;              ;
@@ -215,15 +215,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |debouncing:inst17|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst17                                             ;              ;
 ;    |debouncing:inst3|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst3                                              ;              ;
 ;    |debouncing:inst5|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst5                                              ;              ;
-;    |divizor_frecventa:inst2|     ; 28 (0)            ; 27 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
-;       |divizor_1000:inst5|       ; 13 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5                    ;              ;
+;    |divizor_frecventa:inst2|     ; 44 (0)            ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
+;       |divizor_1000:inst5|       ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5                    ;              ;
 ;          |numarator_10:inst1|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst1 ;              ;
 ;          |numarator_10:inst2|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst2 ;              ;
-;          |numarator_10:inst|     ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst  ;              ;
+;          |numarator_10:inst|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst  ;              ;
 ;       |divizor_1000:inst6|       ; 12 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst6                    ;              ;
 ;          |numarator_10:inst1|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst1 ;              ;
 ;          |numarator_10:inst2|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst2 ;              ;
 ;          |numarator_10:inst|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst  ;              ;
+;       |divizor_1000:inst7|       ; 13 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst7                    ;              ;
+;          |numarator_10:inst1|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst1 ;              ;
+;          |numarator_10:inst2|    ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2 ;              ;
+;          |numarator_10:inst|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst  ;              ;
+;       |divizor_10:inst4|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst4                      ;              ;
 ;       |divizor_10:inst|          ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_10:inst                       ;              ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -273,7 +278,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 70    ;
+; Total registers                              ; 86    ;
 ; Number of registers using Synchronous Clear  ; 4     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
@@ -288,12 +293,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_3[3]   ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_2[2]   ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_3[1]   ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |main|afisare_multiplexata:inst11|digit_2[3]   ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |main|afisare_multiplexata:inst11|digit_1      ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|afisare_multiplexata:inst11|Mux3         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[0] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverA[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[0] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |main|Logica_miscare:inst6|directie_driverB[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
@@ -303,7 +308,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed May 22 00:54:05 2024
+    Info: Processing started: Wed May 22 01:10:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
@@ -348,30 +353,30 @@ Info: Elaborating entity "main" for the top level hierarchy
 Info: Elaborating entity "START_STOP" for hierarchy "START_STOP:inst15"
 Info: Elaborating entity "debouncing" for hierarchy "debouncing:inst16"
 Info: Elaborating entity "divizor_frecventa" for hierarchy "divizor_frecventa:inst2"
-Info: Elaborating entity "divizor_10" for hierarchy "divizor_frecventa:inst2|divizor_10:inst"
 Info: Elaborating entity "divizor_5" for hierarchy "divizor_frecventa:inst2|divizor_5:inst3"
 Info: Elaborating entity "divizor_1000" for hierarchy "divizor_frecventa:inst2|divizor_1000:inst2"
 Info: Elaborating entity "numarator_10" for hierarchy "divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2"
+Info: Elaborating entity "divizor_10" for hierarchy "divizor_frecventa:inst2|divizor_10:inst"
 Info: Elaborating entity "Selectie_proba" for hierarchy "Selectie_proba:inst1"
 Info: Elaborating entity "Logica_miscare" for hierarchy "Logica_miscare:inst6"
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(99): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(100): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(120): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(101): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(121): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(156): truncated value with size 32 to match size of target (8)
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(87): inferring latch(es) for variable "dreapta", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(87): inferring latch(es) for variable "stanga", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(87): inferring latch(es) for variable "count_ture", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "count_ture[0]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[1]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[2]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[3]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[4]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[5]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(160)
-Info (10041): Inferred latch for "stanga" at Logica_miscare.v(109)
-Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(109)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(122): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at Logica_miscare.v(157): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(88): inferring latch(es) for variable "dreapta", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(88): inferring latch(es) for variable "stanga", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Logica_miscare.v(88): inferring latch(es) for variable "count_ture", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "count_ture[0]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[1]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[2]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[3]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[4]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[5]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[6]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "count_ture[7]" at Logica_miscare.v(161)
+Info (10041): Inferred latch for "stanga" at Logica_miscare.v(110)
+Info (10041): Inferred latch for "dreapta" at Logica_miscare.v(110)
 Info: Elaborating entity "afisare_multiplexata" for hierarchy "afisare_multiplexata:inst11"
 Warning (10230): Verilog HDL assignment warning at afisare_multiplexata.v(20): truncated value with size 4 to match size of target (2)
 Warning (10235): Verilog HDL Always Construct warning at afisare_multiplexata.v(74): variable "digit_2" is read inside the Always Construct but isn't in the Always Construct's Event Control
@@ -433,13 +438,13 @@ Warning: Ignored assignments for entity "sisau" -- entity does not exist in desi
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
 Info: Generated suppressed messages file C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.map.smsg
-Info: Implemented 181 device resources after synthesis - the final resource count might be different
+Info: Implemented 197 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 26 output pins
-    Info: Implemented 147 logic cells
+    Info: Implemented 163 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 215 megabytes
-    Info: Processing ended: Wed May 22 00:54:08 2024
+    Info: Peak virtual memory: 220 megabytes
+    Info: Processing ended: Wed May 22 01:10:19 2024
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

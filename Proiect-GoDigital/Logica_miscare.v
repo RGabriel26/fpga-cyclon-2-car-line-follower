@@ -58,6 +58,7 @@ reg dreapta;
 reg stanga;
 reg [7:0] count_ture;
 
+
 initial begin 
 	dreapta = 0;
 	stanga = 0;
