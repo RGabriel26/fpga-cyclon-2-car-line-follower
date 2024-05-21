@@ -1,5 +1,5 @@
 Assembler report for sisau
-Tue May 21 12:38:19 2024
+Wed May 22 00:54:15 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.sof
-  6. Assembler Device Options: C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.pof
+  5. Assembler Device Options: C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.sof
+  6. Assembler Device Options: C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 21 12:38:19 2024 ;
+; Assembler Status      ; Successful - Wed May 22 00:54:15 2024 ;
 ; Revision Name         ; sisau                                 ;
 ; Top-level Entity Name ; main                                  ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; File Name                                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.sof ;
-; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.pof ;
-+------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                             ;
++---------------------------------------------------------------------------------------+
+; File Name                                                                             ;
++---------------------------------------------------------------------------------------+
+; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.sof ;
+; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.pof ;
++---------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                 ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; Device         ; EP2C5T144C8                                                                                             ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                              ;
-; Checksum       ; 0x0008EBE8                                                                                              ;
-+----------------+---------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.sof ;
++----------------+------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C8                                                                                    ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                     ;
+; Checksum       ; 0x0008CBFF                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.pof ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                             ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                                               ;
-; JTAG usercode      ; 0x00000000                                                                                          ;
-; Checksum           ; 0x074FBF35                                                                                          ;
-; Compression Ratio  ; 3                                                                                                   ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.pof ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                    ;
++--------------------+--------------------------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                                      ;
+; JTAG usercode      ; 0x00000000                                                                                 ;
+; Checksum           ; 0x074FD935                                                                                 ;
+; Compression Ratio  ; 3                                                                                          ;
++--------------------+--------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue May 21 12:38:18 2024
+    Info: Processing started: Wed May 22 00:54:14 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off sisau -c sisau
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 198 megabytes
-    Info: Processing ended: Tue May 21 12:38:19 2024
+    Info: Peak virtual memory: 190 megabytes
+    Info: Processing ended: Wed May 22 00:54:15 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

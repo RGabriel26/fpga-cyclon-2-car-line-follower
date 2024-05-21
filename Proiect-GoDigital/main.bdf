@@ -1173,64 +1173,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 200 176)(line_width 1))
 	)
 )
-(symbol
-	(rect 704 600 808 696)
-	(text "intarziere_semnal" (rect 5 0 89 12)(font "Arial" ))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "semnal" (rect 0 0 35 12)(font "Arial" ))
-		(text "semnal" (rect 21 27 56 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 43 35 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 104 64)
-		(output)
-		(text "semnal_out" (rect -40 0 16 12)(font "Arial" ))
-		(text "semnal_out" (rect 24 56 80 68)(font "Arial" ))
-		(line (pt 104 64)(pt 88 64)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 88 80)(line_width 1))
-	)
-)
-(symbol
-	(rect 704 696 808 792)
-	(text "intarziere_semnal" (rect 5 0 89 12)(font "Arial" ))
-	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "semnal" (rect 0 0 35 12)(font "Arial" ))
-		(text "semnal" (rect 21 27 56 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 43 35 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 104 64)
-		(output)
-		(text "semnal_out" (rect -40 0 16 12)(font "Arial" ))
-		(text "semnal_out" (rect 24 56 80 68)(font "Arial" ))
-		(line (pt 104 64)(pt 88 64)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 88 80)(line_width 1))
-	)
-)
 (connector
 	(text "tact_debouncing" (rect 154 360 234 372)(font "Arial" ))
 	(pt 152 376)
@@ -1571,30 +1513,12 @@ applicable agreement for further details.
 	(pt 1152 712)
 )
 (connector
-	(pt 704 632)
-	(pt 440 632)
-)
-(connector
-	(pt 704 728)
-	(pt 600 728)
-)
-(connector
 	(pt 600 728)
 	(pt 600 648)
 )
 (connector
 	(pt 440 648)
 	(pt 600 648)
-)
-(connector
-	(text "semnal_dreapta" (rect 818 648 895 660)(font "Arial" ))
-	(pt 888 664)
-	(pt 808 664)
-)
-(connector
-	(text "semnal_stanga" (rect 818 744 892 756)(font "Arial" ))
-	(pt 888 760)
-	(pt 808 760)
 )
 (connector
 	(text "semnal_stanga" (rect 634 808 708 820)(font "Arial" ))
@@ -1641,6 +1565,32 @@ applicable agreement for further details.
 	(text "tact_debouncing_ture" (rect 130 912 235 924)(font "Arial" ))
 	(pt 136 904)
 	(pt 216 904)
+)
+(connector
+	(pt 720 728)
+	(pt 600 728)
+)
+(connector
+	(pt 720 728)
+	(pt 720 760)
+)
+(connector
+	(text "semnal_stanga" (rect 818 744 892 756)(font "Arial" ))
+	(pt 720 760)
+	(pt 888 760)
+)
+(connector
+	(text "semnal_dreapta" (rect 818 648 895 660)(font "Arial" ))
+	(pt 720 664)
+	(pt 888 664)
+)
+(connector
+	(pt 720 664)
+	(pt 720 632)
+)
+(connector
+	(pt 440 632)
+	(pt 720 632)
 )
 (junction (pt 696 400))
 (junction (pt 696 392))

@@ -14,11 +14,11 @@ always @(posedge tact or posedge reset) begin
 	end else begin
 		cifra_unitati = cifra_unitati + 1; 
 		if (cifra_unitati == 10) begin 
-			cifra_unitati = 0;
+			cifra_unitati = 4'b0000;
 			if (cifra_zeci == 10) begin  
-				cifra_zeci = 0;
+				cifra_zeci = 4'b0000;
 			end else
-				cifra_zeci = cifra_zeci + 1;
+				cifra_zeci = cifra_zeci + 4'b0001;
 		end
 	end
 end

@@ -13,11 +13,11 @@ reg [3:0] mux_out;
 
 initial begin 
 	mux_out = 4'b0000;
-	generator_adresa = 4'b0000;
 	digit_1 = 4'b0000;
 	digit_2 = 4'b0000;
 	digit_3 = 4'b0000;
 	digit_4 = 4'b0000;
+	generator_adresa = 4'b0000;
 end
 
 always @(posedge clock) begin 
@@ -28,13 +28,8 @@ always @(posedge clock) begin
 		digit_3 = 4'b1000;
 		digit_4 = 4'b1000;
 	end else begin 
-		if ({semnal_stanga, semnal_dreapta} == 2'b00) begin 
-				digit_1 = 4'b1101;
-				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
-				digit_3 = cifra_unitati;
-				digit_4 = 4'b1101;
-		end else begin
-			if ({semnal_dreapta, semnal_stanga} != 2'b11) begin 
+		if ({semnal_stanga, semnal_dreapta} != 2'b00) begin 
+			if ({semnal_stanga, semnal_dreapta} == 2'b11) begin
 				if (semnal_stanga == 1) begin 
 					digit_1 = 4'b1011; // 11
 					digit_2 = 4'b1100;
@@ -46,8 +41,18 @@ always @(posedge clock) begin
 					digit_2 = 4'b1100;
 					digit_3 = 4'b1100;
 					digit_4 = 4'b1010; // 10	
-				end	
-			end	 
+				end
+			end else begin
+				digit_1 = 4'b1101;
+				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
+				digit_3 = cifra_unitati;
+				digit_4 = 4'b1101; 
+			end
+		end else begin
+				digit_1 = 4'b1101;
+				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
+				digit_3 = cifra_unitati;
+				digit_4 = 4'b1101; 
 		end
 	end 
 	
@@ -66,10 +71,10 @@ end
 //multiplexoare
 always @(generator_adresa) begin 
 	case (generator_adresa)
-		2'b00 : mux_out = digit_1;
-		2'b01 : mux_out = digit_2;
-		2'b10 : mux_out = digit_3;
-		2'b11 : mux_out = digit_4;
+		2'b00 : mux_out = digit_2;
+		2'b01 : mux_out = digit_3;
+		2'b10 : mux_out = digit_4;
+		2'b11 : mux_out = digit_1;
 	endcase
 end
 
