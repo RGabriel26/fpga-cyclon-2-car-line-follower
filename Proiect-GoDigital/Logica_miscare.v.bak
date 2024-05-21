@@ -159,7 +159,6 @@ always @* begin
 		tact_count = 0;
 	end
 	
-	
 	//OUTPUT SEMNALA DE INFORMARE
 	//scoaterea numarului de ture realizate de masina
 	//acesta va fi modificat si scos la iesire pe parcursul parcurgerii logicii de mai sus

@@ -90,6 +90,7 @@ always @* begin
 		//!!!!!!!!!!!!!
 		// de implementat conditie ca atunci cand senzor 2 cu senzor 1 sunt aprinsi in acelasi timp sa nu 
 		// se execute comanda de curba deoarece acesta este comportament in cazul unei semnalizari
+		// trebuie modificata urmatoarea conditie
 		//!!!!!!!!!!!!!
 		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
 			directie_driverA = (senzor_2 == 1) ? 2'b00 : 2'b10;
@@ -129,32 +130,32 @@ always @* begin
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
 	
 	// Conditii de oprire a masinutei in fucntie de numarul de ture executate
-			//conditie de circuit pentru circuitul 1 (proba linie dreapta)
-		if (circuit == 2'b01 && count_ture == 8'b00000001) begin 
-			directie_driverA = 2'b00;
-			directie_driverB = 2'b00;
-		end
-		//conditie de circuit pentru circuitul 2 (proba curbe)
-		if (circuit == 2'b10 && count_ture == 8'b00001010) begin 
-			//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
-			directie_driverA = 2'b00;
-			directie_driverB = 2'b00;
-		end
-		//conditie de circuit pentru circuitul 3 (proba anduranta)
-		//conditia consta in numararea turelor de circuit pana la terminarea bateriilor 
-		//instructiune ce se realizeaza deja mai sus 
-		
-		//conditie de resetare a numarului de cicluri
-		if (circuit == 2'b00) begin
-			count_ture = 8'b00000000;
-		end
-		// ! Poate ar rebui un semnal care sa basculeze exterior semnalele de sens.
+		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
+	if (circuit == 2'b01 && count_ture == 8'b00000001) begin 
+		directie_driverA = 2'b00;
+		directie_driverB = 2'b00;
+	end
+	//conditie de circuit pentru circuitul 2 (proba curbe)
+	if (circuit == 2'b10 && count_ture == 8'b00001010) begin 
+		//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
+		directie_driverA = 2'b00;
+		directie_driverB = 2'b00;
+	end
+	//conditie de circuit pentru circuitul 3 (proba anduranta)
+	//conditia consta in numararea turelor de circuit pana la terminarea bateriilor 
+	//instructiune ce se realizeaza deja mai sus 
+	
+	//conditie de resetare a numarului de cicluri
+	if (circuit == 2'b00) begin
+		count_ture = 8'b00000000;
+	end
+	// ! Poate ar rebui un semnal care sa basculeze exterior semnalele de sens.
 	
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    PROBLEMA DE ACTUALIZARE DEOARECE ASTEAPTA EVENIMENTUL DIN CONDITIA LUI IF
 	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111) begin 
 		count_ture = count_ture + 1;
 		tact_count = 1;
-		// am sters conditiile de oprire
+		// am sters conditiile de oprire si le am scos din aceasca conditie
 	end else begin
 		tact_count = 0;
 	end
