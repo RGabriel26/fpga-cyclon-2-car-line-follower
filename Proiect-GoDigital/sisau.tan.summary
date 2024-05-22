@@ -5,19 +5,19 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.471 ns
-From           : senzor_4
-To             : Logica_miscare:inst6|stanga
+Actual Time    : 5.506 ns
+From           : senzor_2
+To             : Logica_miscare:inst6|dreapta
 From Clock     : --
-To Clock       : senzor_2
+To Clock       : senzor_4
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 31.780 ns
-From           : Logica_miscare:inst6|count_ture[1]
-To             : A_IN2_D1
+Actual Time    : 33.678 ns
+From           : Logica_miscare:inst6|count_ture[3]
+To             : B_IN4_D1
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.730 ns
-From           : senzor_4
-To             : A_IN2_D1
+Actual Time    : 14.847 ns
+From           : senzor_3
+To             : B_IN4_D1
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.936 ns
+Actual Time    : 16.829 ns
 From           : senzor_2
 To             : Logica_miscare:inst6|count_ture[2]
 From Clock     : --
@@ -45,51 +45,51 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 126.57 MHz ( period = 7.901 ns )
-From           : intarziere_semnal:inst|semnal_out
+Actual Time    : 101.66 MHz ( period = 9.837 ns )
+From           : intarziere_semnal:inst4|semnal_out
 To             : afisare_multiplexata:inst11|digit_2[3]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
 
-Type           : Clock Setup: 'senzon_1'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 260.89 MHz ( period = 3.833 ns )
-From           : Logica_miscare:inst6|count_ture[2]
-To             : Logica_miscare:inst6|count_ture[3]
-From Clock     : senzon_1
-To Clock       : senzon_1
-Failed Paths   : 0
-
 Type           : Clock Setup: 'senzor_5'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 260.89 MHz ( period = 3.833 ns )
-From           : Logica_miscare:inst6|count_ture[2]
+Actual Time    : 271.37 MHz ( period = 3.685 ns )
+From           : Logica_miscare:inst6|count_ture[0]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzor_5
 To Clock       : senzor_5
 Failed Paths   : 0
 
-Type           : Clock Setup: 'senzor_4'
+Type           : Clock Setup: 'senzon_1'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 260.89 MHz ( period = 3.833 ns )
-From           : Logica_miscare:inst6|count_ture[2]
+Actual Time    : 271.37 MHz ( period = 3.685 ns )
+From           : Logica_miscare:inst6|count_ture[0]
 To             : Logica_miscare:inst6|count_ture[3]
-From Clock     : senzor_4
-To Clock       : senzor_4
+From Clock     : senzon_1
+To Clock       : senzon_1
 Failed Paths   : 0
 
 Type           : Clock Setup: 'senzor_2'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 260.89 MHz ( period = 3.833 ns )
-From           : Logica_miscare:inst6|count_ture[2]
+Actual Time    : 271.37 MHz ( period = 3.685 ns )
+From           : Logica_miscare:inst6|count_ture[0]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzor_2
 To Clock       : senzor_2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'senzor_4'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 271.37 MHz ( period = 3.685 ns )
+From           : Logica_miscare:inst6|count_ture[0]
+To             : Logica_miscare:inst6|count_ture[3]
+From Clock     : senzor_4
+To Clock       : senzor_4
 Failed Paths   : 0
 
 Type           : Clock Hold: 'clk'
@@ -100,7 +100,7 @@ From           : Selectie_proba:inst1|circuit[0]
 To             : Selectie_proba:inst1|led1
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 124
+Failed Paths   : 131
 
 Type           : Total number of failed paths
 Slack          : 
@@ -110,7 +110,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 124
+Failed Paths   : 131
 
 --------------------------------------------------------------------------------------
 

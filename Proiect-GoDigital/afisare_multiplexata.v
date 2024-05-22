@@ -28,6 +28,7 @@ always @(posedge clock) begin
 		digit_3 = 4'b1000;
 		digit_4 = 4'b1000;
 	end else begin 
+		/*
 		if ({semnal_stanga, semnal_dreapta} != 2'b00) begin // optimizeaza cu case
 			if ({semnal_stanga, semnal_dreapta} != 2'b11) begin
 				if (semnal_stanga == 1) begin 
@@ -54,6 +55,34 @@ always @(posedge clock) begin
 				digit_3 = cifra_unitati;
 				digit_4 = 4'b1101; 
 		end
+		*/
+		
+		case ({semnal_stanga, semnal_dreapta}) 
+			2'b00: begin
+						digit_1 = 4'b1101;
+						digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
+						digit_3 = cifra_unitati;
+						digit_4 = 4'b1101;
+				   end
+			2'b01: begin
+						digit_1 = 4'b1100; 
+						digit_2 = 4'b1100;
+						digit_3 = 4'b1100;
+						digit_4 = 4'b1010; // 10
+				   end
+			2'b10: begin
+						digit_1 = 4'b1011; // 11
+						digit_2 = 4'b1100;
+						digit_3 = 4'b1100;
+						digit_4 = 4'b1100;
+				   end
+			2'b11: begin
+						digit_1 = 4'b1101;
+						digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
+						digit_3 = cifra_unitati;
+						digit_4 = 4'b1101;
+				   end
+		endcase 
 	end 
 	
 	//generator adresa + multiplexarea cifrelor

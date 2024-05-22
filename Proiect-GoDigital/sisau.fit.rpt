@@ -1,5 +1,5 @@
 Fitter report for sisau
-Wed May 22 11:59:40 2024
+Wed May 22 12:17:39 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +------------------------------------+----------------------------------------------+
-; Fitter Status                      ; Successful - Wed May 22 11:59:40 2024        ;
+; Fitter Status                      ; Successful - Wed May 22 12:17:39 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
@@ -141,7 +141,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -194,7 +194,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/sisau.pin.
+The pin-out file can be found in C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/sisau.pin.
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -208,9 +208,9 @@ The pin-out file can be found in C:/Users/Maria/Desktop/GoDigital/sisau-car-godi
 ;     -- Combinational with a register        ; 114                                                                  ;
 ;                                             ;                                                                      ;
 ; Logic element usage by number of LUT inputs ;                                                                      ;
-;     -- 4 input functions                    ; 54                                                                   ;
-;     -- 3 input functions                    ; 68                                                                   ;
-;     -- <=2 input functions                  ; 43                                                                   ;
+;     -- 4 input functions                    ; 55                                                                   ;
+;     -- 3 input functions                    ; 71                                                                   ;
+;     -- <=2 input functions                  ; 39                                                                   ;
 ;     -- Register only                        ; 4                                                                    ;
 ;                                             ;                                                                      ;
 ; Logic elements by mode                      ;                                                                      ;
@@ -221,7 +221,7 @@ The pin-out file can be found in C:/Users/Maria/Desktop/GoDigital/sisau-car-godi
 ;     -- Dedicated logic registers            ; 118 / 4,608 ( 3 % )                                                  ;
 ;     -- I/O registers                        ; 0 / 243 ( 0 % )                                                      ;
 ;                                             ;                                                                      ;
-; Total LABs:  partially or completely used   ; 22 / 288 ( 8 % )                                                     ;
+; Total LABs:  partially or completely used   ; 21 / 288 ( 7 % )                                                     ;
 ; User inserted logic elements                ; 0                                                                    ;
 ; Virtual pins                                ; 0                                                                    ;
 ; I/O pins                                    ; 34 / 89 ( 38 % )                                                     ;
@@ -240,10 +240,10 @@ The pin-out file can be found in C:/Users/Maria/Desktop/GoDigital/sisau-car-godi
 ; Peak interconnect usage (total/H/V)         ; 1% / 1% / 0%                                                         ;
 ; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ;
 ; Maximum fan-out                             ; 16                                                                   ;
-; Highest non-global fan-out signal           ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ;
-; Highest non-global fan-out                  ; 15                                                                   ;
-; Total fan-out                               ; 780                                                                  ;
-; Average fan-out                             ; 2.35                                                                 ;
+; Highest non-global fan-out signal           ; senzor_3                                                             ;
+; Highest non-global fan-out                  ; 16                                                                   ;
+; Total fan-out                               ; 783                                                                  ;
+; Average fan-out                             ; 2.36                                                                 ;
 +---------------------------------------------+----------------------------------------------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -259,7 +259,7 @@ The pin-out file can be found in C:/Users/Maria/Desktop/GoDigital/sisau-car-godi
 ; clk              ; 17    ; 1        ; 0            ; 6            ; 0           ; 3                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; senzon_1         ; 104   ; 3        ; 28           ; 12           ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; senzor_2         ; 103   ; 3        ; 28           ; 12           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; senzor_3         ; 101   ; 3        ; 28           ; 11           ; 0           ; 15                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; senzor_3         ; 101   ; 3        ; 28           ; 11           ; 0           ; 16                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; senzor_4         ; 100   ; 3        ; 28           ; 11           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; senzor_5         ; 99    ; 3        ; 28           ; 11           ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
@@ -594,35 +594,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------+-------------------+---------+
 ; senzor_4                                          ;                   ;         ;
 ;      - Logica_miscare:inst6|directie_driverB[0]~0 ; 1                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverB[1]~2 ; 1                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[0]~3 ; 1                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[1]~5 ; 1                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverB[1]~4 ; 1                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[0]~1 ; 1                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[1]~3 ; 1                 ; 6       ;
 ;      - Logica_miscare:inst6|stanga~0              ; 0                 ; 0       ;
 ;      - Logica_miscare:inst6|Equal6~0              ; 0                 ; 0       ;
 ;      - Logica_miscare:inst6|stanga                ; 1                 ; 6       ;
 ; senzor_2                                          ;                   ;         ;
 ;      - Logica_miscare:inst6|directie_driverB[0]~0 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverB[1]~2 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[0]~3 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[1]~5 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverB[1]~4 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[0]~1 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[1]~3 ; 0                 ; 6       ;
 ;      - Logica_miscare:inst6|stanga~0              ; 1                 ; 0       ;
 ;      - Logica_miscare:inst6|Equal6~0              ; 1                 ; 0       ;
 ;      - Logica_miscare:inst6|dreapta               ; 0                 ; 6       ;
 ; senzor_3                                          ;                   ;         ;
-;      - afisare_multiplexata:inst11|digit_4[2]     ; 0                 ; 6       ;
-;      - afisare_multiplexata:inst11|digit_4[1]     ; 0                 ; 6       ;
-;      - afisare_multiplexata:inst11|digit_1[1]     ; 0                 ; 6       ;
-;      - afisare_multiplexata:inst11|digit_1[2]     ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverB[0]~1 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[1]~2 ; 1                 ; 0       ;
-;      - Logica_miscare:inst6|directie_driverB[1]~3 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[0]~4 ; 0                 ; 6       ;
-;      - Logica_miscare:inst6|directie_driverA[1]~6 ; 0                 ; 6       ;
-;      - afisare_multiplexata:inst11|digit_2[2]~0   ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverB[0]~3 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[1]~0 ; 1                 ; 0       ;
+;      - Logica_miscare:inst6|directie_driverB[1]~5 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[0]~2 ; 0                 ; 6       ;
+;      - Logica_miscare:inst6|directie_driverA[1]~4 ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_4~0      ; 0                 ; 6       ;
 ;      - afisare_multiplexata:inst11|digit_3~0      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_4~1      ; 0                 ; 6       ;
 ;      - afisare_multiplexata:inst11|digit_3~1      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_4~2      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_2~1      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_1~0      ; 0                 ; 6       ;
 ;      - afisare_multiplexata:inst11|digit_3~2      ; 0                 ; 6       ;
-;      - afisare_multiplexata:inst11|digit_2~4      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_2~2      ; 0                 ; 6       ;
+;      - afisare_multiplexata:inst11|digit_1~1      ; 0                 ; 6       ;
 ;      - afisare_multiplexata:inst11|digit_3~3      ; 0                 ; 6       ;
 ; senzon_1                                          ;                   ;         ;
 ;      - Logica_miscare:inst6|Equal6~0              ; 1                 ; 0       ;
@@ -637,69 +638,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - intarziere_semnal:inst4|counter[1]         ; 0                 ; 6       ;
 ;      - intarziere_semnal:inst4|counter[0]         ; 0                 ; 6       ;
 ; buton_START_STOP                                  ;                   ;         ;
-;      - debouncing:inst16|inst~feeder              ; 1                 ; 6       ;
+;      - debouncing:inst16|inst~feeder              ; 0                 ; 6       ;
 ; buton_selectie                                    ;                   ;         ;
-;      - debouncing:inst5|inst~feeder               ; 1                 ; 6       ;
+;      - debouncing:inst5|inst~feeder               ; 0                 ; 6       ;
 ; clk                                               ;                   ;         ;
 +---------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                        ;
-+----------------------------------------------------------------------+--------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                 ; Location           ; Fan-Out ; Usage             ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------------------------+--------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
-; Logica_miscare:inst6|count_ture[2]~8                                 ; LCCOMB_X24_Y9_N10  ; 4       ; Latch enable      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; Logica_miscare:inst6|stanga~0                                        ; LCCOMB_X26_Y10_N30 ; 2       ; Latch enable      ; no     ; --                   ; --               ; --                        ;
-; Selectie_proba:inst1|reset_counter                                   ; LCFF_X1_Y13_N5     ; 8       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
-; afisare_multiplexata:inst11|a~0                                      ; LCCOMB_X13_Y8_N16  ; 7       ; Latch enable      ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; clk                                                                  ; PIN_17             ; 3       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; clk                                                                  ; PIN_17             ; 5       ; Clock             ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; count_ture:inst12|Equal0~0                                           ; LCCOMB_X12_Y8_N12  ; 4       ; Clock enable      ; no     ; --                   ; --               ; --                        ;
-; debouncing:inst16|inst3                                              ; LCCOMB_X20_Y9_N2   ; 1       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; debouncing:inst17|inst3                                              ; LCCOMB_X26_Y10_N18 ; 8       ; Clock             ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; debouncing:inst5|inst3                                               ; LCCOMB_X20_Y9_N30  ; 3       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; debouncing:inst5|inst3                                               ; LCCOMB_X20_Y9_N30  ; 4       ; Clock             ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12 ; LCFF_X17_Y8_N29    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12 ; LCFF_X17_Y8_N5     ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12  ; LCFF_X22_Y8_N21    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12 ; LCFF_X18_Y9_N31    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst12 ; LCFF_X19_Y9_N19    ; 5       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12  ; LCFF_X18_Y9_N29    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst1|inst12 ; LCFF_X20_Y8_N27    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst2|inst12 ; LCFF_X20_Y9_N1     ; 10      ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst|inst12  ; LCFF_X20_Y8_N31    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst1|inst12 ; LCFF_X25_Y10_N13   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst2|inst12 ; LCFF_X26_Y10_N29   ; 4       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst|inst12  ; LCFF_X25_Y10_N27   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst1|inst12 ; LCFF_X22_Y7_N13    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X8_Y6_N9      ; 16      ; Clock, Sync. load ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X8_Y6_N9      ; 7       ; Clock             ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst|inst12  ; LCFF_X22_Y7_N27    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_10:inst4|inst12                      ; LCFF_X22_Y8_N17    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X20_Y8_N17    ; 5       ; Clock             ; no     ; --                   ; --               ; --                        ;
-; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X20_Y8_N17    ; 5       ; Clock             ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; divizor_frecventa:inst2|divizor_5:inst3|inst2                        ; LCFF_X19_Y9_N13    ; 8       ; Clock             ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; senzon_1                                                             ; PIN_104            ; 5       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
-; senzor_3                                                             ; PIN_101            ; 15      ; Sync. clear       ; no     ; --                   ; --               ; --                        ;
-; senzor_5                                                             ; PIN_99             ; 5       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------------------------------+--------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                       ;
++----------------------------------------------------------------------+-------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                 ; Location          ; Fan-Out ; Usage             ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------------------------+-------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
+; Logica_miscare:inst6|count_ture[2]~8                                 ; LCCOMB_X21_Y9_N16 ; 4       ; Latch enable      ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; Logica_miscare:inst6|stanga~0                                        ; LCCOMB_X26_Y9_N6  ; 2       ; Latch enable      ; no     ; --                   ; --               ; --                        ;
+; Selectie_proba:inst1|reset_counter                                   ; LCFF_X12_Y8_N21   ; 8       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
+; afisare_multiplexata:inst11|a~0                                      ; LCCOMB_X9_Y8_N0   ; 7       ; Latch enable      ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; clk                                                                  ; PIN_17            ; 3       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; clk                                                                  ; PIN_17            ; 5       ; Clock             ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; count_ture:inst12|Equal0~0                                           ; LCCOMB_X8_Y8_N2   ; 4       ; Clock enable      ; no     ; --                   ; --               ; --                        ;
+; debouncing:inst16|inst3                                              ; LCCOMB_X17_Y9_N24 ; 1       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; debouncing:inst17|inst3                                              ; LCCOMB_X26_Y9_N2  ; 8       ; Clock             ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; debouncing:inst5|inst3                                               ; LCCOMB_X17_Y9_N30 ; 3       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; debouncing:inst5|inst3                                               ; LCCOMB_X17_Y9_N30 ; 4       ; Clock             ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst12 ; LCFF_X18_Y10_N27  ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst12 ; LCFF_X18_Y10_N31  ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12  ; LCFF_X14_Y9_N1    ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst1|inst12 ; LCFF_X19_Y11_N29  ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst2|inst12 ; LCFF_X15_Y9_N13   ; 5       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst2|numarator_10:inst|inst12  ; LCFF_X19_Y11_N13  ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst1|inst12 ; LCFF_X24_Y7_N29   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst2|inst12 ; LCFF_X24_Y7_N13   ; 10      ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst|inst12  ; LCFF_X27_Y9_N19   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst1|inst12 ; LCFF_X24_Y9_N13   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst2|inst12 ; LCFF_X26_Y9_N17   ; 4       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst|inst12  ; LCFF_X24_Y9_N29   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst1|inst12 ; LCFF_X13_Y7_N31   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X14_Y7_N1    ; 16      ; Clock, Sync. load ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X14_Y7_N1    ; 7       ; Clock             ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst|inst12  ; LCFF_X13_Y7_N27   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_10:inst4|inst12                      ; LCFF_X14_Y9_N13   ; 6       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X27_Y9_N11   ; 5       ; Clock             ; no     ; --                   ; --               ; --                        ;
+; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X27_Y9_N11   ; 5       ; Clock             ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; divizor_frecventa:inst2|divizor_5:inst3|inst2                        ; LCFF_X15_Y9_N19   ; 8       ; Clock             ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; senzon_1                                                             ; PIN_104           ; 5       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
+; senzor_5                                                             ; PIN_99            ; 5       ; Async. clear      ; no     ; --                   ; --               ; --                        ;
++----------------------------------------------------------------------+-------------------+---------+-------------------+--------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                               ;
-+----------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; Name                                                                 ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; Logica_miscare:inst6|count_ture[2]~8                                 ; LCCOMB_X24_Y9_N10  ; 4       ; Global Clock         ; GCLK4            ; --                        ;
-; afisare_multiplexata:inst11|a~0                                      ; LCCOMB_X13_Y8_N16  ; 7       ; Global Clock         ; GCLK0            ; --                        ;
-; clk                                                                  ; PIN_17             ; 5       ; Global Clock         ; GCLK2            ; --                        ;
-; debouncing:inst17|inst3                                              ; LCCOMB_X26_Y10_N18 ; 8       ; Global Clock         ; GCLK6            ; --                        ;
-; debouncing:inst5|inst3                                               ; LCCOMB_X20_Y9_N30  ; 4       ; Global Clock         ; GCLK7            ; --                        ;
-; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X8_Y6_N9      ; 7       ; Global Clock         ; GCLK3            ; --                        ;
-; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X20_Y8_N17    ; 5       ; Global Clock         ; GCLK5            ; --                        ;
-; divizor_frecventa:inst2|divizor_5:inst3|inst2                        ; LCFF_X19_Y9_N13    ; 8       ; Global Clock         ; GCLK1            ; --                        ;
-+----------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                              ;
++----------------------------------------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
+; Name                                                                 ; Location          ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
+; Logica_miscare:inst6|count_ture[2]~8                                 ; LCCOMB_X21_Y9_N16 ; 4       ; Global Clock         ; GCLK3            ; --                        ;
+; afisare_multiplexata:inst11|a~0                                      ; LCCOMB_X9_Y8_N0   ; 7       ; Global Clock         ; GCLK7            ; --                        ;
+; clk                                                                  ; PIN_17            ; 5       ; Global Clock         ; GCLK2            ; --                        ;
+; debouncing:inst17|inst3                                              ; LCCOMB_X26_Y9_N2  ; 8       ; Global Clock         ; GCLK5            ; --                        ;
+; debouncing:inst5|inst3                                               ; LCCOMB_X17_Y9_N30 ; 4       ; Global Clock         ; GCLK6            ; --                        ;
+; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; LCFF_X14_Y7_N1    ; 7       ; Global Clock         ; GCLK1            ; --                        ;
+; divizor_frecventa:inst2|divizor_10:inst|inst12                       ; LCFF_X27_Y9_N11   ; 5       ; Global Clock         ; GCLK0            ; --                        ;
+; divizor_frecventa:inst2|divizor_5:inst3|inst2                        ; LCFF_X15_Y9_N19   ; 8       ; Global Clock         ; GCLK4            ; --                        ;
++----------------------------------------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -707,24 +707,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------+---------+
 ; Name                                                                 ; Fan-Out ;
 +----------------------------------------------------------------------+---------+
-; senzor_3                                                             ; 15      ;
+; senzor_3                                                             ; 16      ;
 ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ; 15      ;
 ; afisare_multiplexata:inst11|generator_adresa[1]                      ; 12      ;
 ; afisare_multiplexata:inst11|generator_adresa[0]                      ; 11      ;
 ; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst2|inst12 ; 10      ;
+; intarziere_semnal:inst|semnal_out                                    ; 10      ;
+; intarziere_semnal:inst4|semnal_out                                   ; 10      ;
 ; Selectie_proba:inst1|circuit[0]                                      ; 10      ;
 ; Selectie_proba:inst1|circuit[1]                                      ; 9       ;
 ; Selectie_proba:inst1|reset_counter                                   ; 8       ;
-; afisare_multiplexata:inst11|Mux0~1                                   ; 8       ;
-; afisare_multiplexata:inst11|Mux1~1                                   ; 8       ;
-; afisare_multiplexata:inst11|Mux2~1                                   ; 8       ;
+; afisare_multiplexata:inst11|Mux4~1                                   ; 8       ;
+; afisare_multiplexata:inst11|Mux5~1                                   ; 8       ;
+; afisare_multiplexata:inst11|Mux6~1                                   ; 8       ;
 ; senzor_2                                                             ; 7       ;
 ; senzor_4                                                             ; 7       ;
 ; divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst|inst9   ; 7       ;
 ; divizor_frecventa:inst2|divizor_10:inst4|inst9                       ; 7       ;
-; intarziere_semnal:inst|semnal_out                                    ; 7       ;
-; intarziere_semnal:inst4|semnal_out                                   ; 7       ;
-; afisare_multiplexata:inst11|Mux3~1                                   ; 7       ;
+; afisare_multiplexata:inst11|Mux7~1                                   ; 7       ;
 ; Logica_miscare:inst6|count_ture[0]                                   ; 6       ;
 ; Logica_miscare:inst6|count_ture[1]                                   ; 6       ;
 ; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst|inst12  ; 6       ;
@@ -751,12 +751,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; count_ture:inst12|cifra_unitati[1]                                   ; 5       ;
 ; count_ture:inst12|cifra_zeci[1]                                      ; 5       ;
 ; count_ture:inst12|cifra_zeci[2]                                      ; 5       ;
-; afisare_multiplexata:inst11|digit_2[2]~0                             ; 5       ;
 ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst9  ; 5       ;
 ; START_STOP:inst15|inst                                               ; 5       ;
 ; Logica_miscare:inst6|count_ture[2]                                   ; 4       ;
 ; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst1|inst9  ; 4       ;
 ; divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst|inst9   ; 4       ;
+; divizor_frecventa:inst2|divizor_1000:inst1|numarator_10:inst2|inst9  ; 4       ;
 +----------------------------------------------------------------------+---------+
 
 
@@ -765,29 +765,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 154 / 15,666 ( < 1 % ) ;
-; C16 interconnects          ; 1 / 812 ( < 1 % )      ;
-; C4 interconnects           ; 90 / 11,424 ( < 1 % )  ;
-; Direct links               ; 47 / 15,666 ( < 1 % )  ;
+; Block interconnects        ; 142 / 15,666 ( < 1 % ) ;
+; C16 interconnects          ; 0 / 812 ( 0 % )        ;
+; C4 interconnects           ; 104 / 11,424 ( < 1 % ) ;
+; Direct links               ; 26 / 15,666 ( < 1 % )  ;
 ; Global clocks              ; 8 / 8 ( 100 % )        ;
-; Local interconnects        ; 124 / 4,608 ( 3 % )    ;
-; R24 interconnects          ; 16 / 652 ( 2 % )       ;
-; R4 interconnects           ; 145 / 13,328 ( 1 % )   ;
+; Local interconnects        ; 129 / 4,608 ( 3 % )    ;
+; R24 interconnects          ; 20 / 652 ( 3 % )       ;
+; R4 interconnects           ; 152 / 13,328 ( 1 % )   ;
 +----------------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 7.68) ; Number of LABs  (Total = 22) ;
+; Number of Logic Elements  (Average = 8.05) ; Number of LABs  (Total = 21) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 1                            ;
+; 1                                          ; 0                            ;
 ; 2                                          ; 1                            ;
 ; 3                                          ; 3                            ;
 ; 4                                          ; 1                            ;
 ; 5                                          ; 3                            ;
-; 6                                          ; 1                            ;
-; 7                                          ; 2                            ;
+; 6                                          ; 0                            ;
+; 7                                          ; 3                            ;
 ; 8                                          ; 5                            ;
 ; 9                                          ; 0                            ;
 ; 10                                         ; 0                            ;
@@ -803,23 +803,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.18) ; Number of LABs  (Total = 22) ;
+; LAB-wide Signals  (Average = 1.19) ; Number of LABs  (Total = 21) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 5                            ;
-; 1 Clock                            ; 15                           ;
+; 1 Clock                            ; 13                           ;
 ; 1 Clock enable                     ; 1                            ;
-; 2 Clocks                           ; 5                            ;
+; 2 Clocks                           ; 6                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.05) ; Number of LABs  (Total = 22) ;
+; Number of Signals Sourced  (Average = 13.67) ; Number of LABs  (Total = 21) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 2                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
@@ -829,9 +829,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                            ; 1                            ;
 ; 10                                           ; 2                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
+; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 3                            ;
+; 14                                           ; 4                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 5                            ;
 ; 17                                           ; 0                            ;
@@ -855,14 +855,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 3.45) ; Number of LABs  (Total = 22) ;
+; Number of Signals Sourced Out  (Average = 3.29) ; Number of LABs  (Total = 21) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 9                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 4                            ;
+; 2                                               ; 4                            ;
+; 3                                               ; 2                            ;
 ; 4                                               ; 0                            ;
-; 5                                               ; 3                            ;
+; 5                                               ; 2                            ;
 ; 6                                               ; 1                            ;
 ; 7                                               ; 1                            ;
 ; 8                                               ; 0                            ;
@@ -877,15 +877,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 4.05) ; Number of LABs  (Total = 22) ;
+; Number of Distinct Inputs  (Average = 3.90) ; Number of LABs  (Total = 21) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 7                            ;
-; 2                                           ; 4                            ;
-; 3                                           ; 3                            ;
+; 2                                           ; 5                            ;
+; 3                                           ; 2                            ;
 ; 4                                           ; 3                            ;
 ; 5                                           ; 1                            ;
-; 6                                           ; 1                            ;
+; 6                                           ; 0                            ;
 ; 7                                           ; 1                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
@@ -941,8 +941,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+-----------------------------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s)                    ; Delay Added in ns ;
 +-----------------+-----------------------------------------+-------------------+
-; clk             ; clk                                     ; 12.6097           ;
-; clk             ; clk,senzor_4,senzor_2,senzor_5,senzon_1 ; 10.7621           ;
+; clk             ; clk                                     ; 16.942            ;
+; clk             ; clk,senzor_4,senzor_2,senzor_5,senzon_1 ; 7.40407           ;
 +-----------------+-----------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -954,7 +954,7 @@ This will disable optimization of problematic paths and expose them for further 
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed May 22 11:59:37 2024
+    Info: Processing started: Wed May 22 12:17:37 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off sisau -c sisau
 Info: Selected device EP2C5T144C8 for design "sisau"
 Info: Low junction temperature is 0 degrees C
@@ -989,15 +989,15 @@ Info: Automatically promoted node divizor_frecventa:inst2|divizor_1000:inst7|num
     Info: Automatically promoted destinations to use location or clock signal Global Clock
     Info: Following destination nodes may be non-global or may not use global or regional clocks
         Info: Destination node divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12
-        Info: Destination node afisare_multiplexata:inst11|digit_4[2]
-        Info: Destination node afisare_multiplexata:inst11|digit_4[1]
-        Info: Destination node afisare_multiplexata:inst11|digit_1[1]
-        Info: Destination node afisare_multiplexata:inst11|digit_1[2]
         Info: Destination node afisare_multiplexata:inst11|generator_adresa[0]
         Info: Destination node afisare_multiplexata:inst11|generator_adresa[1]
+        Info: Destination node afisare_multiplexata:inst11|digit_4[2]
         Info: Destination node afisare_multiplexata:inst11|digit_3[1]
+        Info: Destination node afisare_multiplexata:inst11|digit_4[1]
         Info: Destination node afisare_multiplexata:inst11|digit_2[1]
+        Info: Destination node afisare_multiplexata:inst11|digit_1[1]
         Info: Destination node afisare_multiplexata:inst11|digit_3[2]
+        Info: Destination node afisare_multiplexata:inst11|digit_2[2]
         Info: Non-global destination nodes limited to 10 nodes
 Info: Automatically promoted node divizor_frecventa:inst2|divizor_10:inst|inst12 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
@@ -1033,15 +1033,15 @@ Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
-Info: Estimated most critical path is register to register delay of 2.888 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X13_Y9; Fanout = 7; REG Node = 'intarziere_semnal:inst|semnal_out'
-    Info: 2: + IC(1.259 ns) + CELL(0.370 ns) = 1.629 ns; Loc. = LAB_X13_Y8; Fanout = 5; COMB Node = 'afisare_multiplexata:inst11|digit_2[2]~0'
-    Info: 3: + IC(0.781 ns) + CELL(0.370 ns) = 2.780 ns; Loc. = LAB_X12_Y8; Fanout = 1; COMB Node = 'afisare_multiplexata:inst11|digit_2~4'
-    Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.888 ns; Loc. = LAB_X12_Y8; Fanout = 1; REG Node = 'afisare_multiplexata:inst11|digit_2[2]'
-    Info: Total cell delay = 0.848 ns ( 29.36 % )
-    Info: Total interconnect delay = 2.040 ns ( 70.64 % )
+Info: Estimated most critical path is register to register delay of 3.206 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X12_Y11; Fanout = 10; REG Node = 'intarziere_semnal:inst4|semnal_out'
+    Info: 2: + IC(1.356 ns) + CELL(0.624 ns) = 1.980 ns; Loc. = LAB_X9_Y8; Fanout = 4; COMB Node = 'afisare_multiplexata:inst11|digit_4~0'
+    Info: 3: + IC(0.748 ns) + CELL(0.370 ns) = 3.098 ns; Loc. = LAB_X8_Y8; Fanout = 1; COMB Node = 'afisare_multiplexata:inst11|digit_2~2'
+    Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 3.206 ns; Loc. = LAB_X8_Y8; Fanout = 1; REG Node = 'afisare_multiplexata:inst11|digit_2[2]'
+    Info: Total cell delay = 1.102 ns ( 34.37 % )
+    Info: Total interconnect delay = 2.104 ns ( 65.63 % )
 Info: Fitter routing operations beginning
-Info: 3 (of 475) connections in the design require a large routing delay to satisfy hold requirements. Refer to the Fitter report for a summary of the relevant clock transfers. Also, check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
+Info: 1 (of 481) connections in the design require a large routing delay to satisfy hold requirements. Refer to the Fitter report for a summary of the relevant clock transfers. Also, check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
 Info: Average interconnect usage is 1% of the available device resources
     Info: Peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
 Info: Fitter routing operations ending: elapsed time is 00:00:00
@@ -1080,9 +1080,9 @@ Info: Delay annotation completed successfully
 Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 226 megabytes
-    Info: Processing ended: Wed May 22 11:59:41 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Wed May 22 12:17:39 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
