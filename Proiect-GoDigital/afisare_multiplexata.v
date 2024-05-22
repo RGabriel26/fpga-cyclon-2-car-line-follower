@@ -95,9 +95,17 @@ always @(posedge clock) begin
 		2'b11 : {D1, D2, D3, D4} = 4'b0001;
 	endcase
 	
+	case (generator_adresa)
+		2'b00 : mux_out = digit_1;
+		2'b01 : mux_out = digit_2;
+		2'b10 : mux_out = digit_3;
+		2'b11 : mux_out = digit_4;
+	endcase
+	
 end
 
 //multiplexoare
+/*
 always @(generator_adresa) begin 
 	case (generator_adresa)
 		2'b00 : mux_out = digit_2;
@@ -106,6 +114,7 @@ always @(generator_adresa) begin
 		2'b11 : mux_out = digit_1;
 	endcase
 end
+*/
 
 
 //decodificator adresa

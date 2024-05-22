@@ -28,6 +28,7 @@ always @(posedge clock) begin
 		digit_3 = 4'b1000;
 		digit_4 = 4'b1000;
 	end else begin 
+		/*
 		if ({semnal_stanga, semnal_dreapta} != 2'b00) begin // optimizeaza cu case
 			if ({semnal_stanga, semnal_dreapta} != 2'b11) begin
 				if (semnal_stanga == 1) begin 
@@ -54,6 +55,7 @@ always @(posedge clock) begin
 				digit_3 = cifra_unitati;
 				digit_4 = 4'b1101; 
 		end
+		*/
 		
 		case ({semnal_stanga, semnal_dreapta}) 
 			2'b00: begin
@@ -63,16 +65,16 @@ always @(posedge clock) begin
 						digit_4 = 4'b1101;
 				   end
 			2'b01: begin
-					digit_1 = 4'b1100; 
-					digit_2 = 4'b1100;
-					digit_3 = 4'b1100;
-					digit_4 = 4'b1010; // 10
+						digit_1 = 4'b1100; 
+						digit_2 = 4'b1100;
+						digit_3 = 4'b1100;
+						digit_4 = 4'b1010; // 10
 				   end
 			2'b10: begin
-					digit_1 = 4'b1011; // 11
-					digit_2 = 4'b1100;
-					digit_3 = 4'b1100;
-					digit_4 = 4'b1100;
+						digit_1 = 4'b1011; // 11
+						digit_2 = 4'b1100;
+						digit_3 = 4'b1100;
+						digit_4 = 4'b1100;
 				   end
 			2'b11: begin
 						digit_1 = 4'b1101;
@@ -80,7 +82,6 @@ always @(posedge clock) begin
 						digit_3 = cifra_unitati;
 						digit_4 = 4'b1101;
 				   end
-		
 		endcase 
 	end 
 	
@@ -94,9 +95,17 @@ always @(posedge clock) begin
 		2'b11 : {D1, D2, D3, D4} = 4'b0001;
 	endcase
 	
+	case (generator_adresa)
+		2'b00 : mux_out = digit_2;
+		2'b01 : mux_out = digit_3;
+		2'b10 : mux_out = digit_4;
+		2'b11 : mux_out = digit_1;
+	endcase
+	
 end
 
 //multiplexoare
+/*
 always @(generator_adresa) begin 
 	case (generator_adresa)
 		2'b00 : mux_out = digit_2;
@@ -105,6 +114,7 @@ always @(generator_adresa) begin
 		2'b11 : mux_out = digit_1;
 	endcase
 end
+*/
 
 
 //decodificator adresa
