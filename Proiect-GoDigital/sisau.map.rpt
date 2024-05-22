@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sisau
-Wed May 22 02:10:25 2024
+Wed May 22 10:13:10 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -44,15 +44,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 22 02:10:25 2024        ;
+; Analysis & Synthesis Status        ; Successful - Wed May 22 10:13:10 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; sisau                                        ;
 ; Top-level Entity Name              ; main                                         ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 175                                          ;
-;     Total combinational functions  ; 165                                          ;
-;     Dedicated logic registers      ; 120                                          ;
-; Total registers                    ; 120                                          ;
+; Total logic elements               ; 172                                          ;
+;     Total combinational functions  ; 164                                          ;
+;     Dedicated logic registers      ; 118                                          ;
+; Total registers                    ; 118                                          ;
 ; Total pins                         ; 34                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
@@ -146,30 +146,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+
-; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/main.bdf               ;
-; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/divizor_10.bdf         ;
-; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/divizor_1000.bdf       ;
-; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/divizor_frecventa.bdf  ;
-; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/debouncing.bdf         ;
-; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/numarator_10.bdf       ;
-; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/divizor_5.bdf          ;
-; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/START_STOP.bdf         ;
-; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/Logica_miscare.v       ;
-; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/Selectie_proba.v       ;
-; afisare_multiplexata.v           ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/afisare_multiplexata.v ;
-; count_ture.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/count_ture.v           ;
-; intarziere_semnal.v              ; yes             ; User Verilog HDL File              ; C:/Users/Maria/Desktop/GoDigital/sisau-car-godigital-TEST/Proiect-GoDigital/intarziere_semnal.v    ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/main.bdf               ;
+; divizor_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/divizor_5.bdf          ;
+; divizor_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/divizor_10.bdf         ;
+; divizor_1000.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/divizor_1000.bdf       ;
+; divizor_frecventa.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/divizor_frecventa.bdf  ;
+; debouncing.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/debouncing.bdf         ;
+; numarator_10.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/numarator_10.bdf       ;
+; START_STOP.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/START_STOP.bdf         ;
+; Logica_miscare.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/Logica_miscare.v       ;
+; Selectie_proba.v                 ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/Selectie_proba.v       ;
+; afisare_multiplexata.v           ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/afisare_multiplexata.v ;
+; count_ture.v                     ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/count_ture.v           ;
+; intarziere_semnal.v              ; yes             ; User Verilog HDL File              ; C:/Users/gabri/OneDrive/Desktop/GoDigital/sisau-car-godigital_TEST/Proiect-GoDigital/intarziere_semnal.v    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -177,27 +177,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                ;
 +---------------------------------------------+----------------------------------------------------------------------+
-; Estimated Total logic elements              ; 175                                                                  ;
+; Estimated Total logic elements              ; 172                                                                  ;
 ;                                             ;                                                                      ;
-; Total combinational functions               ; 165                                                                  ;
+; Total combinational functions               ; 164                                                                  ;
 ; Logic element usage by number of LUT inputs ;                                                                      ;
 ;     -- 4 input functions                    ; 54                                                                   ;
 ;     -- 3 input functions                    ; 68                                                                   ;
-;     -- <=2 input functions                  ; 43                                                                   ;
+;     -- <=2 input functions                  ; 42                                                                   ;
 ;                                             ;                                                                      ;
 ; Logic elements by mode                      ;                                                                      ;
-;     -- normal mode                          ; 165                                                                  ;
+;     -- normal mode                          ; 164                                                                  ;
 ;     -- arithmetic mode                      ; 0                                                                    ;
 ;                                             ;                                                                      ;
-; Total registers                             ; 120                                                                  ;
-;     -- Dedicated logic registers            ; 120                                                                  ;
+; Total registers                             ; 118                                                                  ;
+;     -- Dedicated logic registers            ; 118                                                                  ;
 ;     -- I/O registers                        ; 0                                                                    ;
 ;                                             ;                                                                      ;
 ; I/O pins                                    ; 34                                                                   ;
 ; Maximum fan-out node                        ; divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2|inst12 ;
 ; Maximum fan-out                             ; 22                                                                   ;
-; Total fan-out                               ; 773                                                                  ;
-; Average fan-out                             ; 2.42                                                                 ;
+; Total fan-out                               ; 767                                                                  ;
+; Average fan-out                             ; 2.43                                                                 ;
 +---------------------------------------------+----------------------------------------------------------------------+
 
 
@@ -206,7 +206,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |main                            ; 165 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |main                                                               ; work         ;
+; |main                            ; 164 (0)           ; 118 (0)      ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |main                                                               ; work         ;
 ;    |Logica_miscare:inst6|        ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Logica_miscare:inst6                                          ;              ;
 ;    |START_STOP:inst15|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|START_STOP:inst15                                             ;              ;
 ;    |Selectie_proba:inst1|        ; 4 (4)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Selectie_proba:inst1                                          ;              ;
@@ -214,7 +214,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |count_ture:inst12|           ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|count_ture:inst12                                             ;              ;
 ;    |debouncing:inst16|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst16                                             ;              ;
 ;    |debouncing:inst17|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst17                                             ;              ;
-;    |debouncing:inst3|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst3                                              ;              ;
 ;    |debouncing:inst5|            ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|debouncing:inst5                                              ;              ;
 ;    |divizor_frecventa:inst2|     ; 70 (0)            ; 69 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2                                       ;              ;
 ;       |divizor_1000:inst1|       ; 11 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|divizor_frecventa:inst2|divizor_1000:inst1                    ;              ;
@@ -287,7 +286,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 120   ;
+; Total registers                              ; 118   ;
 ; Number of registers using Synchronous Clear  ; 4     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 16    ;
@@ -328,13 +327,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed May 22 02:10:21 2024
+    Info: Processing started: Wed May 22 10:13:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sisau -c sisau
 Info: Found 1 design units, including 1 entities, in source file main.bdf
     Info: Found entity 1: main
+Info: Found 1 design units, including 1 entities, in source file divizor_5.bdf
+    Info: Found entity 1: divizor_5
 Info: Found 1 design units, including 1 entities, in source file divizor_10.bdf
     Info: Found entity 1: divizor_10
-Warning: Can't analyze file -- file divizor_10_test.bdf is missing
 Info: Found 1 design units, including 1 entities, in source file divizor_1000.bdf
     Info: Found entity 1: divizor_1000
 Info: Found 1 design units, including 1 entities, in source file divizor_frecventa.bdf
@@ -345,18 +345,6 @@ Info: Found 1 design units, including 1 entities, in source file numarator_10.bd
     Info: Found entity 1: numarator_10
 Info: Found 1 design units, including 1 entities, in source file numarator_1000.bdf
     Info: Found entity 1: numarator_1000
-Info: Found 1 design units, including 1 entities, in source file comparator_1bit.bdf
-    Info: Found entity 1: comparator_1BIT
-Info: Found 1 design units, including 1 entities, in source file comparator_4bit.bdf
-    Info: Found entity 1: comparator_4BIT
-Info: Found 1 design units, including 1 entities, in source file comparator_12bit.bdf
-    Info: Found entity 1: comparator_12BIT
-Info: Found 1 design units, including 1 entities, in source file generator_semnalpwm.bdf
-    Info: Found entity 1: generator_semnalPWM
-Info: Found 1 design units, including 1 entities, in source file generator_pwm.bdf
-    Info: Found entity 1: generator_PWM
-Info: Found 1 design units, including 1 entities, in source file divizor_5.bdf
-    Info: Found entity 1: divizor_5
 Info: Found 1 design units, including 1 entities, in source file start_stop.bdf
     Info: Found entity 1: START_STOP
 Info: Found 1 design units, including 1 entities, in source file logica_miscare.v
@@ -449,14 +437,14 @@ Critical Warning: Ignored Power-Up Level option on the following registers
 Warning: Ignored assignments for entity "sisau" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity sisau -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity sisau -section_id "Root Region" was ignored
-Info: Implemented 214 device resources after synthesis - the final resource count might be different
+Info: Implemented 211 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 26 output pins
-    Info: Implemented 180 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 220 megabytes
-    Info: Processing ended: Wed May 22 02:10:25 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Implemented 177 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 222 megabytes
+    Info: Processing ended: Wed May 22 10:13:10 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 

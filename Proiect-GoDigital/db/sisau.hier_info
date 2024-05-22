@@ -497,10 +497,3 @@ clock => inst1.CLK
 press_in => inst.DATAIN
 
 
-|main|debouncing:inst3
-press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-clock => inst.CLK
-clock => inst1.CLK
-press_in => inst.DATAIN
-
-

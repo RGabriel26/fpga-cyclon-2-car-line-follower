@@ -254,7 +254,6 @@ AUTO
 debouncing:inst16
 debouncing:inst5
 debouncing:inst17
-debouncing:inst3
 }
 # macro_sequence
 
@@ -462,26 +461,6 @@ intarziere_semnal:inst
 
 # end
 # entity
-main
-# storage
-db|sisau.(8).cnf
-db|sisau.(8).cnf
-# case_insensitive
-# source_file
-main.bdf
-3af4606dd19c6a25dde0ed1cd2ec03
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 Logica_miscare
 # storage
 db|sisau.(14).cnf
@@ -513,6 +492,26 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 Logica_miscare:inst6
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# case_insensitive
+# source_file
+main.bdf
+1114ffad85c287b2e2b1a59635aa1b2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

@@ -5,19 +5,19 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.362 ns
-From           : senzor_2
-To             : Logica_miscare:inst6|dreapta
+Actual Time    : 5.471 ns
+From           : senzor_4
+To             : Logica_miscare:inst6|stanga
 From Clock     : --
-To Clock       : senzor_4
+To Clock       : senzor_2
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 27.438 ns
-From           : Logica_miscare:inst6|count_ture[0]
-To             : B_IN4_D1
+Actual Time    : 31.780 ns
+From           : Logica_miscare:inst6|count_ture[1]
+To             : A_IN2_D1
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.225 ns
-From           : senzor_2
-To             : C_IN1_D2
+Actual Time    : 15.730 ns
+From           : senzor_4
+To             : A_IN2_D1
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.103 ns
-From           : senzor_5
-To             : debouncing:inst17|inst
+Actual Time    : 14.936 ns
+From           : senzor_2
+To             : Logica_miscare:inst6|count_ture[2]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 98.29 MHz ( period = 10.174 ns )
-From           : count_ture:inst12|cifra_zeci[2]
-To             : afisare_multiplexata:inst11|digit_2[2]
+Actual Time    : 126.57 MHz ( period = 7.901 ns )
+From           : intarziere_semnal:inst|semnal_out
+To             : afisare_multiplexata:inst11|digit_2[3]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -55,7 +55,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzon_1'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 276.63 MHz ( period = 3.615 ns )
+Actual Time    : 260.89 MHz ( period = 3.833 ns )
 From           : Logica_miscare:inst6|count_ture[2]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzon_1
@@ -65,7 +65,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzor_5'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 276.63 MHz ( period = 3.615 ns )
+Actual Time    : 260.89 MHz ( period = 3.833 ns )
 From           : Logica_miscare:inst6|count_ture[2]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzor_5
@@ -75,7 +75,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzor_4'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 276.63 MHz ( period = 3.615 ns )
+Actual Time    : 260.89 MHz ( period = 3.833 ns )
 From           : Logica_miscare:inst6|count_ture[2]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzor_4
@@ -85,7 +85,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'senzor_2'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 276.63 MHz ( period = 3.615 ns )
+Actual Time    : 260.89 MHz ( period = 3.833 ns )
 From           : Logica_miscare:inst6|count_ture[2]
 To             : Logica_miscare:inst6|count_ture[3]
 From Clock     : senzor_2
@@ -96,11 +96,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : afisare_multiplexata:inst11|generator_adresa[0]
-To             : afisare_multiplexata:inst11|D4
+From           : Selectie_proba:inst1|circuit[0]
+To             : Selectie_proba:inst1|led1
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 100
+Failed Paths   : 124
 
 Type           : Total number of failed paths
 Slack          : 
@@ -110,7 +110,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 100
+Failed Paths   : 124
 
 --------------------------------------------------------------------------------------
 
