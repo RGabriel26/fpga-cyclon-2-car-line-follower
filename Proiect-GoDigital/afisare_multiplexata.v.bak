@@ -60,10 +60,10 @@ always @(posedge clock) begin
 	generator_adresa = generator_adresa + 2'b01;
 	
 	case(generator_adresa)
-		2'b00 : begin {D1, D2, D3, D4} = 4'b1000; mux_out = digit_2; end
-		2'b01 : begin {D1, D2, D3, D4} = 4'b0100; mux_out = digit_3; end
-		2'b10 : begin {D1, D2, D3, D4} = 4'b0010; mux_out = digit_4; end
-		2'b11 : begin {D1, D2, D3, D4} = 4'b0001; mux_out = digit_1; end
+		2'b00 : {D1, D2, D3, D4} = 4'b1000;
+		2'b01 : {D1, D2, D3, D4} = 4'b0100;
+		2'b10 : {D1, D2, D3, D4} = 4'b0010;
+		2'b11 : {D1, D2, D3, D4} = 4'b0001;
 	endcase
 	
 end

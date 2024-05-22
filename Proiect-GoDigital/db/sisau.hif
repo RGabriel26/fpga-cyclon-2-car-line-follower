@@ -359,42 +359,6 @@ AUTO
 
 # end
 # entity
-afisare_multiplexata
-# storage
-db|sisau.(0).cnf
-db|sisau.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-afisare_multiplexata.v
-bde918d142f2c7ead61625cf5ae979
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-afisare_multiplexata:inst11
-}
-# macro_sequence
-
-# end
-# entity
 intarziere_semnal
 # storage
 db|sisau.(4).cnf
@@ -427,6 +391,42 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 # hierarchies {
 intarziere_semnal:inst4
 intarziere_semnal:inst
+}
+# macro_sequence
+
+# end
+# entity
+afisare_multiplexata
+# storage
+db|sisau.(0).cnf
+db|sisau.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+afisare_multiplexata.v
+469d64e36a11e427fca3c5876a2add80
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+afisare_multiplexata:inst11
 }
 # macro_sequence
 

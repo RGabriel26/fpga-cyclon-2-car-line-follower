@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at Logica_miscare.v(81): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at afisare_multiplexata.v(23): always construct contains both blocking and non-blocking assignments
