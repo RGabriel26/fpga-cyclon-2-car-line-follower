@@ -4,7 +4,7 @@ module intarziere_semnal(
     output reg semnal_out
 );
 
-reg [2:0] counter; // pentru a numara pâna la 4 (4 secunde)
+reg [2:0] counter;
 
 initial begin 
     semnal_out = 1'b0; 

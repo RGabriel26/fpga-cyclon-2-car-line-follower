@@ -113,7 +113,6 @@ set_global_assignment -name BDF_FILE debouncing.bdf
 set_global_assignment -name BDF_FILE numarator_10.bdf
 set_global_assignment -name BDF_FILE numarator_1000.bdf
 set_global_assignment -name BDF_FILE START_STOP.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE divizor_5.vwf
 set_global_assignment -name VERILOG_FILE Logica_miscare.v
 set_global_assignment -name VERILOG_FILE Selectie_proba.v
 set_global_assignment -name VERILOG_FILE afisare_multiplexata.v

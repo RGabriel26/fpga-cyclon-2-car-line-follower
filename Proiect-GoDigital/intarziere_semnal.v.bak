@@ -16,7 +16,7 @@ always @(posedge clk or posedge semnal) begin
         counter <= 3'b000; // Reset counter daca semnal este activ
         semnal_out <= 1'b1; // Daca semnal este activ, semnal_out este activ
     end else begin
-        if (counter == 3'b100) begin // Daca contorul nu a ajuns la 4
+        if (counter < 3'b100) begin // Daca contorul nu a ajuns la 4
             counter <= counter + 3'b001;
             semnal_out <= 1'b1; // Mentine semnal_out activ în timpul numararii
         end else begin
