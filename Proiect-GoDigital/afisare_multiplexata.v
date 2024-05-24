@@ -28,35 +28,6 @@ always @(posedge clock) begin
 		digit_3 = 4'b1000;
 		digit_4 = 4'b1000;
 	end else begin 
-		/*
-		if ({semnal_stanga, semnal_dreapta} != 2'b00) begin // optimizeaza cu case
-			if ({semnal_stanga, semnal_dreapta} != 2'b11) begin
-				if (semnal_stanga == 1) begin 
-					digit_1 = 4'b1011; // 11
-					digit_2 = 4'b1100;
-					digit_3 = 4'b1100;
-					digit_4 = 4'b1100;
-				end
-				if (semnal_dreapta == 1) begin 
-					digit_1 = 4'b1100; 
-					digit_2 = 4'b1100;
-					digit_3 = 4'b1100;
-					digit_4 = 4'b1010; // 10	
-				end
-			end else begin
-				digit_1 = 4'b1101;
-				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
-				digit_3 = cifra_unitati;
-				digit_4 = 4'b1101; 
-			end
-		end else begin
-				digit_1 = 4'b1101;
-				digit_2 = (cifra_zeci == 0) ? 4'b1101 : cifra_zeci;
-				digit_3 = cifra_unitati;
-				digit_4 = 4'b1101; 
-		end
-		*/
-		
 		case ({semnal_stanga, semnal_dreapta}) 
 			2'b00: begin
 						digit_1 = 4'b1101;
@@ -104,23 +75,12 @@ always @(posedge clock) begin
 	
 end
 
-//multiplexoare
-/*
-always @(generator_adresa) begin 
-	case (generator_adresa)
-		2'b00 : mux_out = digit_2;
-		2'b01 : mux_out = digit_3;
-		2'b10 : mux_out = digit_4;
-		2'b11 : mux_out = digit_1;
-	endcase
-end
-*/
-
-
 //decodificator adresa
 always @(mux_out) begin 
 
 	case(mux_out) 
+	// 1 - stins
+	// 0 - aprins
 		4'b0000: begin a=0; b=0; c=0; d=0; e=0; f=0; g=1; end
 		4'b0001: begin a=1; b=0; c=0; d=1; e=1; f=1; g=1; end
 		4'b0010: begin a=0; b=0; c=1; d=0; e=0; f=1; g=0; end

@@ -169,28 +169,6 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-debouncing
-# storage
-db|sisau.(16).cnf
-db|sisau.(16).cnf
-# case_insensitive
-# source_file
-debouncing.bdf
-2f156effd1b27d48946f7f74d1cb6621
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-debouncing:inst16
-debouncing:inst5
-debouncing:inst17
-}
-# macro_sequence
-
-# end
-# entity
 START_STOP
 # storage
 db|sisau.(10).cnf
@@ -267,98 +245,6 @@ divizor_frecventa:inst2
 
 # end
 # entity
-count_ture
-# storage
-db|sisau.(18).cnf
-db|sisau.(18).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-count_ture.v
-814c58c4e9ce8ecdd51654c5be278eda
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-count_ture:inst12
-}
-# macro_sequence
-
-# end
-# entity
-Logica_miscare
-# storage
-db|sisau.(14).cnf
-db|sisau.(14).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-logica_miscare.v
-b9dc27d39c2b8c2ca5197b382bfb4468
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Logica_miscare:inst6
-}
-# macro_sequence
-
-# end
-# entity
-main
-# storage
-db|sisau.(8).cnf
-db|sisau.(8).cnf
-# case_insensitive
-# source_file
-main.bdf
-1114ffad85c287b2e2b1a59635aa1b2
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 intarziere_semnal
 # storage
 db|sisau.(4).cnf
@@ -389,8 +275,86 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-intarziere_semnal:inst4
+intarziere_semnal:inst3
 intarziere_semnal:inst
+}
+# macro_sequence
+
+# end
+# entity
+main
+# storage
+db|sisau.(0).cnf
+db|sisau.(0).cnf
+# case_insensitive
+# source_file
+main.bdf
+459234c7a8a83f9155d9e40bb72d986
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+count_ture
+# storage
+db|sisau.(8).cnf
+db|sisau.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+count_ture.v
+f48d50761168bd4cb0fde4b76cd853
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+count_ture:inst12
+}
+# macro_sequence
+
+# end
+# entity
+debouncing
+# storage
+db|sisau.(5).cnf
+db|sisau.(5).cnf
+# case_insensitive
+# source_file
+debouncing.bdf
+89fcb52d2690407f2716bf2f35916e2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+debouncing:inst16
+debouncing:inst5
+debouncing:inst17
 }
 # macro_sequence
 
@@ -398,8 +362,8 @@ intarziere_semnal:inst
 # entity
 afisare_multiplexata
 # storage
-db|sisau.(0).cnf
-db|sisau.(0).cnf
+db|sisau.(13).cnf
+db|sisau.(13).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -407,7 +371,7 @@ ON
 # case_sensitive
 # source_file
 afisare_multiplexata.v
-a420fac773ecd4f6699cfa8a99b462
+5ba2a0fee238c3435c43d3f73ececf5
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -427,6 +391,42 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 afisare_multiplexata:inst11
+}
+# macro_sequence
+
+# end
+# entity
+Logica_miscare
+# storage
+db|sisau.(6).cnf
+db|sisau.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+logica_miscare.v
+91289d1f5a6ec62b26939f7f8a5af783
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Logica_miscare:inst6
 }
 # macro_sequence
 
