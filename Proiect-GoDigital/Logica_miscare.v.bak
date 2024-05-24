@@ -40,6 +40,7 @@ module Logica_miscare(
     input senzor_4,
     input senzor_5, 
     input [1:0] circuit,
+    input [3:0] count_ture, 
     
     output reg [1:0] directie_driverA,
     output reg [1:0] directie_driverB,
@@ -47,102 +48,88 @@ module Logica_miscare(
     output reg semnal_dreapta,
     output reg semnal_stanga,
     output reg stop, 
-    output reg [7:0] count_ture,
-    
-    output reg [11:0] factor_dc_driverA,
-    output reg [11:0] factor_dc_driverB 
+    output reg tact_count
 );
 //variabile locale
 //pentru memorarea temporara a curbei in cazul in care senzor_3 iese de pe circuit
 reg dreapta;
 reg stanga;
+reg run;
 
 initial begin 
-	dreapta = 0;
-	stanga = 0;
-	semnal_dreapta = 0;
-	semnal_stanga = 0;
-	stop = 0;
-	count_ture = 0;
-	//initializare cu starea de mers inainte
-	directie_driverA = 2'b10;
-	directie_driverB = 2'b10;
-	//initializarea factorului de comparatie cu numarul obtinut din numarator
-	//initializare cu 999 asta inseamna starea maxima de comparat in comparator ceea ce ofera un semnal PWM aproape de 100% ca duty cycle
-	factor_dc_driverA = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului A
-	factor_dc_driverB = 12'h999; // procentajul de duty cycle a semnalului PWM a driverului B
+	dreapta = 1'b0;
+	stanga = 1'b0;
+	semnal_dreapta = 1'b0;
+	semnal_stanga = 1'b0;
+	stop = 1'b0;
+	run = 1'b0;
+	//initializare cu starea initiala a senalelor de sens ale motoarelor
+	directie_driverA = 2'b00; // 10 - mers in fata | 01 - mers in spate
+	directie_driverB = 2'b00;
 	
 end 
-
-//SEMNALUL DE 1 LOGIC AL INTRARILOR APARE ATUNCI CAND SENZORUL DETECTEAZA NEGRU
-//LEDUL DE CONTROL AL ACESTUIA ESTE STINS
-//CRED... TREBUIE TESTAT IAR .. 
-
-//FOLOSIREA TRIBUIRILOR NEBLOCANTE (<=) CRED CA POATE GENERA PROBLEME IN RESETAREA REGISTRILOR
 	
 //logica directiei
 always @* begin
 	//conditie ca senzorul se afla pe traseul corect
-	if(senzor_3 == 1) begin
-		//creaza conditie de salvare in reg dreapta/stanga a ultimei activari a senzorului
-		//si crearea conditie de resetare a registrilor dreapta si stanga pentru cazul in care senzorul_3 iese de pe circuit
-		if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-			directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
-			
-			dreapta = (senzor_2 == 1) ? 1 : 0;
-			stanga = (senzor_4 == 1) ? 1: 0;
-		end else begin //tratarea cazului cand senzorii sunt simultan in 1 logic
-			//masina va continua sa mearga in fata
-			directie_driverA = 2'b10;
-			directie_driverB = 2'b10;
-		end
-	end
-	else begin // cazul cand senzor_3 iese de pe circuit(0 logic)
-		//cautare spre dreapta in functie de ultima directie cautata
-		if(dreapta == 1 | stanga == 1) begin
-			//posibil ca sensutile sa trebuiasca puse invers
-			directie_driverA = (dreapta == 1) ? 2'b01 : 2'b10;
-			directie_driverB = (stanga == 1) ? 2'b01 : 2'b10;
-			//resetarea registrilor se realizeaza in conditia ca senzorul_1 sa fie in 1 logic
-			//trebuie TESTAT
-		end else begin
-			if({senzor_2, senzor_4} != 2'b11) begin  //tratarea cazului cand senzorii nu sunt simultan in 1 logic
-				directie_driverA = (senzor_2 == 1) ? 2'b01 : 2'b10;
-				directie_driverB = (senzor_4 == 1) ? 2'b01 : 2'b10;
+	if(run == 1'b1) begin 
+		if(senzor_3 == 1'b1) begin
+			if(({senzor_2, senzor_4} != 2'b11) || ({senzor_2, senzor_1} != 2'b11) || ({senzor_4, senzor_5} != 2'b11 ) begin
+				directie_driverA = (senzor_2 == 1'b1) ? 2'b00 : 2'b10;
+				directie_driverB = (senzor_4 == 1'b1) ? 2'b00 : 2'b10;
 				
-				dreapta = (senzor_2 == 1) ? 1 : 0;
-				stanga = (senzor_4 == 1) ? 1: 0;
-			end else begin //tratarea cazului cand senzorii sunt simultan in 1 logic
-				//masina va continua sa mearga in fata
+				dreapta = (senzor_2 == 1'b1) ? 1'b1 : 1'b0;
+				stanga = (senzor_4 == 1'b1) ? 1'b1: 1'b0;
+			end else begin
 				directie_driverA = 2'b10;
 				directie_driverB = 2'b10;
 			end
 		end
+		else begin
+			if(dreapta == 1'b1 | stanga == 1'b1) begin
+				directie_driverA = (dreapta == 1'b1) ? 2'b01 : 2'b10;
+				directie_driverB = (stanga == 1'b1) ? 2'b01 : 2'b10;
+			end else begin
+				if(({senzor_2, senzor_4} != 2'b11) || ({senzor_2, senzor_1} != 2'b11) || ({senzor_4, senzor_5} != 2'b11 ) begin 
+					directie_driverA = (senzor_2 == 1'b1) ? 2'b01 : 2'b10;
+					directie_driverB = (senzor_4 == 1'b1) ? 2'b01 : 2'b10;
+					
+					dreapta = (senzor_2 == 1'b1) ? 1'b1 : 1'b0;
+					stanga = (senzor_4 == 1'b1) ? 1'b1: 1'b0;
+				end else begin 
+					directie_driverA = 2'b10;
+					directie_driverB = 2'b10;
+				end
+			end
+		end
 	end
+	
 	//LOGICA COMPORTAMENTALA PE DIFERITE CIRCUTE
-	if (senzor_1 == 1 & senzor_5 == 1) begin 
-		count_ture = count_ture + 1;
-		//conditie de circuit pentru circuitul 1 (proba linie dreapta)
-		if (circuit == 2'b01 & count_ture == 1) begin 
+	
+	// Conditii de oprire a masinutei in fucntie de numarul de ture executate
+    // Conditie pentru circuitul 1
+    if ((circuit == 2'b01) && (count_ture == 4'b0001)) begin 
+        directie_driverA = 2'b00;
+        directie_driverB = 2'b00;
+        run = 1'b0;
+    end else
+		// Conditie pentru circuitul 2 (proba curbe)
+		if ((circuit == 2'b10) && (count_ture == 4'b1010)) begin 
 			directie_driverA = 2'b00;
 			directie_driverB = 2'b00;
-		end
-		//conditie de circuit pentru circuitul 2 (proba curbe)
-		if (circuit == 2'b10 & count_ture == 10) begin 
-			//in acest caz, cand masina face 10 cicluri pe circuit, se va opri
-			directie_driverA = 2'b00;
-			directie_driverB = 2'b00;
-		end
-		//conditie de circuit pentru circuitul 3 (proba anduranta)
-		//conditia consta in numararea turelor de circuit pana la terminarea bateriilor 
-		//instructiune ce se realizeaza deja mai sus 
-		
-		//conditie de resetare a numarului de cicluri
-		if (circuit == 2'b00) begin
-			count_ture = 0;
-		end
-	end
+			run = 1'b0;
+		end else
+			// ANDURANTA NU NECESITA CONDITIE DE STOP
+			// Conditie de resetare  a semnalului run
+			if (circuit == 2'b00) begin
+				run = 1'b1;
+			end
+    
+    // CREARE TACT DE INCREMENTARE PENTRU COUNTERUL DE TURE
+	if ({senzor_1, senzor_2, senzor_4, senzor_5} == 4'b1111)
+		tact_count = 1'b1;
+	else
+		tact_count = 1'b0;
 	
 	//OUTPUT SEMNALA DE INFORMARE
 	//scoaterea numarului de ture realizate de masina
@@ -155,6 +142,8 @@ always @* begin
 	semnal_stanga = senzor_5;
 	
 	//semnalul de stop
+	//cand masina nu mai este centrata pe linia neagra => adica cand senzor_3 nu mai este pe traseu
+	// AR TREBUI SA SE TRIMITA SEMNAL DE STOP MEREU CAND MASINA SE REPOZITIONEAZA ??? 
 	stop = ~senzor_3;
 end
 

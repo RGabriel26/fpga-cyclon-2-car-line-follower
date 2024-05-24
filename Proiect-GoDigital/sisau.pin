@@ -106,14 +106,14 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-GND*                         : 40        :        :                   :         : 4         :                
-GND*                         : 41        :        :                   :         : 4         :                
-GND*                         : 42        :        :                   :         : 4         :                
-GND*                         : 43        :        :                   :         : 4         :                
-GND*                         : 44        :        :                   :         : 4         :                
-GND*                         : 45        :        :                   :         : 4         :                
+a                            : 40        : output : 3.3-V LVTTL       :         : 4         : Y              
+f                            : 41        : output : 3.3-V LVTTL       :         : 4         : Y              
+b                            : 42        : output : 3.3-V LVTTL       :         : 4         : Y              
+e                            : 43        : output : 3.3-V LVTTL       :         : 4         : Y              
+d                            : 44        : output : 3.3-V LVTTL       :         : 4         : Y              
+c                            : 45        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 46        : power  :                   : 3.3V    : 4         :                
-GND*                         : 47        :        :                   :         : 4         :                
+g                            : 47        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND*                         : 48        :        :                   :         : 4         :                
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
@@ -135,10 +135,10 @@ GND*                         : 65        :        :                   :         
 VCCIO4                       : 66        : power  :                   : 3.3V    : 4         :                
 GND*                         : 67        :        :                   :         : 4         :                
 GND                          : 68        : gnd    :                   :         :           :                
-GND*                         : 69        :        :                   :         : 4         :                
-GND*                         : 70        :        :                   :         : 4         :                
-GND*                         : 71        :        :                   :         : 4         :                
-GND*                         : 72        :        :                   :         : 4         :                
+D1                           : 69        : output : 3.3-V LVTTL       :         : 4         : Y              
+D2                           : 70        : output : 3.3-V LVTTL       :         : 4         : Y              
+D3                           : 71        : output : 3.3-V LVTTL       :         : 4         : Y              
+D4                           : 72        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND*                         : 73        :        :                   :         : 3         :                
 GND*                         : 74        :        :                   :         : 3         :                
 GND*                         : 75        :        :                   :         : 3         :                
@@ -187,15 +187,15 @@ GND                          : 117       : gnd    :                   :         
 PWM_C                        : 118       : output : 3.3-V LVTTL       :         : 2         : Y              
 PWM_D                        : 119       : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 120       :        :                   :         : 2         :                
-info_circuit3                : 121       : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 121       :        :                   :         : 2         :                
 GND*                         : 122       :        :                   :         : 2         :                
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-info_circuit2                : 125       : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 125       :        :                   :         : 2         :                
 GND*                         : 126       :        :                   :         : 2         :                
 VCCIO2                       : 127       : power  :                   : 3.3V    : 2         :                
 GND                          : 128       : gnd    :                   :         :           :                
-info_circuit1                : 129       : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 129       :        :                   :         : 2         :                
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
 A_IN1_D1                     : 132       : output : 3.3-V LVTTL       :         : 2         : Y              

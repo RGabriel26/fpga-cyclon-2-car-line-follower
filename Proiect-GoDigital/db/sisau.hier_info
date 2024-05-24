@@ -4,13 +4,17 @@ buton_START_STOP => debouncing:inst16.press_in
 clk => divizor_frecventa:inst2.clk
 PWM_A <= START_STOP:inst15.START/STOP
 PWM_C <= START_STOP:inst15.START/STOP
+PWM_D <= START_STOP:inst15.START/STOP
+info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+buton_selectie => debouncing:inst5.press_in
+info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 C_IN1_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
 senzon_1 => Logica_miscare:inst6.senzor_1
 senzor_2 => Logica_miscare:inst6.senzor_2
 senzor_3 => Logica_miscare:inst6.senzor_3
 senzor_4 => Logica_miscare:inst6.senzor_4
 senzor_5 => Logica_miscare:inst6.senzor_5
-buton_selectie => debouncing:inst5.press_in
 C_IN2_D2 <= directie_D2[1].DB_MAX_OUTPUT_PORT_TYPE
 D_IN3_D2 <= directie_D2[0].DB_MAX_OUTPUT_PORT_TYPE
 D_IN4_D2 <= directie_D2[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -18,13 +22,17 @@ A_IN1_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 A_IN2_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
 B_IN3_D1 <= directie_D1[0].DB_MAX_OUTPUT_PORT_TYPE
 B_IN4_D1 <= directie_D1[1].DB_MAX_OUTPUT_PORT_TYPE
-PWM_D <= START_STOP:inst15.START/STOP
-info_circuit1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit1_board <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit2_board <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-info_circuit3_board <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= afisare_multiplexata:inst11.D1
+D2 <= afisare_multiplexata:inst11.D2
+D3 <= afisare_multiplexata:inst11.D3
+D4 <= afisare_multiplexata:inst11.D4
+a <= afisare_multiplexata:inst11.a
+b <= afisare_multiplexata:inst11.b
+c <= afisare_multiplexata:inst11.c
+d <= afisare_multiplexata:inst11.d
+e <= afisare_multiplexata:inst11.e
+f <= afisare_multiplexata:inst11.f
+g <= afisare_multiplexata:inst11.g
 
 
 |main|START_STOP:inst15
@@ -40,15 +48,12 @@ press_in => inst.DATAIN
 
 
 |main|divizor_frecventa:inst2
-divizor_10 <= divizor_10:inst.next_tact
-clk => divizor_10:inst.in_clk
 1HZ <= divizor_5:inst3.next_tact
-divizor_100 <= divizor_10:inst4.next_tact
-
-
-|main|divizor_frecventa:inst2|divizor_10:inst
-next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-in_clk => inst1.IN0
+clk => divizor_10:inst.in_clk
+clk => divizor_1000:inst5.clk
+divizor_1M <= divizor_1000:inst6.next_tact
+divizor_1000 <= divizor_1000:inst5.next_tact
+500Hz <= divizor_1000:inst7.next_tact
 
 
 |main|divizor_frecventa:inst2|divizor_5:inst3
@@ -138,78 +143,141 @@ Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|main|divizor_frecventa:inst2|divizor_10:inst
+next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+in_clk => inst1.IN0
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst6
+next_tact <= numarator_10:inst2.Q3
+clk => numarator_10:inst.in_clk
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst2
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst1
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst6|numarator_10:inst
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst5
+next_tact <= numarator_10:inst2.Q3
+clk => numarator_10:inst.in_clk
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst2
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst1
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst5|numarator_10:inst
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst7
+next_tact <= numarator_10:inst2.Q3
+clk => numarator_10:inst.in_clk
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst2
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst1
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|divizor_frecventa:inst2|divizor_1000:inst7|numarator_10:inst
+Q0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst9.ACLR
+RESET => inst10.ACLR
+RESET => inst12.ACLR
+RESET => inst11.ACLR
+in_clk => inst1.IN0
+Q1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |main|divizor_frecventa:inst2|divizor_10:inst4
 next_tact <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 in_clk => inst1.IN0
 
 
-|main|Logica_miscare:inst6
-senzor_1 => always0.IN0
-senzor_1 => semnal_dreapta.DATAIN
-senzor_2 => directie_driverA.DATAB
-senzor_2 => dreapta.DATAIN
-senzor_2 => directie_driverA.DATAB
-senzor_2 => Equal0.IN0
-senzor_3 => directie_driverA.OUTPUTSELECT
-senzor_3 => directie_driverA.OUTPUTSELECT
-senzor_3 => directie_driverB.OUTPUTSELECT
-senzor_3 => directie_driverB.OUTPUTSELECT
-senzor_3 => stanga.OUTPUTSELECT
-senzor_3 => stop.DATAIN
-senzor_4 => directie_driverB.DATAB
-senzor_4 => stanga.DATAIN
-senzor_4 => Equal0.IN1
-senzor_4 => directie_driverB.DATAB
-senzor_5 => always0.IN1
-senzor_5 => semnal_stanga.DATAIN
-circuit[0] => Equal1.IN0
-circuit[0] => Equal3.IN1
-circuit[0] => Equal5.IN1
-circuit[1] => Equal1.IN1
-circuit[1] => Equal3.IN0
-circuit[1] => Equal5.IN0
-directie_driverA[0] <= directie_driverA.DB_MAX_OUTPUT_PORT_TYPE
-directie_driverA[1] <= directie_driverA.DB_MAX_OUTPUT_PORT_TYPE
-directie_driverB[0] <= directie_driverB.DB_MAX_OUTPUT_PORT_TYPE
-directie_driverB[1] <= directie_driverB.DB_MAX_OUTPUT_PORT_TYPE
-semnal_dreapta <= senzor_1.DB_MAX_OUTPUT_PORT_TYPE
-semnal_stanga <= senzor_5.DB_MAX_OUTPUT_PORT_TYPE
-stop <= senzor_3.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[0] <= count_ture[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[1] <= count_ture[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[2] <= count_ture[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[3] <= count_ture[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[4] <= count_ture[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[5] <= count_ture[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[6] <= count_ture[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-count_ture[7] <= count_ture[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-factor_dc_driverA[0] <= <VCC>
-factor_dc_driverA[1] <= <GND>
-factor_dc_driverA[2] <= <GND>
-factor_dc_driverA[3] <= <VCC>
-factor_dc_driverA[4] <= <VCC>
-factor_dc_driverA[5] <= <GND>
-factor_dc_driverA[6] <= <GND>
-factor_dc_driverA[7] <= <VCC>
-factor_dc_driverA[8] <= <VCC>
-factor_dc_driverA[9] <= <GND>
-factor_dc_driverA[10] <= <GND>
-factor_dc_driverA[11] <= <VCC>
-factor_dc_driverB[0] <= <VCC>
-factor_dc_driverB[1] <= <GND>
-factor_dc_driverB[2] <= <GND>
-factor_dc_driverB[3] <= <VCC>
-factor_dc_driverB[4] <= <VCC>
-factor_dc_driverB[5] <= <GND>
-factor_dc_driverB[6] <= <GND>
-factor_dc_driverB[7] <= <VCC>
-factor_dc_driverB[8] <= <VCC>
-factor_dc_driverB[9] <= <GND>
-factor_dc_driverB[10] <= <GND>
-factor_dc_driverB[11] <= <VCC>
-
-
 |main|Selectie_proba:inst1
+buton => reset_counter~reg0.CLK
 buton => led3~reg0.CLK
 buton => led2~reg0.CLK
 buton => led1~reg0.CLK
@@ -220,6 +288,7 @@ circuit[1] <= circuit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset_counter <= reset_counter~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|debouncing:inst5
@@ -227,5 +296,183 @@ press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 clock => inst.CLK
 clock => inst1.CLK
 press_in => inst.DATAIN
+
+
+|main|Logica_miscare:inst6
+senzor_1 => semnal_dreapta.DATAIN
+senzor_1 => Equal1.IN1
+senzor_1 => Equal8.IN0
+senzor_2 => directie_driverA.DATAB
+senzor_2 => dreapta.DATAIN
+senzor_2 => directie_driverA.DATAB
+senzor_2 => Equal0.IN0
+senzor_2 => Equal1.IN0
+senzor_2 => Equal8.IN1
+senzor_3 => directie_driverA.OUTPUTSELECT
+senzor_3 => directie_driverA.OUTPUTSELECT
+senzor_3 => directie_driverB.OUTPUTSELECT
+senzor_3 => directie_driverB.OUTPUTSELECT
+senzor_3 => stanga.OUTPUTSELECT
+senzor_3 => stop.DATAIN
+senzor_4 => directie_driverB.DATAB
+senzor_4 => stanga.DATAIN
+senzor_4 => Equal0.IN1
+senzor_4 => Equal2.IN0
+senzor_4 => directie_driverB.DATAB
+senzor_4 => Equal8.IN2
+senzor_5 => semnal_stanga.DATAIN
+senzor_5 => Equal2.IN1
+senzor_5 => Equal8.IN3
+circuit[0] => Equal3.IN0
+circuit[0] => Equal5.IN1
+circuit[0] => Equal7.IN1
+circuit[1] => Equal3.IN1
+circuit[1] => Equal5.IN0
+circuit[1] => Equal7.IN0
+count_ture[0] => Equal4.IN0
+count_ture[0] => Equal6.IN3
+count_ture[1] => Equal4.IN3
+count_ture[1] => Equal6.IN1
+count_ture[2] => Equal4.IN2
+count_ture[2] => Equal6.IN2
+count_ture[3] => Equal4.IN1
+count_ture[3] => Equal6.IN0
+directie_driverA[0] <= directie_driverA[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+directie_driverA[1] <= directie_driverA[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+directie_driverB[0] <= directie_driverB[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+directie_driverB[1] <= directie_driverB[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+semnal_dreapta <= senzor_1.DB_MAX_OUTPUT_PORT_TYPE
+semnal_stanga <= senzor_5.DB_MAX_OUTPUT_PORT_TYPE
+stop <= senzor_3.DB_MAX_OUTPUT_PORT_TYPE
+tact_count <= Equal8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|count_ture:inst12
+tact => count_ture[0]~reg0.CLK
+tact => count_ture[1]~reg0.CLK
+tact => count_ture[2]~reg0.CLK
+tact => count_ture[3]~reg0.CLK
+tact => cifra_zeci[0]~reg0.CLK
+tact => cifra_zeci[1]~reg0.CLK
+tact => cifra_zeci[2]~reg0.CLK
+tact => cifra_zeci[3]~reg0.CLK
+tact => cifra_unitati[0]~reg0.CLK
+tact => cifra_unitati[1]~reg0.CLK
+tact => cifra_unitati[2]~reg0.CLK
+tact => cifra_unitati[3]~reg0.CLK
+reset => count_ture[0]~reg0.ACLR
+reset => count_ture[1]~reg0.ACLR
+reset => count_ture[2]~reg0.ACLR
+reset => count_ture[3]~reg0.ACLR
+reset => cifra_zeci[0]~reg0.ACLR
+reset => cifra_zeci[1]~reg0.ACLR
+reset => cifra_zeci[2]~reg0.ACLR
+reset => cifra_zeci[3]~reg0.ACLR
+reset => cifra_unitati[0]~reg0.ACLR
+reset => cifra_unitati[1]~reg0.ACLR
+reset => cifra_unitati[2]~reg0.ACLR
+reset => cifra_unitati[3]~reg0.ACLR
+cifra_unitati[0] <= cifra_unitati[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_unitati[1] <= cifra_unitati[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_unitati[2] <= cifra_unitati[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_unitati[3] <= cifra_unitati[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_zeci[0] <= cifra_zeci[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_zeci[1] <= cifra_zeci[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_zeci[2] <= cifra_zeci[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cifra_zeci[3] <= cifra_zeci[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_ture[0] <= count_ture[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_ture[1] <= count_ture[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_ture[2] <= count_ture[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_ture[3] <= count_ture[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|debouncing:inst17
+press_out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+press_in => inst.DATAIN
+
+
+|main|afisare_multiplexata:inst11
+semnal_stanga => Mux0.IN4
+semnal_stanga => Mux1.IN4
+semnal_stanga => Mux2.IN4
+semnal_stanga => Mux3.IN4
+semnal_stanga => Decoder0.IN0
+semnal_dreapta => Mux0.IN5
+semnal_dreapta => Mux1.IN5
+semnal_dreapta => Mux2.IN5
+semnal_dreapta => Mux3.IN5
+semnal_dreapta => Decoder0.IN1
+stop => digit_1.OUTPUTSELECT
+stop => digit_1.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_2.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_3.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+stop => digit_4.OUTPUTSELECT
+clock => mux_out[0].CLK
+clock => mux_out[1].CLK
+clock => mux_out[2].CLK
+clock => mux_out[3].CLK
+clock => D4~reg0.CLK
+clock => D3~reg0.CLK
+clock => D2~reg0.CLK
+clock => D1~reg0.CLK
+clock => generator_adresa[0].CLK
+clock => generator_adresa[1].CLK
+cifra_zeci[0] => digit_2.DATAA
+cifra_zeci[0] => Equal0.IN31
+cifra_zeci[1] => digit_2.DATAA
+cifra_zeci[1] => Equal0.IN30
+cifra_zeci[2] => digit_2.DATAA
+cifra_zeci[2] => Equal0.IN29
+cifra_zeci[3] => digit_2.DATAA
+cifra_zeci[3] => Equal0.IN28
+cifra_unitati[0] => digit_3.DATAB
+cifra_unitati[1] => digit_3.DATAB
+cifra_unitati[2] => digit_3.DATAB
+cifra_unitati[3] => digit_3.DATAB
+D1 <= D1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= D2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= D3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D4 <= D4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a <= a$latch.DB_MAX_OUTPUT_PORT_TYPE
+b <= b$latch.DB_MAX_OUTPUT_PORT_TYPE
+c <= c$latch.DB_MAX_OUTPUT_PORT_TYPE
+d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
+e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
+f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
+g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|intarziere_semnal:inst3
+semnal => semnal_out~reg0.PRESET
+semnal => counter[0].ACLR
+semnal => counter[1].ACLR
+semnal => counter[2].ACLR
+clk => semnal_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+semnal_out <= semnal_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|intarziere_semnal:inst
+semnal => semnal_out~reg0.PRESET
+semnal => counter[0].ACLR
+semnal => counter[1].ACLR
+semnal => counter[2].ACLR
+clk => semnal_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+semnal_out <= semnal_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

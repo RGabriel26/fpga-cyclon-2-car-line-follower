@@ -291,4 +291,3 @@ applicable agreement for further details.
 )
 (junction (pt 344 296))
 (junction (pt 424 224))
-(text "Trebuie introdus un semnal de tact de o frecventa destul de mica, de ex 1HZ" (rect 96 312 530 326)(font "Arial" (font_size 8)))

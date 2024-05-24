@@ -2,7 +2,8 @@ module Selectie_proba(
 	input buton, //buton care selecteaza tipul de traseu pentru proba x
 		
 	output reg [1:0] circuit,
-	output reg led1,led2,led3 //outputuri pentru informarea exterioara a traseului selectat
+	output reg led1,led2,led3, //outputuri pentru informarea exterioara a traseului selectat
+	output reg reset_counter
 	
 	);
 	
@@ -32,10 +33,10 @@ module Selectie_proba(
 		
 		// dupa selectia unui circuit, se vor contoriza 5 secunde dupa care se va trimite comanda de MISCARE pentru masina 
 		case(circuit)
-			2'b00: begin led1=0; led2=0; led3=0; end
-			2'b01: begin led1=1; led2=0; led3=0; end
-			2'b10: begin led1=0; led2=1; led3=0; end
-			2'b11: begin led1=0; led2=0; led3=1; end
+			2'b00: begin led1=0; led2=0; led3=0; reset_counter = 1; end
+			2'b01: begin led1=1; led2=0; led3=0; reset_counter = 0; end
+			2'b10: begin led1=0; led2=1; led3=0; reset_counter = 0; end
+			2'b11: begin led1=0; led2=0; led3=1; reset_counter = 0; end
 		endcase
 	end
 	
